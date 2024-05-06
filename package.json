@@ -1,0 +1,32 @@
+{
+  "name": "gitcoin-onchain",
+  "module": "index.ts",
+  "type": "module",
+  "author": {
+    "name": "jaxcoder"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "tsup": {
+    "entry": ["./src/index.ts"],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "dependencies": {
+    "viem": "^2.9.32"
+  }
+}
