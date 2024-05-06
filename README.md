@@ -1,9 +1,15 @@
-# gitcoin-networks
+# Gitcoin common data package
 
 To install dependencies:
 
 ```bash
 bun install
+```
+
+To build:
+
+```bash
+bun run build
 ```
 
 To run:
