@@ -1,42 +1,66 @@
-import type { Token } from "../types";
+import {
+  arbitrum,
+  arbitrumSepolia,
+  avalanche,
+  avalancheFuji,
+  base,
+  baseSepolia,
+  celo,
+  celoAlfajores,
+  fantom,
+  lukso,
+  luksoTestnet,
+  mainnet,
+  optimism,
+  optimismSepolia,
+  pgn,
+  pgnTestnet,
+  polygon,
+  polygonAmoy,
+  scroll,
+  scrollSepolia,
+  seiDevnet,
+  sepolia,
+  zkSync,
+  zkSyncSepoliaTestnet,
+} from "viem/chains";
+import type { TTokenRecord } from "../types";
 
-export const tokens: Record<number, Token[]> = {
-  1: [
-    {
-      code: "USDC",
-      address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-      decimals: 6,
-      priceSource: {
-        chainId: 1,
-        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-      },
-    },
-    {
-      code: "DAI",
-      address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-      decimals: 18,
-      priceSource: {
-        chainId: 1,
-        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-      },
-    },
-    {
-      code: "ETH",
-      address: "0x0000000000000000000000000000000000000000",
-      decimals: 18,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000",
-      },
-    },
-    {
-      code: "ETH",
-      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      decimals: 18,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000",
-      },
-    },
-  ],
+// Tokens for each chain
+export const tokens: TTokenRecord = {
+  [mainnet.id]: [],
+  [sepolia.id]: [],
+  [optimism.id]: [],
+  [optimismSepolia.id]: [],
+  [base.id]: [],
+  [baseSepolia.id]: [],
+  [arbitrum.id]: [],
+  [arbitrumSepolia.id]: [],
+  [polygon.id]: [],
+  [polygonAmoy.id]: [],
+  [zkSync.id]: [],
+  [zkSyncSepoliaTestnet.id]: [],
+  [avalanche.id]: [],
+  [avalancheFuji.id]: [],
+  [scroll.id]: [],
+  [scrollSepolia.id]: [],
+  [seiDevnet.id]: [],
+  [lukso.id]: [],
+  [luksoTestnet.id]: [],
+  [celo.id]: [],
+  [celoAlfajores.id]: [],
+  [fantom.id]: [],
+  [pgn.id]: [],
+  [pgnTestnet.id]: [],
+};
+
+export const fetchTokens = async (): Promise<TTokenRecord> => {
+  // Fetch tokens from the server
+  const response = await fetch(
+    `https://grants-stack-indexer-v2.gitcoin.co/api/v2}/tokens`
+  );
+
+  console.log("Fetching tokens response", response);
+
+  return tokens;
 };
