@@ -1,6 +1,6 @@
-import { chains as supportedChains } from "./chains/chains";
-import { tokens as supportedTokens } from "./tokens/tokens";
-import { fetchSubscriptions, subscriptions as indexerSubscriptions } from "./subscriptions/subscriptions";
+import { fetchChains, chains as supportedChains } from "./chains/chains";
+import { fetchTokens, tokens as supportedTokens } from "./tokens/tokens";
+import { fetchSubscriptions, subscriptions as supportedSubscriptions } from "./subscriptions/subscriptions";
 
 // All supported chains
 export const chains = supportedChains;
@@ -46,7 +46,7 @@ export const getTokensByChainId = (chainId: number) => {
 };
 
 // All subscriptions
-export const subscriptions = indexerSubscriptions;
+export const subscriptions = supportedSubscriptions;
 
 // Get all subscriptions
 export const getSubscriptions = () => {
@@ -58,4 +58,6 @@ export const getSubscriptionsByChainId = (chainId: number) => {
   return subscriptions[chainId];
 };
 
-fetchSubscriptions();
+// fetchSubscriptions();
+// fetchTokens();
+fetchChains();

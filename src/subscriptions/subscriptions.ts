@@ -25,6 +25,7 @@ import {
   zkSyncSepoliaTestnet,
 } from "viem/chains";
 import type { TSubscriptionRecord } from "../types";
+import axios from "axios";
 
 export const subscriptions: TSubscriptionRecord = {
   [mainnet.id]: [],
@@ -53,14 +54,24 @@ export const subscriptions: TSubscriptionRecord = {
   [pgnTestnet.id]: [],
 };
 
-export const fetchSubscriptions = async (): Promise<TSubscriptionRecord> => {
-  // Fetch subscriptions from the server
-  const response = await fetch(
-    `https://grants-stack-indexer-v2.gitcoin.co/api/v2
-    }/subscriptions`
-  );
+export const fetchSubscriptions =
+  async (): Promise<TSubscriptionRecord | null> => {
+    // Initialize a default empty response or your preferred default structure
+    let subscriptions: TSubscriptionRecord | null = null;
 
-  console.log("Fetching subscriptions response", response);
+    try {
+      const response = await axios.get(
+        "http://localhost:8080/api/v2/subscriptions"
+      );
 
-  return subscriptions;
-};
+      subscriptions = response.data; // Assuming the API returns data that matches TSubscriptionRecord
+      console.log("Fetching subscriptions response", {
+        response: subscriptions,
+      });
+    } catch (error) {
+      console.error("Error fetching subscriptions", error);
+      return subscriptions; // This can be null or a default value if that's more appropriate
+    }
+
+    return subscriptions;
+  };

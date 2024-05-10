@@ -25,6 +25,7 @@ import {
   zkSyncSepoliaTestnet,
 } from "viem/chains";
 import type { TTokenRecord } from "../types";
+import axios from "axios";
 
 // Tokens for each chain
 export const tokens: TTokenRecord = {
@@ -54,13 +55,21 @@ export const tokens: TTokenRecord = {
   [pgnTestnet.id]: [],
 };
 
-export const fetchTokens = async (): Promise<TTokenRecord> => {
-  // Fetch tokens from the server
-  const response = await fetch(
-    `https://grants-stack-indexer-v2.gitcoin.co/api/v2}/tokens`
-  );
+export const fetchTokens = async (): Promise<TTokenRecord | null> => {
+  // Initialize a default empty response or your preferred default structure
+  let tokens: TTokenRecord | null = null;
 
-  console.log("Fetching tokens response", response);
+  try {
+    const response = await axios.get("http://localhost:8080/api/v2/tokens");
+
+    tokens = response.data; // Assuming the API returns data that matches TTokenRecord
+    console.log("Fetching tokens response", {
+      response: tokens,
+    });
+  } catch (error) {
+    console.error("Error fetching tokens", error);
+    return tokens; // This can be null or a default value if that's more appropriate
+  }
 
   return tokens;
 };

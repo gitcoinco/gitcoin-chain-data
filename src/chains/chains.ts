@@ -1,5 +1,6 @@
 import { mainnet } from "viem/chains";
 import type { TChainRecord } from "../types";
+import axios from "axios";
 
 export const chains: TChainRecord = [
   {
@@ -39,13 +40,21 @@ export const chains: TChainRecord = [
   // pgnTestnet,
 ];
 
-export const fetchChains = async (): Promise<TChainRecord> => {
-  // Fetch chains from the server
-  const response = await fetch(
-    `https://grants-stack-indexer-v2.gitcoin.co/api/v2}/chains`
-  );
+export const fetchChains = async (): Promise<TChainRecord | null> => {
+  // Initialize a default empty response or your preferred default structure
+  let chains: TChainRecord | null = null;
 
-  console.log("Fetching chains response", response);
+  try {
+    const response = await axios.get("http://localhost:8080/api/v2/chains");
+
+    chains = response.data; // Assuming the API returns data that matches TChainRecord
+    console.log("Fetching chains response", {
+      response: chains,
+    });
+  } catch (error) {
+    console.error("Error fetching chains", error);
+    return chains; // This can be null or a default value if that's more appropriate
+  }
 
   return chains;
 };
