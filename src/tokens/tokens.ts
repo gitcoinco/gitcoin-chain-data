@@ -60,7 +60,9 @@ export const fetchTokens = async (): Promise<TTokenRecord | null> => {
   let tokens: TTokenRecord | null = null;
 
   try {
-    const response = await axios.get("http://localhost:8080/api/v2/tokens");
+    const response = await axios.get(
+      "https://gitcoinco.github.io/static-data/tokens/tokens.json"
+    );
 
     tokens = response.data; // Assuming the API returns data that matches TTokenRecord
     console.log("Fetching tokens response", {

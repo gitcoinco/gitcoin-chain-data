@@ -45,7 +45,9 @@ export const fetchChains = async (): Promise<TChainRecord | null> => {
   let chains: TChainRecord | null = null;
 
   try {
-    const response = await axios.get("http://localhost:8080/api/v2/chains");
+    const response = await axios.get(
+      "https://gitcoinco.github.io/static-data/chains/chains.json"
+    );
 
     chains = response.data; // Assuming the API returns data that matches TChainRecord
     console.log("Fetching chains response", {

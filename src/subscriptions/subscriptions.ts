@@ -61,7 +61,7 @@ export const fetchSubscriptions =
 
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/v2/subscriptions"
+        "https://gitcoinco.github.io/static-data/subscriptions/subscriptions.json"
       );
 
       subscriptions = response.data; // Assuming the API returns data that matches TSubscriptionRecord
