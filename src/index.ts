@@ -1,6 +1,13 @@
 import { fetchChains, chains as supportedChains } from "./chains/chains";
-import { fetchTokens, tokens as supportedTokens } from "./tokens/tokens";
-import { fetchSubscriptions, subscriptions as supportedSubscriptions } from "./subscriptions/subscriptions";
+import {
+  fetchTokens,
+  tokens as supportedTokens,
+} from "./tokens/tokens";
+import {
+  fetchSubscriptions,
+  subscriptions as supportedSubscriptions,
+} from "./subscriptions/subscriptions";
+import { ETokenType } from "./types";
 
 // All supported chains
 export const chains = supportedChains;
@@ -59,5 +66,5 @@ export const getSubscriptionsByChainId = (chainId: number) => {
 };
 
 // fetchSubscriptions();
-// fetchTokens();
-fetchChains();
+fetchTokens(ETokenType.PAYOUT);
+// fetchChains();

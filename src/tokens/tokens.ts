@@ -24,7 +24,7 @@ import {
   zkSync,
   zkSyncSepoliaTestnet,
 } from "viem/chains";
-import type { TTokenRecord } from "../types";
+import { ETokenType, type TTokenRecord } from "../types";
 import axios from "axios";
 
 // Tokens for each chain
@@ -55,19 +55,49 @@ export const tokens: TTokenRecord = {
   [pgnTestnet.id]: [],
 };
 
-export const fetchTokens = async (): Promise<TTokenRecord | null> => {
+
+
+export const fetchTokens = async (
+  tokenType: ETokenType
+): Promise<TTokenRecord | null> => {
   // Initialize a default empty response or your preferred default structure
-  let tokens: TTokenRecord | null = null;
+  let tokens: TTokenRecord | [] = [];
+  let response;
 
   try {
-    const response = await axios.get(
-      "https://gitcoinco.github.io/static-data/tokens/tokens.json"
-    );
+    switch (tokenType) {
+      case ETokenType.PAYOUT:
+        response = await axios.get(
+          "https://gitcoinco.github.io/static-data/tokens/payout-tokens.json"
+        );
 
-    tokens = response.data; // Assuming the API returns data that matches TTokenRecord
-    console.log("Fetching tokens response", {
-      response: tokens,
-    });
+        tokens = response.data; // Assuming the API returns data that matches TTokenRecord
+        console.log("Fetching tokens response", {
+          response: tokens,
+        });
+        break;
+      case ETokenType.DONATION:
+        response = await axios.get(
+          "https://gitcoinco.github.io/static-data/tokens/donation-tokens.json"
+        );
+
+        tokens = response.data; // Assuming the API returns data that matches TTokenRecord
+        console.log("Fetching tokens response", {
+          response: tokens,
+        });
+        break;
+      case ETokenType.INDEXER:
+        response = await axios.get(
+          "https://gitcoinco.github.io/static-data/tokens/indexer-tokens.json"
+        );
+
+        tokens = response.data; // Assuming the API returns data that matches TTokenRecord
+        console.log("Fetching tokens response", {
+          response: tokens,
+        });
+
+        break;
+    }
   } catch (error) {
     console.error("Error fetching tokens", error);
     return tokens; // This can be null or a default value if that's more appropriate
