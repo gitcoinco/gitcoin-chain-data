@@ -19,7 +19,6 @@
     "start": "npx tsc src/index.ts"
   },
   "dependencies": {
-    "@grants-labs/gitcoin-chain-data": "^1.0.3",
     "axios": "^1.6.8",
     "ethers": "^6.12.1",
     "viem": "^2.9.32"
