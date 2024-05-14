@@ -1,8 +1,5 @@
-import { mainnet } from "viem/chains";
 import type { TChainRecord } from "../types";
 import axios from "axios";
-
-const chains: TChainRecord = [];
 
 /**
  * Fetch chains for all supported networks.
@@ -10,15 +7,16 @@ const chains: TChainRecord = [];
  * @returns
  */
 export const fetchChainData = async (): Promise<TChainRecord> => {
-  // Initialize a default empty response or your preferred default structure
+  /** Initialize a default empty response or your preferred default structure */
   let chains: TChainRecord;
 
   try {
     const response = await axios.get(
-      "https://gitcoinco.github.io/static-data/chains/chains.json"
+      "https://gitcoinco.github.io/chain-data/chains/chains.json"
     );
 
-    chains = response.data; // Assuming the API returns data that matches TChainRecord
+    chains =
+      response.data; /** Assuming the API returns data that matches TChainRecord */
     console.log("Fetching chains response", {
       response: chains,
     });
@@ -27,7 +25,7 @@ export const fetchChainData = async (): Promise<TChainRecord> => {
   } catch (error) {
     console.error("Error fetching chains", error);
 
-    return []; // This can be null or a default value if that's more appropriate
+    return []; /** This can be null or a default value if that's more appropriate */
   }
 };
 
@@ -39,12 +37,12 @@ export const fetchChainData = async (): Promise<TChainRecord> => {
 export const fetchChainDataById = async (
   chainId: number
 ): Promise<TChainRecord> => {
-  // Initialize a default empty response or your preferred default structure
+  /** Initialize a default empty response or your preferred default structure */
   let chains: TChainRecord;
 
   try {
     const response = await axios.get(
-      `https://gitcoinco.github.io/static-data/chains/${chainId}/chain.json`
+      `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
     );
 
     chains = response.data; // Assuming the API returns data that matches TChainRecord
@@ -56,6 +54,6 @@ export const fetchChainDataById = async (
   } catch (error) {
     console.error("Error fetching chains", error);
 
-    return []; // This can be null or a default value if that's more appropriate
+    return []; /** This can be null or a default value if that's more appropriate */
   }
 };
