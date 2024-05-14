@@ -2,16 +2,16 @@ import { mainnet } from "viem/chains";
 import type { TChainRecord } from "../types";
 import axios from "axios";
 
-export const chains: TChainRecord = [];
+const chains: TChainRecord = [];
 
 /**
  * Fetch chains for all supported networks.
  *
  * @returns
  */
-export const fetchChainData = async (): Promise<TChainRecord | null> => {
+export const fetchChainData = async (): Promise<TChainRecord> => {
   // Initialize a default empty response or your preferred default structure
-  let chains: TChainRecord | null = null;
+  let chains: TChainRecord;
 
   try {
     const response = await axios.get(
@@ -38,13 +38,13 @@ export const fetchChainData = async (): Promise<TChainRecord | null> => {
  */
 export const fetchChainDataById = async (
   chainId: number
-): Promise<TChainRecord | null> => {
+): Promise<TChainRecord> => {
   // Initialize a default empty response or your preferred default structure
-  let chains: TChainRecord | null = null;
+  let chains: TChainRecord;
 
   try {
     const response = await axios.get(
-      `https://gitcoinco.github.io/static-data/chains/${chainId}/chains.json`
+      `https://gitcoinco.github.io/static-data/chains/${chainId}/chain.json`
     );
 
     chains = response.data; // Assuming the API returns data that matches TChainRecord

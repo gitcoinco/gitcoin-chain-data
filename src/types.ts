@@ -67,10 +67,11 @@ export type TChain = Chain & {
 };
 
 export type TSubscriptionRecord = Record<number, TSubscription[]>;
-export type TTokenRecord = Record<
-  number,
-  TIndexerToken[] | TPayoutToken[] | TDonationToken[]
->;
+export type TTokenRecord = {
+  payout: TPayoutToken[];
+  indexer: TIndexerToken[];
+  donation: TDonationToken[];
+};
 export type TChainRecord = TChain[];
 
 export enum ETokenType {
