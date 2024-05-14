@@ -1,14 +1,47 @@
 import type { Address, Chain } from "viem";
 
+export const RedstoneTokenIds = {
+  FTM: "FTM",
+  USDC: "USDC",
+  DAI: "DAI",
+  ETH: "ETH",
+  ARB: "ARB",
+  BUSD: "BUSD",
+  GTC: "GTC",
+  MATIC: "MATIC",
+  AVAX: "AVAX",
+  CVP: "CVP",
+  USDT: "USDT",
+  LUSD: "LUSD",
+  MUTE: "MUTE",
+  mkUSD: "mkUSD",
+  DATA: "DATA",
+  USDGLO: "USDGLO",
+  SEI: "SEI",
+  OP: "OP",
+  LYX: "LYX",
+  CELO: "CELO",
+  CUSD: "CUSD",
+} as const;
+
 export type TIndexerToken = {
   code: string;
+  icon: string;
   address: Address;
   decimals: number;
   priceSource: { chainId: number; address: string };
   voteAmountCap?: bigint;
 };
 
-export type TPayoutToken = {};
+export type TPayoutToken = {
+  name: string;
+  chainId: number;
+  address: Address;
+  logo?: string;
+  default?: boolean;
+  redstoneTokenId?: string;
+  decimal: number;
+};
 
 export type TDonationToken = {};
 
@@ -24,7 +57,11 @@ export type TChain = Chain & {
   name: string;
   id: number;
   pricesFromTimestamp?: number;
-  tokens: TIndexerToken[] | TPayoutToken[] | TDonationToken[];
+  tokens: {
+    payout: TPayoutToken[];
+    indexer: TIndexerToken[];
+    donation: TDonationToken[];
+  };
   subscriptions?: TSubscription[];
   maxGetLogsRange?: number;
 };

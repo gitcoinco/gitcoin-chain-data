@@ -1,43 +1,43 @@
-import { useMemo } from "react";
-import { chains } from "./chains";
-
-const supportedChains = chains;
+import { useEffect, useMemo, useState } from "react";
+import { fetchChainData, fetchChainDataById } from "./chains";
+import type { TChainRecord } from "../types";
 
 // Custom hook to manage chain data
 export const useChainData = (chainId?: number) => {
-  const chains = supportedChains;
+  const [chains, setChains] = useState<TChainRecord | null>(null);
+
+  // Fetch chains data
+  useEffect(() => {
+    if (chainId) {
+      const fetchChains = async () => {
+        const data = await fetchChainDataById(chainId);
+        setChains(data);
+      };
+
+      fetchChains();
+    } else {
+      const fetchChains = async () => {
+        const data = await fetchChainData();
+        setChains(data);
+      };
+
+      fetchChains();
+    }
+  }, []);
 
   const getChains = useMemo(() => {
     return chains;
   }, [chains]);
 
   const getChain = useMemo(() => {
-    if (chainId !== undefined && chains[chainId]) {
-      return chains[chainId];
+    if (chainId !== undefined && chains) {
+      return fetchChainDataById(chainId);
     }
     return null;
   }, [chainId, chains]);
 
-  const getChainRpc = useMemo(() => {
-    const chain = getChain;
-    return chain?.rpc || null;
-  }, [getChain]);
-
-  const getChainPricesFromTimestamp = useMemo(() => {
-    const chain = getChain;
-    return chain?.pricesFromTimestamp || null;
-  }, [getChain]);
-
-  const getChainName = useMemo(() => {
-    const chain = getChain;
-    return chain?.name || null;
-  }, [getChain]);
-
   return {
     getChains,
     getChain,
-    getChainRpc,
-    getChainPricesFromTimestamp,
-    getChainName,
   };
 };
