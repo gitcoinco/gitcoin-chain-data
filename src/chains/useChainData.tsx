@@ -1,43 +1,84 @@
-import { useEffect, useMemo, useState } from "react";
 import { fetchChainData, fetchChainDataById } from "./chains";
-import type { TChainRecord } from "../types";
+import type { TChainRecord, TTokenRecord } from "../types";
 
-// Custom hook to manage chain data
-export const useChainData = (chainId?: number) => {
-  const [chains, setChains] = useState<TChainRecord | null>(null);
+/**
+ * Custom hook to manage chain data
+ *
+ * @returns
+ */
+export const useChainData = () => {
+  /**
+   * Get all networks and their data.
+   *
+   * @returns `Promise<TChainRecord>`
+   */
+  const getChains = async () => {
+    return await fetchChainData();
+  };
 
-  // Fetch chains data
-  useEffect(() => {
-    if (chainId) {
-      const fetchChains = async () => {
-        const data = await fetchChainDataById(chainId);
-        setChains(data);
-      };
+  /**
+   * Get a specific chain by its ID
+   *
+   * @param chainId The ID of the network to fetch data for.
+   * @returns `Promise<TChainRecord>`
+   */
+  const getChain = async (chainId: number) => {
+    return await fetchChainDataById(chainId);
+  };
 
-      fetchChains();
-    } else {
-      const fetchChains = async () => {
-        const data = await fetchChainData();
-        setChains(data);
-      };
+  /**
+   * Get all supported tokens for a specific chain by its ID
+   *
+   * @param chainId The ID of the network to fetch data for.
+   * @returns `Promise<TTokenRecord>`
+   */
+  const getTokensByChainId = async (chainId: number) => {
+    const chainData: TChainRecord = await fetchChainDataById(chainId);
 
-      fetchChains();
-    }
-  }, []);
+    const tokens: TTokenRecord = {
+      payout: [],
+      indexer: [],
+      donation: [],
+    };
 
-  const getChains = useMemo(() => {
-    return chains;
-  }, [chains]);
+    chainData?.forEach((chain) => {
+      tokens.payout.push(...chain.tokens.payout);
+      tokens.indexer.push(...chain.tokens.indexer);
+      tokens.donation.push(...chain.tokens.donation);
+    });
 
-  const getChain = useMemo(() => {
-    if (chainId !== undefined && chains) {
-      return fetchChainDataById(chainId);
-    }
-    return null;
-  }, [chainId, chains]);
+    return tokens;
+  };
+
+  /**
+   * Get all subscriptions
+   *
+   * @returns `Promise<(TSubscription | undefined)[]>`
+   */
+  const getSubscriptions = async () => {
+    const chainData: TChainRecord = await fetchChainData();
+    const subs = chainData.map((chain) => chain.subscriptions);
+
+    return subs.flat();
+  };
+
+  /**
+   * Get all subscriptions for a specific chain by its ID
+   *
+   * @param chainId The ID of the network to fetch data for.
+   * @returns `Promise<(TSubscription | undefined)[]>`
+   */
+  const getSubscriptionsByChainId = async (chainId: number) => {
+    const chain = await fetchChainDataById(chainId);
+
+    return chain.map((c) => c.subscriptions).flat();
+  };
 
   return {
     getChains,
     getChain,
+    getTokensByChainId,
+    getSubscriptions,
+    getSubscriptionsByChainId,
   };
 };

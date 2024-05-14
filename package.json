@@ -1,8 +1,12 @@
 {
   "name": "@grants-labs/gitcoin-chain-data",
-  "version": "1.0.0",
-  "module": "index.ts",
-  "type": "module",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "npm": ">=8.5.5",
+    "node": ">=16.15.0"
+  },
   "author": "jaxcoder",
   "license": "MIT",
   "keywords": [
@@ -15,9 +19,9 @@
     "start": "npx tsc src/index.ts"
   },
   "dependencies": {
+    "@grants-labs/gitcoin-chain-data": "^1.0.3",
     "axios": "^1.6.8",
     "ethers": "^6.12.1",
-    "react": "^18.3.1",
     "viem": "^2.9.32"
   },
   "devDependencies": {
@@ -45,6 +49,5 @@
     "clean": true
   },
   "description": "A library for interacting with the Gitcoin chain data.",
-  "homepage": "https://github.com/gitcoinco/gitcoin-chain-data#readme",
-  "main": "index.js"
+  "homepage": "https://github.com/gitcoinco/gitcoin-chain-data#readme"
 }
