@@ -108,11 +108,6 @@ var useChainData = () => {
     getSubscriptionsByChainId
   };
 };
-
-// src/index.ts
-fetchChainDataById(1).then((data) => {
-  console.log(data);
-});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   useChainData
