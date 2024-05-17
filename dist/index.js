@@ -30,6 +30,11 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
+  getChain: () => getChain,
+  getChains: () => getChains,
+  getSubscriptions: () => getSubscriptions,
+  getSubscriptionsByChainId: () => getSubscriptionsByChainId,
+  getTokensByChainId: () => getTokensByChainId,
   useChainData: () => useChainData
 });
 module.exports = __toCommonJS(src_exports);
@@ -68,16 +73,45 @@ var fetchChainDataById = async (chainId) => {
     return [];
   }
 };
+var getChains = async () => {
+  return await fetchChainData();
+};
+var getChain = async (chainId) => {
+  return await fetchChainDataById(chainId);
+};
+var getTokensByChainId = async (chainId) => {
+  const chainData = await fetchChainDataById(chainId);
+  const tokens = {
+    payout: [],
+    indexer: [],
+    donation: []
+  };
+  chainData?.forEach((chain) => {
+    tokens.payout.push(...chain.tokens.payout);
+    tokens.indexer.push(...chain.tokens.indexer);
+    tokens.donation.push(...chain.tokens.donation);
+  });
+  return tokens;
+};
+var getSubscriptions = async () => {
+  const chainData = await fetchChainData();
+  const subs = chainData.map((chain) => chain.subscriptions);
+  return subs.flat();
+};
+var getSubscriptionsByChainId = async (chainId) => {
+  const chain = await fetchChainDataById(chainId);
+  return chain.map((c) => c.subscriptions).flat();
+};
 
 // src/chains/useChainData.tsx
 var useChainData = () => {
-  const getChains = async () => {
+  const getChains2 = async () => {
     return await fetchChainData();
   };
-  const getChain = async (chainId) => {
+  const getChain2 = async (chainId) => {
     return await fetchChainDataById(chainId);
   };
-  const getTokensByChainId = async (chainId) => {
+  const getTokensByChainId2 = async (chainId) => {
     const chainData = await fetchChainDataById(chainId);
     const tokens = {
       payout: [],
@@ -91,25 +125,30 @@ var useChainData = () => {
     });
     return tokens;
   };
-  const getSubscriptions = async () => {
+  const getSubscriptions2 = async () => {
     const chainData = await fetchChainData();
     const subs = chainData.map((chain) => chain.subscriptions);
     return subs.flat();
   };
-  const getSubscriptionsByChainId = async (chainId) => {
+  const getSubscriptionsByChainId2 = async (chainId) => {
     const chain = await fetchChainDataById(chainId);
     return chain.map((c) => c.subscriptions).flat();
   };
   return {
-    getChains,
-    getChain,
-    getTokensByChainId,
-    getSubscriptions,
-    getSubscriptionsByChainId
+    getChains: getChains2,
+    getChain: getChain2,
+    getTokensByChainId: getTokensByChainId2,
+    getSubscriptions: getSubscriptions2,
+    getSubscriptionsByChainId: getSubscriptionsByChainId2
   };
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  getChain,
+  getChains,
+  getSubscriptions,
+  getSubscriptionsByChainId,
+  getTokensByChainId,
   useChainData
 });
 //# sourceMappingURL=index.js.map
