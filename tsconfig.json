@@ -6,17 +6,22 @@
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
-
-    /* Bundler mode */
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ],
+    "rootDir": "./src/",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
-
-    /* Linting */
+    "declaration": true,
+    "declarationDir": "./dist",
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/**/*"]
 }

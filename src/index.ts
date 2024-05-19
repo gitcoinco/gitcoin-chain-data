@@ -1,5 +1,7 @@
 export { useChainData } from "./chains/useChainData";
 
+export * from "./types";
+
 export {
   getChains,
   getChain,
@@ -7,3 +9,4 @@ export {
   getSubscriptionsByChainId,
   getTokensByChainId,
 } from "./chains/chains";
+
