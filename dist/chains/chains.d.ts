@@ -21,6 +21,10 @@ export declare const getChains: () => Promise<TChainRecord>;
  */
 export declare const getChain: (chainId: number) => Promise<TChainRecord>;
 /**
+ *
+ * @returns `Promise<TTokenRecord>`
+ */
+/**
  * Get all supported tokens for a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.

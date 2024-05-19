@@ -75,6 +75,27 @@ export const getChain = async (chainId: number) => {
 };
 
 /**
+ *
+ * @returns `Promise<TTokenRecord>`
+ */
+// todo: implement this function
+// export const getTokens = async () => {
+//   const chains = await fetchChainData();
+//   const tokens: TTokenRecord[] = [
+//     {
+//       payout: [],
+//       indexer: [],
+//       donation: [],
+//     },
+//   ];
+
+//   chains.forEach((chain) => {
+//     tokens.push(...chain.tokens);
+//   });
+//   return tokens;
+// };
+
+/**
  * Get all supported tokens for a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.
@@ -90,9 +111,11 @@ export const getTokensByChainId = async (chainId: number) => {
   };
 
   chainData?.forEach((chain) => {
-    tokens.payout.push(...chain.tokens.payout);
-    tokens.indexer.push(...chain.tokens.indexer);
-    tokens.donation.push(...chain.tokens.donation);
+    if (chain.id === chainId) {
+      tokens.payout.push(...chain.tokens.payout);
+      tokens.indexer.push(...chain.tokens.indexer);
+      tokens.donation.push(...chain.tokens.donation);
+    }
   });
 
   return tokens;

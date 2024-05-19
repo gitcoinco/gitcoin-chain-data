@@ -43,7 +43,16 @@ export type TPayoutToken = {
   decimal: number;
 };
 
-export type TDonationToken = {};
+export type TDonationToken = {
+  name: string;
+  chainId: number;
+  address: Address;
+  decimal: number;
+  logo?: string;
+  default?: boolean;
+  redstoneTokenId: string;
+  permitVersion?: string;
+};
 
 export type TSubscription = {
   address: Address;
