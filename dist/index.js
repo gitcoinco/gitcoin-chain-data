@@ -32,9 +32,9 @@ var src_exports = {};
 __export(src_exports, {
   getChainById: () => getChainById,
   getChains: () => getChains,
+  getTokenByChainIdAndAddress: () => getTokenByChainIdAndAddress,
   getTokens: () => getTokens,
-  getTokensByChainId: () => getTokensByChainId,
-  getTokensByChainIdAndAddress: () => getTokensByChainIdAndAddress
+  getTokensByChainId: () => getTokensByChainId
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -132,7 +132,7 @@ var getTokensByChainId = async (chainId) => {
   }
   return tokens;
 };
-var getTokensByChainIdAndAddress = async (chainId, address) => {
+var getTokenByChainIdAndAddress = async (chainId, address) => {
   const chainData = await fetchChainDataById(chainId);
   let token;
   if (chainData) {
@@ -144,8 +144,8 @@ var getTokensByChainIdAndAddress = async (chainId, address) => {
 0 && (module.exports = {
   getChainById,
   getChains,
+  getTokenByChainIdAndAddress,
   getTokens,
-  getTokensByChainId,
-  getTokensByChainIdAndAddress
+  getTokensByChainId
 });
 //# sourceMappingURL=index.js.map

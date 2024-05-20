@@ -185,7 +185,7 @@ export const getTokensByChainId = async (chainId: number) => {
  * @param address The address of the token to fetch.
  * @returns `Promise<TToken>`
  */
-export const getTokensByChainIdAndAddress = async (
+export const getTokenByChainIdAndAddress = async (
   chainId: number,
   address: Address
 ) => {
@@ -196,5 +196,5 @@ export const getTokensByChainIdAndAddress = async (
     token = chainData.tokens.find((token) => token.address === address);
   }
 
-  return token;
+  return token as TToken;
 };

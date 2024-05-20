@@ -5,5 +5,5 @@ export {
   getChainById,
   getTokens,
   getTokensByChainId,
-  getTokensByChainIdAndAddress,
+  getTokenByChainIdAndAddress,
 } from "./chains/chains";

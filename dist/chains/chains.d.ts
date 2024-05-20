@@ -43,4 +43,4 @@ export declare const getTokensByChainId: (chainId: number) => Promise<TToken[]>;
  * @param address The address of the token to fetch.
  * @returns `Promise<TToken>`
  */
-export declare const getTokensByChainIdAndAddress: (chainId: number, address: Address) => Promise<TToken | undefined>;
+export declare const getTokenByChainIdAndAddress: (chainId: number, address: Address) => Promise<TToken>;
