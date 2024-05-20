@@ -42,26 +42,29 @@ module.exports = __toCommonJS(src_exports);
 var import_chains = require("viem/chains");
 var import_axios = __toESM(require("axios"));
 var supportedChainIds = [
-  // mainnet.id,
-  import_chains.sepolia.id
-  // lukso.id,
-  // luksoTestnet.id,
-  // polygon.id,
-  // polygonMumbai.id,
-  // fantom.id,
-  // zkSyncSepoliaTestnet.id,
-  // zkSync.id,
-  // base.id,
-  // optimism.id,
+  import_chains.mainnet.id,
+  import_chains.sepolia.id,
+  import_chains.lukso.id,
+  import_chains.luksoTestnet.id,
+  import_chains.polygon.id,
+  import_chains.polygonMumbai.id,
+  import_chains.fantom.id,
+  import_chains.zkSyncSepoliaTestnet.id,
+  import_chains.zkSync.id,
+  import_chains.base.id,
+  import_chains.optimism.id,
   // optimismSepolia.id,
-  // celo.id,
-  // celoAlfajores.id,
-  // avalanche.id,
-  // avalancheFuji.id,
-  // scroll.id,
+  import_chains.celo.id,
+  import_chains.celoAlfajores.id,
+  import_chains.arbitrum.id,
+  // arbitrumSepolia.id,
+  import_chains.avalanche.id,
+  import_chains.avalancheFuji.id,
+  import_chains.scroll.id,
   // scrollSepolia.id,
-  // pgn.id,
+  import_chains.pgn.id,
   // pgnTestnet.id,
+  import_chains.seiDevnet.id
 ];
 var fetchChainData = async () => {
   let chains = [];
