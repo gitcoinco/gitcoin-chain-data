@@ -30,59 +30,22 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  ETokenType: () => ETokenType,
-  RedstoneTokenIds: () => RedstoneTokenIds,
   getChain: () => getChain,
   getChains: () => getChains,
-  getSubscriptions: () => getSubscriptions,
-  getSubscriptionsByChainId: () => getSubscriptionsByChainId,
+  getTokens: () => getTokens,
   getTokensByChainId: () => getTokensByChainId
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/types.ts
-var RedstoneTokenIds = {
-  FTM: "FTM",
-  USDC: "USDC",
-  DAI: "DAI",
-  ETH: "ETH",
-  ARB: "ARB",
-  BUSD: "BUSD",
-  GTC: "GTC",
-  MATIC: "MATIC",
-  AVAX: "AVAX",
-  CVP: "CVP",
-  USDT: "USDT",
-  LUSD: "LUSD",
-  MUTE: "MUTE",
-  mkUSD: "mkUSD",
-  DATA: "DATA",
-  USDGLO: "USDGLO",
-  SEI: "SEI",
-  OP: "OP",
-  LYX: "LYX",
-  CELO: "CELO",
-  CUSD: "CUSD"
-};
-var ETokenType = /* @__PURE__ */ ((ETokenType2) => {
-  ETokenType2["PAYOUT"] = "payout";
-  ETokenType2["DONATION"] = "donation";
-  ETokenType2["INDEXER"] = "indexer";
-  return ETokenType2;
-})(ETokenType || {});
-
 // src/chains/chains.ts
 var import_axios = __toESM(require("axios"));
 var fetchChainData = async () => {
-  let chains;
+  let chains = [];
   try {
     const response = await import_axios.default.get(
       "https://gitcoinco.github.io/chain-data/chains/chains.json"
     );
     chains = response.data;
-    console.log("Fetching chains response", {
-      response: chains
-    });
     return chains;
   } catch (error) {
     console.error("Error fetching chains", error);
@@ -102,7 +65,7 @@ var fetchChainDataById = async (chainId) => {
     return chains;
   } catch (error) {
     console.error("Error fetching chains", error);
-    return [];
+    return {};
   }
 };
 var getChains = async () => {
@@ -111,39 +74,27 @@ var getChains = async () => {
 var getChain = async (chainId) => {
   return await fetchChainDataById(chainId);
 };
-var getTokensByChainId = async (chainId) => {
-  const chainData = await fetchChainDataById(chainId);
-  const tokens = {
-    payout: [],
-    indexer: [],
-    donation: []
-  };
-  chainData?.forEach((chain) => {
-    if (chain.id === chainId) {
-      tokens.payout.push(...chain.tokens.payout);
-      tokens.indexer.push(...chain.tokens.indexer);
-      tokens.donation.push(...chain.tokens.donation);
-    }
+var getTokens = async () => {
+  const chains = await fetchChainData();
+  const tokens = [];
+  chains.forEach((chain) => {
+    tokens.push(...chain.tokens);
   });
   return tokens;
 };
-var getSubscriptions = async () => {
-  const chainData = await fetchChainData();
-  const subs = chainData.map((chain) => chain.subscriptions);
-  return subs.flat();
-};
-var getSubscriptionsByChainId = async (chainId) => {
-  const chain = await fetchChainDataById(chainId);
-  return chain.map((c) => c.subscriptions).flat();
+var getTokensByChainId = async (chainId) => {
+  const chainData = await fetchChainDataById(chainId);
+  const tokens = [];
+  if (chainData) {
+    tokens.push(...chainData.tokens);
+  }
+  return tokens;
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  ETokenType,
-  RedstoneTokenIds,
   getChain,
   getChains,
-  getSubscriptions,
-  getSubscriptionsByChainId,
+  getTokens,
   getTokensByChainId
 });
 //# sourceMappingURL=index.js.map

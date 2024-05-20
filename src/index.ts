@@ -3,8 +3,6 @@ export * from "./types";
 export {
   getChains,
   getChain,
-  getSubscriptions,
-  getSubscriptionsByChainId,
+  getTokens,
   getTokensByChainId,
 } from "./chains/chains";
-

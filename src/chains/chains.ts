@@ -1,31 +1,27 @@
-import type { TChainRecord, TTokenRecord } from "../types";
+import type { TChain, TToken } from "../types";
 import axios from "axios";
 
 /**
  * Fetch chains for all supported networks.
  *
- * @returns `Promise<TChainRecord>`
+ * @returns `Promise<TChain>`
  */
-export const fetchChainData = async (): Promise<TChainRecord> => {
+const fetchChainData = async (): Promise<TChain[]> => {
   /** Initialize a default empty response or your preferred default structure */
-  let chains: TChainRecord;
+  let chains: TChain[] = [] as TChain[];
 
   try {
     const response = await axios.get(
       "https://gitcoinco.github.io/chain-data/chains/chains.json"
     );
 
-    chains =
-      response.data; /** Assuming the API returns data that matches TChainRecord */
-    console.log("Fetching chains response", {
-      response: chains,
-    });
+    chains = response.data as TChain[];
 
     return chains;
   } catch (error) {
     console.error("Error fetching chains", error);
 
-    return []; /** This can be null or a default value if that's more appropriate */
+    return [] as TChain[];
   }
 };
 
@@ -33,13 +29,11 @@ export const fetchChainData = async (): Promise<TChainRecord> => {
  * Fetch a specific chains data by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TChainRecord>`
+ * @returns `Promise<TChain>`
  */
-export const fetchChainDataById = async (
-  chainId: number
-): Promise<TChainRecord> => {
+const fetchChainDataById = async (chainId: number): Promise<TChain> => {
   /** Initialize a default empty response or preferred default structure */
-  let chains: TChainRecord;
+  let chains: TChain;
 
   try {
     const response = await axios.get(
@@ -47,7 +41,7 @@ export const fetchChainDataById = async (
     );
 
     chains =
-      response.data; /** Assuming the API returns data that matches TChainRecord */
+      response.data; /** Assuming the API returns data that matches TChain */
     console.log("Fetching chains response", {
       response: chains,
     });
@@ -56,10 +50,15 @@ export const fetchChainDataById = async (
   } catch (error) {
     console.error("Error fetching chains", error);
 
-    return []; /** This can be null or a default value if that's more appropriate */
+    return {} as TChain; /** This can be null or a default value if that's more appropriate */
   }
 };
 
+/**
+ * Get all supported chains
+ *
+ * @returns `Promise<TChain>`
+ */
 export const getChains = async () => {
   return await fetchChainData();
 };
@@ -68,7 +67,7 @@ export const getChains = async () => {
  * Get a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TChainRecord>`
+ * @returns `Promise<TChain>`
  */
 export const getChain = async (chainId: number) => {
   return await fetchChainDataById(chainId);
@@ -76,71 +75,32 @@ export const getChain = async (chainId: number) => {
 
 /**
  *
- * @returns `Promise<TTokenRecord>`
+ * @returns `Promise<TToken>`
  */
-// todo: implement this function
-// export const getTokens = async () => {
-//   const chains = await fetchChainData();
-//   const tokens: TTokenRecord[] = [
-//     {
-//       payout: [],
-//       indexer: [],
-//       donation: [],
-//     },
-//   ];
+export const getTokens = async () => {
+  const chains = await fetchChainData();
+  const tokens: TToken[] = [];
 
-//   chains.forEach((chain) => {
-//     tokens.push(...chain.tokens);
-//   });
-//   return tokens;
-// };
-
-/**
- * Get all supported tokens for a specific chain by its ID
- *
- * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TTokenRecord>`
- */
-export const getTokensByChainId = async (chainId: number) => {
-  const chainData: TChainRecord = await fetchChainDataById(chainId);
-
-  const tokens: TTokenRecord = {
-    payout: [],
-    indexer: [],
-    donation: [],
-  };
-
-  chainData?.forEach((chain) => {
-    if (chain.id === chainId) {
-      tokens.payout.push(...chain.tokens.payout);
-      tokens.indexer.push(...chain.tokens.indexer);
-      tokens.donation.push(...chain.tokens.donation);
-    }
+  chains.forEach((chain) => {
+    tokens.push(...chain.tokens);
   });
 
   return tokens;
 };
 
 /**
- * Get all subscriptions
- *
- * @returns `Promise<(TSubscription | undefined)[]>`
- */
-export const getSubscriptions = async () => {
-  const chainData: TChainRecord = await fetchChainData();
-  const subs = chainData.map((chain) => chain.subscriptions);
-
-  return subs.flat();
-};
-
-/**
- * Get all subscriptions for a specific chain by its ID
+ * Get all supported tokens for a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<(TSubscription | undefined)[]>`
+ * @returns `Promise<TToken>`
  */
-export const getSubscriptionsByChainId = async (chainId: number) => {
-  const chain = await fetchChainDataById(chainId);
+export const getTokensByChainId = async (chainId: number) => {
+  const chainData: TChain = await fetchChainDataById(chainId);
+  const tokens: TToken[] = [];
 
-  return chain.map((c) => c.subscriptions).flat();
+  if (chainData) {
+    tokens.push(...chainData.tokens);
+  }
+
+  return tokens;
 };
