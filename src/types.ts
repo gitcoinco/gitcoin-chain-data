@@ -25,7 +25,7 @@ export type TToken = {
 
 export type TSubscription = {
   address: Address;
-  contractName: any; // keyof typeof abis;
+  contractName: string;
   fromBlock?: number;
   eventsRenames?: Record<string, string>;
 };
