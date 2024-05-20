@@ -1,28 +1,81 @@
+import {
+  // avalanche,
+  // avalancheFuji,
+  // base,
+  // celo,
+  // celoAlfajores,
+  // fantom,
+  // lukso,
+  // luksoTestnet,
+  // mainnet,
+  // optimism,
+  // optimismSepolia,
+  // pgn,
+  // pgnTestnet,
+  // polygon,
+  // polygonMumbai,
+  // scroll,
+  // scrollSepolia,
+  sepolia,
+  // zkSync,
+  // zkSyncSepoliaTestnet,
+} from "viem/chains";
 import type { TChain, TToken } from "../types";
 import axios from "axios";
+import { Address } from "viem";
+
+const supportedChainIds = [
+  // mainnet.id,
+  sepolia.id,
+  // lukso.id,
+  // luksoTestnet.id,
+  // polygon.id,
+  // polygonMumbai.id,
+  // fantom.id,
+  // zkSyncSepoliaTestnet.id,
+  // zkSync.id,
+  // base.id,
+  // optimism.id,
+  // optimismSepolia.id,
+  // celo.id,
+  // celoAlfajores.id,
+  // avalanche.id,
+  // avalancheFuji.id,
+  // scroll.id,
+  // scrollSepolia.id,
+  // pgn.id,
+  // pgnTestnet.id,
+];
 
 /**
  * Fetch chains for all supported networks.
  *
  * @returns `Promise<TChain>`
  */
-const fetchChainData = async (): Promise<TChain[]> => {
+export const fetchChainData = async (): Promise<TChain[]> => {
   /** Initialize a default empty response or your preferred default structure */
   let chains: TChain[] = [] as TChain[];
 
-  try {
-    const response = await axios.get(
-      "https://gitcoinco.github.io/chain-data/chains/chains.json"
-    );
+  for (const chainId of supportedChainIds) {
+    let response: { data: TChain };
+    try {
+      response = await axios.get(
+        `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+      );
+    } catch (error) {
+      console.error("Error fetching chains", error);
 
-    chains = response.data as TChain[];
+      return [] as TChain[];
+    }
 
-    return chains;
-  } catch (error) {
-    console.error("Error fetching chains", error);
+    chains.push(response.data as TChain);
 
-    return [] as TChain[];
+    console.log("Fetching chains response", {
+      response: chains,
+    });
   }
+
+  return chains;
 };
 
 /**
@@ -69,7 +122,7 @@ export const getChains = async () => {
  * @param chainId The ID of the network to fetch data for.
  * @returns `Promise<TChain>`
  */
-export const getChain = async (chainId: number) => {
+export const getChainById = async (chainId: number) => {
   return await fetchChainDataById(chainId);
 };
 
@@ -77,15 +130,29 @@ export const getChain = async (chainId: number) => {
  *
  * @returns `Promise<TToken>`
  */
-export const getTokens = async () => {
-  const chains = await fetchChainData();
-  const tokens: TToken[] = [];
+/**
+ * Fetches tokens from all chains.
+ *
+ * @returns `Promise<TToken[]>`
+ */
+export const getTokens = async (): Promise<TToken[]> => {
+  try {
+    const chains = await fetchChainData();
+    const tokens: TToken[] = [];
 
-  chains.forEach((chain) => {
-    tokens.push(...chain.tokens);
-  });
+    for (const chain of chains) {
+      if (chain.tokens && chain.tokens.length > 0) {
+        tokens.push(...chain.tokens);
+      } else {
+        console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
+      }
+    }
 
-  return tokens;
+    return tokens;
+  } catch (error) {
+    console.error("Error fetching chain data:", error);
+    throw error; // Rethrow the error after logging it
+  }
 };
 
 /**
@@ -103,4 +170,25 @@ export const getTokensByChainId = async (chainId: number) => {
   }
 
   return tokens;
+};
+
+/**
+ * Get all supported tokens for a specific chain by its ID and address
+ *
+ * @param chainId The ID of the network to fetch data for.
+ * @param address The address of the token to fetch.
+ * @returns `Promise<TToken>`
+ */
+export const getTokensByChainIdAndAddress = async (
+  chainId: number,
+  address: Address
+) => {
+  const chainData: TChain = await fetchChainDataById(chainId);
+  let token: TToken | undefined;
+
+  if (chainData) {
+    token = chainData.tokens.find((token) => token.address === address);
+  }
+
+  return token;
 };

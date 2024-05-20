@@ -1,2 +1,2 @@
 export * from "./types";
-export { getChains, getChain, getTokens, getTokensByChainId, } from "./chains/chains";
+export { getChains, getChainById, getTokens, getTokensByChainId, getTokensByChainIdAndAddress, } from "./chains/chains";

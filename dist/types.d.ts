@@ -1,4 +1,5 @@
 import type { Address } from "viem";
+type CoingeckoSupportedChainId = 1 | 10 | 250 | 42161 | 43114 | 713715 | 42 | 42220;
 export type TToken = {
     code: string;
     chainId: number;
@@ -6,7 +7,7 @@ export type TToken = {
     address: Address;
     decimals: number;
     priceSource?: {
-        chainId: number;
+        chainId: CoingeckoSupportedChainId;
         address: Address;
     };
     redstoneTokenId?: string;
@@ -14,12 +15,20 @@ export type TToken = {
     permitVersion?: string;
     default?: boolean;
 };
+export type TSubscription = {
+    address: Address;
+    contractName: any;
+    fromBlock?: number;
+    eventsRenames?: Record<string, string>;
+};
 export type TChain = {
     rpc: string;
     name: string;
     icon: string;
     id: number;
     pricesFromTimestamp?: number;
-    tokens: TToken[];
     maxGetLogsRange?: number;
+    tokens: TToken[];
+    subscriptions: TSubscription[];
 };
+export {};

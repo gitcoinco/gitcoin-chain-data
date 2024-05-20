@@ -30,27 +30,57 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  getChain: () => getChain,
+  getChainById: () => getChainById,
   getChains: () => getChains,
   getTokens: () => getTokens,
-  getTokensByChainId: () => getTokensByChainId
+  getTokensByChainId: () => getTokensByChainId,
+  getTokensByChainIdAndAddress: () => getTokensByChainIdAndAddress
 });
 module.exports = __toCommonJS(src_exports);
 
 // src/chains/chains.ts
+var import_chains = require("viem/chains");
 var import_axios = __toESM(require("axios"));
+var supportedChainIds = [
+  // mainnet.id,
+  import_chains.sepolia.id
+  // lukso.id,
+  // luksoTestnet.id,
+  // polygon.id,
+  // polygonMumbai.id,
+  // fantom.id,
+  // zkSyncSepoliaTestnet.id,
+  // zkSync.id,
+  // base.id,
+  // optimism.id,
+  // optimismSepolia.id,
+  // celo.id,
+  // celoAlfajores.id,
+  // avalanche.id,
+  // avalancheFuji.id,
+  // scroll.id,
+  // scrollSepolia.id,
+  // pgn.id,
+  // pgnTestnet.id,
+];
 var fetchChainData = async () => {
   let chains = [];
-  try {
-    const response = await import_axios.default.get(
-      "https://gitcoinco.github.io/chain-data/chains/chains.json"
-    );
-    chains = response.data;
-    return chains;
-  } catch (error) {
-    console.error("Error fetching chains", error);
-    return [];
+  for (const chainId of supportedChainIds) {
+    let response;
+    try {
+      response = await import_axios.default.get(
+        `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+      );
+    } catch (error) {
+      console.error("Error fetching chains", error);
+      return [];
+    }
+    chains.push(response.data);
+    console.log("Fetching chains response", {
+      response: chains
+    });
   }
+  return chains;
 };
 var fetchChainDataById = async (chainId) => {
   let chains;
@@ -71,16 +101,25 @@ var fetchChainDataById = async (chainId) => {
 var getChains = async () => {
   return await fetchChainData();
 };
-var getChain = async (chainId) => {
+var getChainById = async (chainId) => {
   return await fetchChainDataById(chainId);
 };
 var getTokens = async () => {
-  const chains = await fetchChainData();
-  const tokens = [];
-  chains.forEach((chain) => {
-    tokens.push(...chain.tokens);
-  });
-  return tokens;
+  try {
+    const chains = await fetchChainData();
+    const tokens = [];
+    for (const chain of chains) {
+      if (chain.tokens && chain.tokens.length > 0) {
+        tokens.push(...chain.tokens);
+      } else {
+        console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
+      }
+    }
+    return tokens;
+  } catch (error) {
+    console.error("Error fetching chain data:", error);
+    throw error;
+  }
 };
 var getTokensByChainId = async (chainId) => {
   const chainData = await fetchChainDataById(chainId);
@@ -90,11 +129,20 @@ var getTokensByChainId = async (chainId) => {
   }
   return tokens;
 };
+var getTokensByChainIdAndAddress = async (chainId, address) => {
+  const chainData = await fetchChainDataById(chainId);
+  let token;
+  if (chainData) {
+    token = chainData.tokens.find((token2) => token2.address === address);
+  }
+  return token;
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  getChain,
+  getChainById,
   getChains,
   getTokens,
-  getTokensByChainId
+  getTokensByChainId,
+  getTokensByChainIdAndAddress
 });
 //# sourceMappingURL=index.js.map
