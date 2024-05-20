@@ -22,11 +22,7 @@ export type TSubscription = {
     eventsRenames?: Record<string, string>;
 };
 export type TChain = {
-    rpc: {
-        public?: string;
-        infura?: string;
-        alchemy?: string;
-    };
+    rpc: string;
     name: string;
     icon: string;
     id: number;
