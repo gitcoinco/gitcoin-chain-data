@@ -31,7 +31,11 @@ export type TSubscription = {
 };
 
 export type TChain = {
-  rpc: string;
+  rpc: {
+    public?: string;
+    infura?: string;
+    alchemy?: string;
+  };
   name: string;
   icon: string;
   id: number;

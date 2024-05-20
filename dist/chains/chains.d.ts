@@ -37,9 +37,10 @@ export declare const getTokens: () => Promise<TToken[]>;
  */
 export declare const getTokensByChainId: (chainId: number) => Promise<TToken[]>;
 /**
- * Get all supported tokens for a specific chain by its ID
+ * Get all supported tokens for a specific chain by its ID and address
  *
  * @param chainId The ID of the network to fetch data for.
+ * @param address The address of the token to fetch.
  * @returns `Promise<TToken>`
  */
 export declare const getTokensByChainIdAndAddress: (chainId: number, address: Address) => Promise<TToken | undefined>;
