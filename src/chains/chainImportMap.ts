@@ -8,18 +8,18 @@ import { zksyncEraTestnet } from "../data/chains/300/chain.js";
 import { zkSyncEraMainnet } from "../data/chains/324/chain.js";
 import { pgnMainnet } from "../data/chains/424/chain.js";
 import { luksoTestnet } from "../data/chains/4201/chain.js";
-// import { mainnet } from "../data/chains/8453/chain.js";
-// import { mainnet } from "../data/chains/42161/chain.js";
-// import { mainnet } from "../data/chains/42220/chain.js";
-// import { mainnet } from "../data/chains/43113/chain.js";
-// import { mainnet } from "../data/chains/43114/chain.js";
+import { base } from "../data/chains/8453/chain.js";
+import { arbitrum } from "../data/chains/42161/chain.js";
+import { celoMainnet } from "../data/chains/42220/chain.js";
+import { avalancheFuji } from "../data/chains/43113/chain.js";
+import { avalanche } from "../data/chains/43114/chain.js";
 // import { mainnet } from "../data/chains/44787/chain.js";
 // import { mainnet } from "../data/chains/58008/chain.js";
 // import { mainnet } from "../data/chains/80001/chain.js";
 // import { mainnet } from "../data/chains/534351/chain.js";
 // import { mainnet } from "../data/chains/534352/chain.js";
 // import { mainnet } from "../data/chains/713715/chain.js";
-// import { mainnet } from "../data/chains/11155111/chain.js";
+import { sepolia } from "../data/chains/11155111/chain.js";
 // import { mainnet } from "../data/chains/11155420/chain.js";
 
 import { TChain } from "../types.js";
@@ -52,6 +52,24 @@ const chainImportMap: { [key: number]: TChain } = {
   },
   4201: {
     ...luksoTestnet,
+  },
+  8453: {
+    ...base,
+  },
+  42161: {
+    ...arbitrum,
+  },
+  42220: {
+    ...celoMainnet,
+  },
+  11155111: {
+    ...sepolia,
+  },
+  43113: {
+    ...avalancheFuji,
+  },
+  43114: {
+    ...avalanche,
   },
 };
 
