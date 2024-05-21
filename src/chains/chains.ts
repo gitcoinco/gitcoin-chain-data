@@ -203,3 +203,6 @@ export const getTokenByChainIdAndAddress = (
 
   return token as TToken;
 };
+
+const chains = fetchChainData();
+console.log("Fetched chains:", chains);

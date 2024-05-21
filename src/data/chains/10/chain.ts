@@ -46,7 +46,7 @@ export const optimism: TChain = {
       icon: "",
       address: "0x93a5347036f69bc6f37ed2b59cbcdda927719217",
       decimals: 18,
-      voteAmountCap: 1000000000000000000n,
+      voteAmountCap: BigInt("1000000000000000000"),
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",

@@ -67,7 +67,7 @@ export const fantom: TChain = {
       icon: "https://ipfs.io/ipfs/QmX2KeJ9xd3RWc4HxGVUWmyq4ELT2z4kJekfv4AgZqp6dz",
       address: "0x83791638da5EB2fAa432aff1c65fbA47c5D29510",
       decimals: 18,
-      voteAmountCap: 1000000000000000000n,
+      voteAmountCap: BigInt("1000000000000000000"),
       priceSource: {
         chainId: 250,
         address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",

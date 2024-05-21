@@ -209,7 +209,7 @@ var optimism = {
       icon: "",
       address: "0x93a5347036f69bc6f37ed2b59cbcdda927719217",
       decimals: 18,
-      voteAmountCap: 1000000000000000000n,
+      voteAmountCap: BigInt("1000000000000000000"),
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
@@ -527,7 +527,7 @@ var fantom = {
       icon: "https://ipfs.io/ipfs/QmX2KeJ9xd3RWc4HxGVUWmyq4ELT2z4kJekfv4AgZqp6dz",
       address: "0x83791638da5EB2fAa432aff1c65fbA47c5D29510",
       decimals: 18,
-      voteAmountCap: 1000000000000000000n,
+      voteAmountCap: BigInt("1000000000000000000"),
       priceSource: {
         chainId: 250,
         address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
@@ -881,6 +881,51 @@ var pgnMainnet = {
   ]
 };
 
+// src/data/chains/4201/chain.ts
+var luksoTestnet = {
+  id: 4201,
+  name: "lukso-testnet",
+  icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+  rpc: "https://4201.rpc.thirdweb.com",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
+    {
+      code: "LYX",
+      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 42,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "LYX"
+    },
+    {
+      code: "LYX",
+      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 42,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "LYX"
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV2/Registry/V1",
+      address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      fromBlock: 25e5
+    },
+    {
+      contractName: "AlloV2/Allo/V1",
+      address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      fromBlock: 25e5
+    }
+  ]
+};
+
 // src/chains/chainImportMap.ts
 var chainImportMap = {
   1: {
@@ -906,6 +951,9 @@ var chainImportMap = {
   },
   424: {
     ...pgnMainnet
+  },
+  4201: {
+    ...luksoTestnet
   }
 };
 var chainImportMap_default = chainImportMap;
@@ -937,7 +985,7 @@ var supportedChainIds = [
   import_chains.seiDevnet.id
 ];
 var fetchChainData = () => {
-  let chains = [];
+  let chains2 = [];
   for (const chainId of supportedChainIds) {
     let response;
     try {
@@ -949,12 +997,12 @@ var fetchChainData = () => {
       console.error("Error fetching chains", error);
       return [];
     }
-    chains.push(response);
+    chains2.push(response);
     console.log("Fetching chains response", {
-      response: chains
+      response: chains2
     });
   }
-  return chains;
+  return chains2;
 };
 var fetchChainDataById = (chainId) => {
   let chain;
@@ -982,9 +1030,9 @@ var getChainById = (chainId) => {
 };
 var getTokens = () => {
   try {
-    const chains = fetchChainData();
+    const chains2 = fetchChainData();
     const tokens = [];
-    for (const chain of chains) {
+    for (const chain of chains2) {
       if (chain.tokens && chain.tokens.length > 0) {
         tokens.push(...chain.tokens);
       } else {
@@ -1013,6 +1061,8 @@ var getTokenByChainIdAndAddress = (chainId, address) => {
   }
   return token;
 };
+var chains = fetchChainData();
+console.log("Fetched chains:", chains);
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   getChainById,
