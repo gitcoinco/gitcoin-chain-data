@@ -40,7 +40,8 @@ module.exports = __toCommonJS(src_exports);
 
 // src/chains/chains.ts
 var import_chains = require("viem/chains");
-var import_axios = __toESM(require("axios"));
+var fs = __toESM(require("fs"));
+var path = __toESM(require("path"));
 var supportedChainIds = [
   import_chains.mainnet.id,
   import_chains.sepolia.id,
@@ -66,50 +67,55 @@ var supportedChainIds = [
   // pgnTestnet.id,
   import_chains.seiDevnet.id
 ];
-var fetchChainData = async () => {
+var fetchChainData = () => {
   let chains = [];
   for (const chainId of supportedChainIds) {
     let response;
     try {
-      response = await import_axios.default.get(
-        `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+      const filePath = path.join(
+        __dirname,
+        `../data/chains/${chainId}/chain.json`
       );
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      response = JSON.parse(fileContent);
     } catch (error) {
       console.error("Error fetching chains", error);
       return [];
     }
-    chains.push(response.data);
+    chains.push(response);
     console.log("Fetching chains response", {
       response: chains
     });
   }
   return chains;
 };
-var fetchChainDataById = async (chainId) => {
-  let chains;
+var fetchChainDataById = (chainId) => {
+  let chain;
   try {
-    const response = await import_axios.default.get(
-      `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+    const filePath = path.join(
+      __dirname,
+      `../data/chains/${chainId}/chain.json`
     );
-    chains = response.data;
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    chain = JSON.parse(fileContent);
     console.log("Fetching chains response", {
-      response: chains
+      response: chain
     });
-    return chains;
+    return chain;
   } catch (error) {
     console.error("Error fetching chains", error);
     return {};
   }
 };
-var getChains = async () => {
-  return await fetchChainData();
+var getChains = () => {
+  return fetchChainData();
 };
-var getChainById = async (chainId) => {
-  return await fetchChainDataById(chainId);
+var getChainById = (chainId) => {
+  return fetchChainDataById(chainId);
 };
-var getTokens = async () => {
+var getTokens = () => {
   try {
-    const chains = await fetchChainData();
+    const chains = fetchChainData();
     const tokens = [];
     for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
@@ -124,16 +130,16 @@ var getTokens = async () => {
     throw error;
   }
 };
-var getTokensByChainId = async (chainId) => {
-  const chainData = await fetchChainDataById(chainId);
+var getTokensByChainId = (chainId) => {
+  const chainData = fetchChainDataById(chainId);
   const tokens = [];
   if (chainData) {
     tokens.push(...chainData.tokens);
   }
   return tokens;
 };
-var getTokenByChainIdAndAddress = async (chainId, address) => {
-  const chainData = await fetchChainDataById(chainId);
+var getTokenByChainIdAndAddress = (chainId, address) => {
+  const chainData = fetchChainDataById(chainId);
   let token;
   if (chainData) {
     token = chainData.tokens.find((token2) => token2.address === address);

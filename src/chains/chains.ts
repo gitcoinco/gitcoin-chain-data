@@ -26,6 +26,8 @@ import {
 import type { TChain, TToken } from "../types";
 import axios from "axios";
 import { Address } from "viem";
+import * as fs from "fs";
+import * as path from "path";
 
 const supportedChainIds = [
   mainnet.id,
@@ -56,25 +58,28 @@ const supportedChainIds = [
 /**
  * Fetch chains for all supported networks.
  *
- * @returns `Promise<TChain>`
+ * @returns `TChain`
  */
-export const fetchChainData = async (): Promise<TChain[]> => {
+const fetchChainData = (): TChain[] => {
   /** Initialize a default empty response or your preferred default structure */
-  let chains: TChain[] = [] as TChain[];
+  let chains: TChain[] = [];
 
   for (const chainId of supportedChainIds) {
-    let response: { data: TChain };
+    let response: TChain;
     try {
-      response = await axios.get(
-        `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+      const filePath = path.join(
+        __dirname,
+        `../data/chains/${chainId}/chain.json`
       );
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      response = JSON.parse(fileContent) as TChain;
     } catch (error) {
       console.error("Error fetching chains", error);
 
       return [] as TChain[];
     }
 
-    chains.push(response.data as TChain);
+    chains.push(response);
 
     console.log("Fetching chains response", {
       response: chains,
@@ -88,24 +93,25 @@ export const fetchChainData = async (): Promise<TChain[]> => {
  * Fetch a specific chains data by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TChain>`
+ * @returns `TChain`
  */
-const fetchChainDataById = async (chainId: number): Promise<TChain> => {
+const fetchChainDataById = (chainId: number): TChain => {
   /** Initialize a default empty response or preferred default structure */
-  let chains: TChain;
+  let chain: TChain;
 
   try {
-    const response = await axios.get(
-      `https://gitcoinco.github.io/chain-data/chains/${chainId}/chain.json`
+    const filePath = path.join(
+      __dirname,
+      `../data/chains/${chainId}/chain.json`
     );
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    chain = JSON.parse(fileContent) as TChain;
 
-    chains =
-      response.data; /** Assuming the API returns data that matches TChain */
     console.log("Fetching chains response", {
-      response: chains,
+      response: chain,
     });
 
-    return chains;
+    return chain;
   } catch (error) {
     console.error("Error fetching chains", error);
 
@@ -116,34 +122,34 @@ const fetchChainDataById = async (chainId: number): Promise<TChain> => {
 /**
  * Get all supported chains
  *
- * @returns `Promise<TChain>`
+ * @returns `TChain`
  */
-export const getChains = async () => {
-  return await fetchChainData();
+export const getChains = () => {
+  return fetchChainData();
 };
 
 /**
  * Get a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TChain>`
+ * @returns `TChain`
  */
-export const getChainById = async (chainId: number) => {
-  return await fetchChainDataById(chainId);
+export const getChainById = (chainId: number): TChain => {
+  return fetchChainDataById(chainId);
 };
 
 /**
  *
- * @returns `Promise<TToken>`
+ * @returns `TToken`
  */
 /**
  * Fetches tokens from all chains.
  *
- * @returns `Promise<TToken[]>`
+ * @returns `TToken]>`
  */
-export const getTokens = async (): Promise<TToken[]> => {
+export const getTokens = (): TToken[] => {
   try {
-    const chains = await fetchChainData();
+    const chains = fetchChainData();
     const tokens: TToken[] = [];
 
     for (const chain of chains) {
@@ -165,10 +171,10 @@ export const getTokens = async (): Promise<TToken[]> => {
  * Get all supported tokens for a specific chain by its ID
  *
  * @param chainId The ID of the network to fetch data for.
- * @returns `Promise<TToken>`
+ * @returns `TToken`
  */
-export const getTokensByChainId = async (chainId: number) => {
-  const chainData: TChain = await fetchChainDataById(chainId);
+export const getTokensByChainId = (chainId: number): TToken[] => {
+  const chainData: TChain = fetchChainDataById(chainId);
   const tokens: TToken[] = [];
 
   if (chainData) {
@@ -183,13 +189,13 @@ export const getTokensByChainId = async (chainId: number) => {
  *
  * @param chainId The ID of the network to fetch data for.
  * @param address The address of the token to fetch.
- * @returns `Promise<TToken>`
+ * @returns `TToken`
  */
-export const getTokenByChainIdAndAddress = async (
+export const getTokenByChainIdAndAddress = (
   chainId: number,
   address: Address
-) => {
-  const chainData: TChain = await fetchChainDataById(chainId);
+): TToken => {
+  const chainData: TChain = fetchChainDataById(chainId);
   let token: TToken | undefined;
 
   if (chainData) {
