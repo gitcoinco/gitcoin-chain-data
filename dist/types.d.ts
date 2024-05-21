@@ -2,7 +2,6 @@ import type { Address } from "viem";
 type CoingeckoSupportedChainId = 1 | 10 | 250 | 42161 | 43114 | 713715 | 42 | 42220;
 export type TToken = {
     code: string;
-    chainId: number;
     icon?: string;
     address: Address;
     decimals: number;
@@ -19,7 +18,7 @@ export type TSubscription = {
     address: Address;
     contractName: string;
     fromBlock?: number;
-    eventsRenames?: Record<string, string>;
+    eventsRenames?: Record<string, string> | undefined;
 };
 export type TChain = {
     rpc: string;

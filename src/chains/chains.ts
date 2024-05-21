@@ -28,6 +28,7 @@ import axios from "axios";
 import { Address } from "viem";
 import * as fs from "fs";
 import * as path from "path";
+import chainImportMap from "./chainImportMap";
 
 const supportedChainIds = [
   mainnet.id,
@@ -67,16 +68,14 @@ const fetchChainData = (): TChain[] => {
   for (const chainId of supportedChainIds) {
     let response: TChain;
     try {
-      const filePath = path.join(
-        __dirname,
-        `../dist/data/chains/${chainId}/chain.json`
-      );
-      const fileContent = fs.readFileSync(filePath, "utf-8");
-      response = JSON.parse(fileContent) as TChain;
+      // Fetch the chain data from the import map
+      response = chainImportMap[chainId];
+      if (!response) {
+        throw new Error(`Chain data not found for chainId: ${chainId}`);
+      }
     } catch (error) {
       console.error("Error fetching chains", error);
-
-      return [] as TChain[];
+      return []; // Return an empty array in case of an error
     }
 
     chains.push(response);
