@@ -1,6 +1,6 @@
 {
   "name": "@grants-labs/gitcoin-chain-data",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -20,7 +20,7 @@
   "scripts": {
     "build:tsup": "tsup",
     "build": "tsc && npm run copy-static-files",
-    "copy-static-files": "cpx \"data/**/*\" dist/data",
+    "copy-static-files": "cpx \"src/data/**/*\" dist/data",
     "start": "npx tsc src/index.ts"
   },
   "dependencies": {
