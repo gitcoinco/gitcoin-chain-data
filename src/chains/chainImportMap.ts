@@ -13,17 +13,16 @@ import { arbitrum } from "../data/chains/42161/chain.js";
 import { celoMainnet } from "../data/chains/42220/chain.js";
 import { avalancheFuji } from "../data/chains/43113/chain.js";
 import { avalanche } from "../data/chains/43114/chain.js";
-// import { mainnet } from "../data/chains/44787/chain.js";
-// import { mainnet } from "../data/chains/58008/chain.js";
-// import { mainnet } from "../data/chains/80001/chain.js";
-// import { mainnet } from "../data/chains/534351/chain.js";
-// import { mainnet } from "../data/chains/534352/chain.js";
-// import { mainnet } from "../data/chains/713715/chain.js";
+import { celoTestnet } from "../data/chains/44787/chain.js";
+import { pgnTestnet } from "../data/chains/58008/chain.js";
+import { polygonMumbai } from "../data/chains/80001/chain.js";
+import { scrollSepolia } from "../data/chains/534351/chain.js";
+import { scrollMainnet } from "../data/chains/534352/chain.js";
+import { seiDevnet } from "../data/chains/713715/chain.js";
 import { sepolia } from "../data/chains/11155111/chain.js";
 // import { mainnet } from "../data/chains/11155420/chain.js";
 
 import { TChain } from "../types.js";
-// Add other imports here
 
 const chainImportMap: { [key: number]: TChain } = {
   1: {
@@ -62,14 +61,32 @@ const chainImportMap: { [key: number]: TChain } = {
   42220: {
     ...celoMainnet,
   },
-  11155111: {
-    ...sepolia,
-  },
   43113: {
     ...avalancheFuji,
   },
   43114: {
     ...avalanche,
+  },
+  80001: {
+    ...polygonMumbai,
+  },
+  44787: {
+    ...celoTestnet,
+  },
+  58008: {
+    ...pgnTestnet,
+  },
+  534351: {
+    ...scrollSepolia,
+  },
+  534352: {
+    ...scrollMainnet,
+  },
+  713715: {
+    ...seiDevnet,
+  },
+  11155111: {
+    ...sepolia,
   },
 };
 

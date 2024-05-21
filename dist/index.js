@@ -1354,6 +1354,418 @@ var avalanche = {
   ]
 };
 
+// src/data/chains/44787/chain.ts
+var celoTestnet = {
+  "id": 44787,
+  "name": "celo-testnet",
+  "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  "rpc": "https://alfajores-forno.celo-testnet.org",
+  "pricesFromTimestamp": 1704164777,
+  "tokens": [
+    {
+      "code": "CELO",
+      "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      "address": "0x0000000000000000000000000000000000000000",
+      "decimals": 18,
+      "priceSource": {
+        "chainId": 42220,
+        "address": "0x0000000000000000000000000000000000000000"
+      },
+      "redstoneTokenId": "CELO"
+    },
+    {
+      "code": "CELO",
+      "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "decimals": 18,
+      "priceSource": {
+        "chainId": 42220,
+        "address": "0x0000000000000000000000000000000000000000"
+      },
+      "redstoneTokenId": "CELO"
+    }
+  ],
+  "subscriptions": [
+    {
+      "contractName": "AlloV2/Registry/V1",
+      "address": "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      "fromBlock": 23061115
+    },
+    {
+      "contractName": "AlloV2/Allo/V1",
+      "address": "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      "fromBlock": 23061115
+    }
+  ]
+};
+
+// src/data/chains/58008/chain.ts
+var pgnTestnet = {
+  id: 58008,
+  name: "pgn-testnet",
+  icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
+  rpc: "https://sepolia.publicgoods.network",
+  pricesFromTimestamp: 1683079577,
+  tokens: [
+    {
+      code: "ETH",
+      icon: "",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "ETH",
+      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "DAI",
+      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+      },
+      redstoneTokenId: "DAI"
+    },
+    {
+      code: "TEST",
+      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      icon: "DAI",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+      },
+      redstoneTokenId: ""
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV1/ProjectRegistry/V2",
+      address: "0x6294bed5B884Ae18bf737793Ef9415069Bf4bc11"
+    },
+    {
+      contractName: "AlloV1/RoundFactory/V2",
+      address: "0x0479b9DA9f287539FEBd597350B1eBaEBF7479ac",
+      fromBlock: 0
+    },
+    {
+      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
+      address: "0xE8027a807Bb85e57da4B7A5ecE65b0aBDf231ce8",
+      fromBlock: 0
+    }
+  ]
+};
+
+// src/data/chains/80001/chain.ts
+var polygonMumbai = {
+  id: 80001,
+  name: "polygon-mumbai",
+  icon: "https://ipfs.io/ipfs/",
+  rpc: "https://rpc-mumbai.maticvigil.com/",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
+    {
+      code: "MATIC",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
+      },
+      redstoneTokenId: "MATIC"
+    },
+    {
+      code: "MATIC",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
+      },
+      redstoneTokenId: "MATIC"
+    },
+    {
+      code: "USDC",
+      address: "0x9999f7Fea5938fD3b1E26A12c3f2fb024e194f97",
+      decimals: 6,
+      priceSource: {
+        chainId: 1,
+        address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      redstoneTokenId: "USDC"
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV1/ProjectRegistry/V2",
+      address: "0x545B282A50EaeA01A619914d44105437036CbB36",
+      fromBlock: 39793132
+    },
+    {
+      contractName: "AlloV1/RoundFactory/V2",
+      address: "0xE1c5812e9831bc1d5BDcF50AAEc1a47C4508F3fA",
+      fromBlock: 39793132
+    },
+    {
+      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
+      address: "0xF7c101A95Ea4cBD5DA0Ab9827D7B2C9857440143",
+      fromBlock: 39793132
+    },
+    {
+      contractName: "AlloV1/MerklePayoutStrategyFactory/V2",
+      address: "0xc1a26b0789C3E93b07713e90596Cad8d0442C826",
+      fromBlock: 39793132
+    },
+    {
+      contractName: "AlloV1/DirectPayoutStrategyFactory/V2",
+      address: "0xD9B7Ce1F68A93dF783A8519ed52b74f5DcF5AFE1",
+      fromBlock: 39793132
+    },
+    {
+      contractName: "AlloV1/ProgramFactory/V1",
+      address: "0xDF9BF58Aa1A1B73F0e214d79C652a7dd37a6074e",
+      fromBlock: 39793132
+    },
+    {
+      address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      contractName: "AlloV2/Registry/V1",
+      fromBlock: 41939383
+    },
+    {
+      contractName: "AlloV2/Allo/V1",
+      address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      fromBlock: 41940805
+    }
+  ]
+};
+
+// src/data/chains/534351/chain.ts
+var scrollSepolia = {
+  id: 534351,
+  name: "scroll-sepolia",
+  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  rpc: "https://sepolia-rpc.scroll.io",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
+    {
+      code: "ETH",
+      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "ETH",
+      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "MTK",
+      icon: "",
+      address: "0xc2332031de487f430fae3290c05465d907785eda",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+      },
+      redstoneTokenId: "MTK"
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV1/ProjectRegistry/V2",
+      address: "0xA78Daa89fE9C1eC66c5cB1c5833bC8C6Cb307918",
+      fromBlock: 2774478
+    },
+    {
+      contractName: "AlloV1/RoundFactory/V2",
+      address: "0xF2a07728107B04266015E67b1468cA0a536956C8",
+      fromBlock: 2774478
+    },
+    {
+      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
+      address: "0x545B282A50EaeA01A619914d44105437036CbB36",
+      fromBlock: 2774478
+    },
+    {
+      contractName: "AlloV1/ProgramFactory/V1",
+      address: "0xd07D54b0231088Ca9BF7DA6291c911B885cBC140",
+      fromBlock: 2774478
+    }
+  ]
+};
+
+// src/data/chains/534352/chain.ts
+var scrollMainnet = {
+  id: 534352,
+  name: "scroll-mainnet",
+  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  rpc: "https://rpc.scroll.io",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
+    {
+      code: "ETH",
+      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "ETH",
+      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 1,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "ETH"
+    },
+    {
+      code: "USDC",
+      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      address: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+      decimals: 6,
+      priceSource: {
+        chainId: 1,
+        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      },
+      redstoneTokenId: "USDC"
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV1/ProjectRegistry/V2",
+      address: "0xDF9BF58Aa1A1B73F0e214d79C652a7dd37a6074e",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/RoundFactory/V2",
+      address: "0x29aAF7D4E83A778DAee08Fe04B0712c4C2989AD1",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
+      address: "0x5b55728e41154562ee80027C1247B13382692e5C",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/ProgramFactory/V1",
+      address: "0x545B282A50EaeA01A619914d44105437036CbB36",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/DirectPayoutStrategyFactory/V2",
+      address: "0xc7722909fEBf7880E15e67d563E2736D9Bb9c1Ab",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/MerklePayoutStrategyFactory/V2",
+      address: "0x7ac74Be34b1A27E48a2525259719F877a57B2Aa4",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
+      address: "0x5b55728e41154562ee80027C1247B13382692e5C",
+      fromBlock: 2683205
+    },
+    {
+      address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      contractName: "AlloV2/Registry/V1",
+      fromBlock: 2683205
+    },
+    {
+      contractName: "AlloV2/Allo/V1",
+      address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      fromBlock: 2683205
+    }
+  ]
+};
+
+// src/data/chains/713715/chain.ts
+var seiDevnet = {
+  id: 713715,
+  name: "sei-devnet",
+  icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+  rpc: "https://evm-rpc-arctic-1.sei-apis.com",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
+    {
+      code: "SEI",
+      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 713715,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "SEI"
+    },
+    {
+      code: "SEI",
+      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 713715,
+        address: "0x0000000000000000000000000000000000000000"
+      },
+      redstoneTokenId: "SEI"
+    },
+    {
+      code: "WSEI",
+      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      decimals: 18,
+      priceSource: {
+        chainId: 713715,
+        address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330"
+      },
+      redstoneTokenId: "SEI"
+    }
+  ],
+  subscriptions: [
+    {
+      contractName: "AlloV2/Registry/V1",
+      address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      fromBlock: 14660337
+    },
+    {
+      contractName: "AlloV2/Allo/V1",
+      address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      fromBlock: 14661917
+    }
+  ]
+};
+
 // src/data/chains/11155111/chain.ts
 var sepolia = {
   id: 11155111,
@@ -1505,14 +1917,32 @@ var chainImportMap = {
   42220: {
     ...celoMainnet
   },
-  11155111: {
-    ...sepolia
-  },
   43113: {
     ...avalancheFuji
   },
   43114: {
     ...avalanche
+  },
+  80001: {
+    ...polygonMumbai
+  },
+  44787: {
+    ...celoTestnet
+  },
+  58008: {
+    ...pgnTestnet
+  },
+  534351: {
+    ...scrollSepolia
+  },
+  534352: {
+    ...scrollMainnet
+  },
+  713715: {
+    ...seiDevnet
+  },
+  11155111: {
+    ...sepolia
   }
 };
 var chainImportMap_default = chainImportMap;
