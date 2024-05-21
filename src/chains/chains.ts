@@ -69,7 +69,7 @@ const fetchChainData = (): TChain[] => {
     try {
       const filePath = path.join(
         __dirname,
-        `../data/chains/${chainId}/chain.json`
+        `../dist/data/chains/${chainId}/chain.json`
       );
       const fileContent = fs.readFileSync(filePath, "utf-8");
       response = JSON.parse(fileContent) as TChain;
@@ -102,7 +102,7 @@ const fetchChainDataById = (chainId: number): TChain => {
   try {
     const filePath = path.join(
       __dirname,
-      `../data/chains/${chainId}/chain.json`
+      `../dist/data/chains/${chainId}/chain.json`
     );
     const fileContent = fs.readFileSync(filePath, "utf-8");
     chain = JSON.parse(fileContent) as TChain;
