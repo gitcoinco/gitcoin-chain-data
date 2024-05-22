@@ -24,10 +24,7 @@ import {
   zkSyncSepoliaTestnet,
 } from "viem/chains";
 import type { TChain, TToken } from "../types";
-import axios from "axios";
 import { Address } from "viem";
-import * as fs from "fs";
-import * as path from "path";
 import chainImportMap from "./chainImportMap";
 
 const supportedChainIds = [
@@ -99,23 +96,21 @@ const fetchChainDataById = (chainId: number): TChain => {
   let chain: TChain;
 
   try {
-    const filePath = path.join(
-      __dirname,
-      `../dist/data/chains/${chainId}/chain.json`
-    );
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    chain = JSON.parse(fileContent) as TChain;
-
-    console.log("Fetching chains response", {
-      response: chain,
-    });
-
-    return chain;
+    // Fetch the chain data from the import map
+    chain = chainImportMap[chainId];
+    if (!chain) {
+      throw new Error(`Chain data not found for chainId: ${chainId}`);
+    }
   } catch (error) {
     console.error("Error fetching chains", error);
-
-    return {} as TChain; /** This can be null or a default value if that's more appropriate */
+    return {} as TChain; // Return an empty array in case of an error
   }
+
+  console.log("Fetching chains response", {
+    response: chains,
+  });
+
+  return chain;
 };
 
 /**

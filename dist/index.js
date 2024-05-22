@@ -1,9 +1,7 @@
 "use strict";
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -17,14 +15,6 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
@@ -40,8 +30,6 @@ module.exports = __toCommonJS(src_exports);
 
 // src/chains/chains.ts
 var import_chains = require("viem/chains");
-var fs = __toESM(require("fs"));
-var path = __toESM(require("path"));
 
 // src/data/chains/1/chain.ts
 var mainnet = {
@@ -1996,20 +1984,18 @@ var fetchChainData = () => {
 var fetchChainDataById = (chainId) => {
   let chain;
   try {
-    const filePath = path.join(
-      __dirname,
-      `../dist/data/chains/${chainId}/chain.json`
-    );
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    chain = JSON.parse(fileContent);
-    console.log("Fetching chains response", {
-      response: chain
-    });
-    return chain;
+    chain = chainImportMap_default[chainId];
+    if (!chain) {
+      throw new Error(`Chain data not found for chainId: ${chainId}`);
+    }
   } catch (error) {
     console.error("Error fetching chains", error);
     return {};
   }
+  console.log("Fetching chains response", {
+    response: chains
+  });
+  return chain;
 };
 var getChains = () => {
   return fetchChainData();
