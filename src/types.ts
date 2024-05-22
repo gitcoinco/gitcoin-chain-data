@@ -12,7 +12,6 @@ type CoingeckoSupportedChainId =
 
 export type TToken = {
   code: string;
-  chainId: number;
   icon?: string;
   address: Address;
   decimals: number;
@@ -27,7 +26,7 @@ export type TSubscription = {
   address: Address;
   contractName: string;
   fromBlock?: number;
-  eventsRenames?: Record<string, string>;
+  eventsRenames?: Record<string, string> | undefined;
 };
 
 export type TChain = {

@@ -18,10 +18,9 @@
     "data"
   ],
   "scripts": {
-    "build:tsup": "tsup",
-    "build": "tsc && npm run copy-static-files",
+    "build": "tsup && tsc",
     "copy-static-files": "cpx \"src/data/**/*\" dist/data",
-    "start": "npx tsc src/index.ts"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
