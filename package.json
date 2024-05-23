@@ -1,6 +1,6 @@
 {
-  "name": "@grants-labs/gitcoin-chain-data",
-  "version": "1.0.41",
+  "name": "@gitcoin/gitcoin-chain-data",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

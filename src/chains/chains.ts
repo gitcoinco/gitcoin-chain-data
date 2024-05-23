@@ -13,7 +13,7 @@ import {
   optimism,
   // optimismSepolia,
   pgn,
-  // pgnTestnet,
+  pgnTestnet,
   polygon,
   polygonMumbai,
   scroll,
@@ -49,7 +49,7 @@ const supportedChainIds = [
   scroll.id,
   // scrollSepolia.id,
   pgn.id,
-  // pgnTestnet.id,
+  pgnTestnet.id,
   seiDevnet.id,
 ];
 
@@ -179,7 +179,7 @@ export const getTokensByChainId = (chainId: number): TToken[] => {
  */
 export const getTokenByChainIdAndAddress = (
   chainId: number,
-  address: Address,
+  address: Address
 ): TToken => {
   const chainData: TChain = fetchChainDataById(chainId);
   let token: TToken | undefined;
@@ -190,5 +190,3 @@ export const getTokenByChainIdAndAddress = (
 
   return token as TToken;
 };
-
-const chains = fetchChainData();
