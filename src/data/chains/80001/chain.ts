@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const polygonMumbai: TChain = {
   id: 80001,
   name: "polygon-mumbai",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,

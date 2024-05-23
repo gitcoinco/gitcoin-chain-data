@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const mainnet: TChain = {
   id: 1,
   name: "mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,

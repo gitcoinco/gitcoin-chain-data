@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const chainName: TChain = {
   id: 0, // chain id
   name: "chain-name", // chain name
+  type: "mainnet", // chain type: "mainnet" or "testnet"
   icon: "https://<icon-url>", // public rpc url
   rpc: "https://<rpc-url>", // public rpc url
   pricesFromTimestamp: 0, // timestamp to get prices from

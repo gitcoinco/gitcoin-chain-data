@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const seiDevnet: TChain = {
   id: 713715,
   name: "sei-devnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,

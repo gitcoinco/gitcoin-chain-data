@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const optimism: TChain = {
   id: 10,
   name: "optimism",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
