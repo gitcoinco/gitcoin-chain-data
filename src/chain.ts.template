@@ -1,5 +1,6 @@
 import { TChain } from "../../../types";
 
+// TODO: replace chainName with the actual chain name
 export const chainName: TChain = {
   id: 0, // chain id
   name: "chain-name", // chain name
