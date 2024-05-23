@@ -15,7 +15,16 @@ const destDir = path.join(srcDir, 'data/chains', chainId);
 const templateFile = path.join(srcDir, 'chain.ts.template');
 const destFile = path.join(destDir, 'chain.ts');
 
-console.log(`Creating chain using ${templateFile} =====> ${destDir}`);
+// ASCII banner
+console.log(`
+┏┓ ┓ ┓•      ┏┓┓   •  
+┣┫┏┫┏┫┓┏┓┏┓  ┃ ┣┓┏┓┓┏┓
+┛┗┗┻┗┻┗┛┗┗┫  ┗┛┛┗┗┻┗┛┗
+`);
+
+console.log("=====================================\n\n")
+console.log(`File created at "src/data/chains/${chainId}"`);
+console.log("\n\n=====================================")
 
 // Create destination directory if it doesn't exist
 if (!fs.existsSync(destDir)) {
