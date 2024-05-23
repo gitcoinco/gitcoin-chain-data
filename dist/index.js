@@ -1810,7 +1810,7 @@ var sepolia = {
       code: "USDC",
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x78e0D07C4A08adFfe610113310163b40E7e47e81",
-      decimals: 6,
+      decimals: 18,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -1975,9 +1975,6 @@ var fetchChainData = () => {
       return [];
     }
     chains2.push(response);
-    console.log("Fetching chains response", {
-      response: chains2
-    });
   }
   return chains2;
 };
@@ -1992,9 +1989,6 @@ var fetchChainDataById = (chainId) => {
     console.error("Error fetching chains", error);
     return {};
   }
-  console.log("Fetching chains response", {
-    response: chains
-  });
   return chain;
 };
 var getChains = () => {
@@ -2037,7 +2031,6 @@ var getTokenByChainIdAndAddress = (chainId, address) => {
   return token;
 };
 var chains = fetchChainData();
-console.log("Fetched chains:", chains);
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   getChainById,
