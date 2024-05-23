@@ -8,14 +8,14 @@ if (!chainId) {
   process.exit(1);
 }
 
-const srcDir = path.join(__dirname, 'src');
+const rootDir = process.cwd();
+const srcDir = path.join(rootDir, 'src');
 const destDir = path.join(srcDir, 'data/chains', chainId);
-
-console.log(`Copying chain.ts.template from ${srcDir}`);
-console.log(`Creating new chain in ${destDir}`);
 
 const templateFile = path.join(srcDir, 'chain.ts.template');
 const destFile = path.join(destDir, 'chain.ts');
+
+console.log(`Creating chain using ${templateFile} =====> ${destDir}`);
 
 // Create destination directory if it doesn't exist
 if (!fs.existsSync(destDir)) {

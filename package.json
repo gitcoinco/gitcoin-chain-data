@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsup && tsc && cp -rf src/data/* dist/data",
-    "new-chain": "node scrips/newChain.ts"
+    "new-chain": "node scripts/newChain.ts"
   },
   "dependencies": {
     "ethers": "^6.12.1",
