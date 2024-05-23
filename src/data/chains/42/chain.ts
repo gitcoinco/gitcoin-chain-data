@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const lukso: TChain = {
   id: 42,
   name: "lukso-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,

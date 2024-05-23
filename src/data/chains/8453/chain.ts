@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const base: TChain = {
   id: 8453,
   name: "base",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,

@@ -76,10 +76,6 @@ const fetchChainData = (): TChain[] => {
     }
 
     chains.push(response);
-
-    console.log("Fetching chains response", {
-      response: chains,
-    });
   }
 
   return chains;
@@ -105,10 +101,6 @@ const fetchChainDataById = (chainId: number): TChain => {
     console.error("Error fetching chains", error);
     return {} as TChain; // Return an empty array in case of an error
   }
-
-  console.log("Fetching chains response", {
-    response: chains,
-  });
 
   return chain;
 };
@@ -187,7 +179,7 @@ export const getTokensByChainId = (chainId: number): TToken[] => {
  */
 export const getTokenByChainIdAndAddress = (
   chainId: number,
-  address: Address
+  address: Address,
 ): TToken => {
   const chainData: TChain = fetchChainDataById(chainId);
   let token: TToken | undefined;
@@ -200,4 +192,3 @@ export const getTokenByChainIdAndAddress = (
 };
 
 const chains = fetchChainData();
-console.log("Fetched chains:", chains);

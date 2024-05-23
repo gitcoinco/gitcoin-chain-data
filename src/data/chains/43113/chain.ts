@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const avalancheFuji: TChain = {
   id: 43113,
   name: "avalanche-fuji",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,

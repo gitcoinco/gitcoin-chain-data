@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const luksoTestnet: TChain = {
   id: 4201,
   name: "lukso-testnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,

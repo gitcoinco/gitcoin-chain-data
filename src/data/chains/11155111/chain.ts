@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const sepolia: TChain = {
   id: 11155111,
   name: "sepolia",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
@@ -55,7 +56,7 @@ export const sepolia: TChain = {
       code: "USDC",
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x78e0D07C4A08adFfe610113310163b40E7e47e81",
-      decimals: 6,
+      decimals: 18,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",

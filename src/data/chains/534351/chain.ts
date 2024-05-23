@@ -3,6 +3,7 @@ import { TChain } from "../../../types";
 export const scrollSepolia: TChain = {
   id: 534351,
   name: "scroll-sepolia",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
