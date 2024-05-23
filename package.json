@@ -18,7 +18,7 @@
     "data"
   ],
   "scripts": {
-    "build": "tsup && tsc && cp -rf src/data/* dist/data",
+    "build": "rm -rf dist && tsup && tsc && cp -rf src/data/* dist/data",
     "new-chain": "node scrips/newChain.ts"
   },
   "dependencies": {
