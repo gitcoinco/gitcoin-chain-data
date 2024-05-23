@@ -35,6 +35,7 @@ var import_chains = require("viem/chains");
 var mainnet = {
   id: 1,
   name: "mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
@@ -154,6 +155,7 @@ var mainnet = {
 var optimism = {
   id: 10,
   name: "optimism",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
@@ -285,6 +287,7 @@ var optimism = {
 var lukso = {
   id: 42,
   name: "lukso-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -342,6 +345,7 @@ var lukso = {
 var polygon = {
   id: 137,
   name: "polygon",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
@@ -451,6 +455,7 @@ var polygon = {
 var fantom = {
   id: 250,
   name: "fantom",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
@@ -582,6 +587,7 @@ var fantom = {
 var zksyncEraTestnet = {
   id: 300,
   name: "zksync-era-testnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
@@ -656,6 +662,7 @@ var zksyncEraTestnet = {
 var zkSyncEraMainnet = {
   id: 324,
   name: "zksync-era-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
@@ -786,6 +793,7 @@ var zkSyncEraMainnet = {
 var pgnMainnet = {
   id: 424,
   name: "pgn-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -873,6 +881,7 @@ var pgnMainnet = {
 var luksoTestnet = {
   id: 4201,
   name: "lukso-testnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -918,6 +927,7 @@ var luksoTestnet = {
 var base = {
   id: 8453,
   name: "base",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
@@ -1004,6 +1014,7 @@ var base = {
 var arbitrum = {
   id: 42161,
   name: "arbitrum",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
@@ -1128,6 +1139,7 @@ var arbitrum = {
 var celoMainnet = {
   id: 42220,
   name: "celo-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
@@ -1184,6 +1196,7 @@ var celoMainnet = {
 var avalancheFuji = {
   id: 43113,
   name: "avalanche-fuji",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
@@ -1260,6 +1273,7 @@ var avalancheFuji = {
 var avalanche = {
   id: 43114,
   name: "avalanche",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
@@ -1344,45 +1358,46 @@ var avalanche = {
 
 // src/data/chains/44787/chain.ts
 var celoTestnet = {
-  "id": 44787,
-  "name": "celo-testnet",
-  "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
-  "rpc": "https://alfajores-forno.celo-testnet.org",
-  "pricesFromTimestamp": 1704164777,
-  "tokens": [
+  id: 44787,
+  name: "celo-testnet",
+  type: "testnet",
+  icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  rpc: "https://alfajores-forno.celo-testnet.org",
+  pricesFromTimestamp: 1704164777,
+  tokens: [
     {
-      "code": "CELO",
-      "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
-      "address": "0x0000000000000000000000000000000000000000",
-      "decimals": 18,
-      "priceSource": {
-        "chainId": 42220,
-        "address": "0x0000000000000000000000000000000000000000"
+      code: "CELO",
+      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      address: "0x0000000000000000000000000000000000000000",
+      decimals: 18,
+      priceSource: {
+        chainId: 42220,
+        address: "0x0000000000000000000000000000000000000000"
       },
-      "redstoneTokenId": "CELO"
+      redstoneTokenId: "CELO"
     },
     {
-      "code": "CELO",
-      "icon": "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
-      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      "decimals": 18,
-      "priceSource": {
-        "chainId": 42220,
-        "address": "0x0000000000000000000000000000000000000000"
+      code: "CELO",
+      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      decimals: 18,
+      priceSource: {
+        chainId: 42220,
+        address: "0x0000000000000000000000000000000000000000"
       },
-      "redstoneTokenId": "CELO"
+      redstoneTokenId: "CELO"
     }
   ],
-  "subscriptions": [
+  subscriptions: [
     {
-      "contractName": "AlloV2/Registry/V1",
-      "address": "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
-      "fromBlock": 23061115
+      contractName: "AlloV2/Registry/V1",
+      address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
+      fromBlock: 23061115
     },
     {
-      "contractName": "AlloV2/Allo/V1",
-      "address": "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
-      "fromBlock": 23061115
+      contractName: "AlloV2/Allo/V1",
+      address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
+      fromBlock: 23061115
     }
   ]
 };
@@ -1391,6 +1406,7 @@ var celoTestnet = {
 var pgnTestnet = {
   id: 58008,
   name: "pgn-testnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -1462,6 +1478,7 @@ var pgnTestnet = {
 var polygonMumbai = {
   id: 80001,
   name: "polygon-mumbai",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
@@ -1545,6 +1562,7 @@ var polygonMumbai = {
 var scrollSepolia = {
   id: 534351,
   name: "scroll-sepolia",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1611,6 +1629,7 @@ var scrollSepolia = {
 var scrollMainnet = {
   id: 534352,
   name: "scroll-mainnet",
+  type: "mainnet",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1702,6 +1721,7 @@ var scrollMainnet = {
 var seiDevnet = {
   id: 713715,
   name: "sei-devnet",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
@@ -1758,6 +1778,7 @@ var seiDevnet = {
 var sepolia = {
   id: 11155111,
   name: "sepolia",
+  type: "testnet",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,

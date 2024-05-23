@@ -24,10 +24,12 @@ export type TChain = {
     rpc: string;
     name: string;
     icon: string;
+    type: TNetworkType;
     id: number;
     pricesFromTimestamp?: number;
     maxGetLogsRange?: number;
     tokens: TToken[];
     subscriptions: TSubscription[];
 };
+export type TNetworkType = "mainnet" | "testnet";
 export {};
