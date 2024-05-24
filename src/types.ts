@@ -31,6 +31,7 @@ export type TSubscription = {
 
 export type TChain = {
   rpc: string;
+  blockExplorer: string;
   name: string;
   icon: string;
   type: TNetworkType;
