@@ -14,6 +14,7 @@ export const pgnTestnet: TChain = {
       icon: "",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -25,6 +26,7 @@ export const pgnTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -36,6 +38,7 @@ export const pgnTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
@@ -47,6 +50,7 @@ export const pgnTestnet: TChain = {
       address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
       icon: "DAI",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",

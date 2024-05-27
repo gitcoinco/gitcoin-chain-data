@@ -14,6 +14,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -25,6 +26,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -36,6 +38,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -47,6 +50,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmTDFjdejwv6gGXYUu8VbTw2eCjPhhJ217VM4vpXiSu5Xx",
       address: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -58,6 +62,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
@@ -69,6 +74,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmaPosCSRnPjmjP6ekQtE2RXgv1MFy1eQSDyfPeuA6oSgw",
       address: "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x5f98805a4e8be255a32880fdec7f6728c6568ba0",
@@ -80,6 +86,7 @@ export const zkSyncEraMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmeHDSK2cKXhnAFzMCRh9UP7VSJpuv4ENagugisM757vYs",
       address: "0x0e97c7a0f8b2c9885c8ac9fc6136e829cbc21d42",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0xa49d7499271ae71cd8ab9ac515e6694c755d400c",

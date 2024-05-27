@@ -15,6 +15,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
@@ -26,6 +27,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
@@ -37,6 +39,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzBg",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
@@ -49,6 +52,7 @@ export const optimism: TChain = {
       address: "0x93a5347036f69bc6f37ed2b59cbcdda927719217",
       decimals: 18,
       voteAmountCap: BigInt("1000000000000000000"),
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
@@ -60,6 +64,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x0000000000000000000000000000000000000000",
@@ -71,6 +76,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x0000000000000000000000000000000000000000",
@@ -82,6 +88,7 @@ export const optimism: TChain = {
       icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
       address: "0x4200000000000000000000000000000000000042",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x4200000000000000000000000000000000000042",

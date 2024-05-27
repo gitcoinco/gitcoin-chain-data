@@ -5,6 +5,7 @@ export type TToken = {
     icon?: string;
     address: Address;
     decimals: number;
+    canVote: boolean;
     priceSource?: {
         chainId: CoingeckoSupportedChainId;
         address: Address;

@@ -14,6 +14,7 @@ export const pgnMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -25,6 +26,7 @@ export const pgnMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -36,6 +38,7 @@ export const pgnMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
       address: "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
@@ -47,6 +50,7 @@ export const pgnMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x6C121674ba6736644A7e73A8741407fE8a5eE5BA",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",

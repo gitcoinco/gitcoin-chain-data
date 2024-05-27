@@ -14,6 +14,7 @@ export const luksoTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000",
@@ -25,6 +26,7 @@ export const luksoTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000",

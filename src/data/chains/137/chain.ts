@@ -15,6 +15,7 @@ export const polygon: TChain = {
       icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
@@ -26,6 +27,7 @@ export const polygon: TChain = {
       icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
@@ -37,6 +39,7 @@ export const polygon: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -48,6 +51,7 @@ export const polygon: TChain = {
       icon: "https://ipfs.io/ipfs/QmRy2AaexbGSXXct2N6Ph8DGgEXHRuT5bzE2snmZRBDtjQ",
       address: "0x3a9A81d576d83FF21f26f325066054540720fC34",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x8f693ca8d21b157107184d29d398a8d082b38b76",
@@ -59,6 +63,7 @@ export const polygon: TChain = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",

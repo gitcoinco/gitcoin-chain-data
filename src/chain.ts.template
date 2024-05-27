@@ -15,6 +15,7 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true, // true for native currency and stable coins, protocol and other are false
       priceSource: {
         chainId: 1, // chain id
         address: "0x0000000000000000000000000000000000000000",
@@ -27,6 +28,7 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1, // chain id
         address: "0x0000000000000000000000000000000000000000",
@@ -38,6 +40,7 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0x1234567890123456789012345678901234567890", // token address
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1, // chain id
         address: "0x1234567890123456789012345678901234567890", // token address

@@ -14,6 +14,7 @@ export const celoMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000",
@@ -25,6 +26,7 @@ export const celoMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000",
@@ -36,6 +38,7 @@ export const celoMainnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmRxcma8Q1545Hcw6K7Z3gwS63FsZQieuGG7uQxeG8vHXS",
       address: "0x765de816845861e75a25fca122bb6898b8b1282a",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x765de816845861e75a25fca122bb6898b8b1282a",
