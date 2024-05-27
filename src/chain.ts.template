@@ -5,6 +5,7 @@ export const chainName: TChain = {
   id: 0, // chain id
   name: "chain-name", // chain name
   type: "mainnet", // chain type: "mainnet" or "testnet"
+  blockExplorer: "https://<url>/",
   icon: "https://<icon-url>", // public rpc url
   rpc: "https://<rpc-url>", // public rpc url
   pricesFromTimestamp: 0, // timestamp to get prices from
@@ -18,6 +19,7 @@ export const chainName: TChain = {
         chainId: 1, // chain id
         address: "0x0000000000000000000000000000000000000000",
       },
+      // see: https://github.com/redstone-finance/redstone-node/blob/main/src/config/tokens.json
       redstoneTokenId: "ETH", // redstone token id
     },
     {
