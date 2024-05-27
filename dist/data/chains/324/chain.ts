@@ -4,6 +4,7 @@ export const zkSyncEraMainnet: TChain = {
   id: 324,
   name: "zksync-era-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,

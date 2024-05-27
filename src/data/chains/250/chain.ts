@@ -4,6 +4,7 @@ export const fantom: TChain = {
   id: 250,
   name: "fantom",
   type: "mainnet",
+  blockExplorer: "https://ftmscan.com/",
   icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,

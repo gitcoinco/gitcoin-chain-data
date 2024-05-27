@@ -4,6 +4,7 @@ export const zksyncEraTestnet: TChain = {
   id: 300,
   name: "zksync-era-testnet",
   type: "testnet",
+  blockExplorer: "https://sepolia.explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,

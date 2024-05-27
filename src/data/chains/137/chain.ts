@@ -4,6 +4,7 @@ export const polygon: TChain = {
   id: 137,
   name: "polygon",
   type: "mainnet",
+  blockExplorer: "https://polygonscan.com/",
   icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,

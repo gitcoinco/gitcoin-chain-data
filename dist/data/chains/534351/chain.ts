@@ -4,6 +4,7 @@ export const scrollSepolia: TChain = {
   id: 534351,
   name: "scroll-sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.scrollscan.com",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,

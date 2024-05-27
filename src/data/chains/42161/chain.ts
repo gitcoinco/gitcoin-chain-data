@@ -4,6 +4,7 @@ export const arbitrum: TChain = {
   id: 42161,
   name: "arbitrum",
   type: "mainnet",
+  blockExplorer: "https://arbiscan.io/",
   icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,

@@ -4,6 +4,7 @@ export const celoMainnet: TChain = {
   id: 42220,
   name: "celo-mainnet",
   type: "mainnet",
+  blockExplorer: "https://celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,

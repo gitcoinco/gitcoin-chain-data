@@ -36,6 +36,7 @@ var mainnet = {
   id: 1,
   name: "mainnet",
   type: "mainnet",
+  blockExplorer: "https://etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
@@ -156,6 +157,7 @@ var optimism = {
   id: 10,
   name: "optimism",
   type: "mainnet",
+  blockExplorer: "https://optimistic.etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
@@ -288,6 +290,7 @@ var lukso = {
   id: 42,
   name: "lukso-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -346,6 +349,7 @@ var polygon = {
   id: 137,
   name: "polygon",
   type: "mainnet",
+  blockExplorer: "https://polygonscan.com/",
   icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
@@ -456,6 +460,7 @@ var fantom = {
   id: 250,
   name: "fantom",
   type: "mainnet",
+  blockExplorer: "https://ftmscan.com/",
   icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
@@ -588,6 +593,7 @@ var zksyncEraTestnet = {
   id: 300,
   name: "zksync-era-testnet",
   type: "testnet",
+  blockExplorer: "https://sepolia.explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
@@ -663,6 +669,7 @@ var zkSyncEraMainnet = {
   id: 324,
   name: "zksync-era-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
@@ -794,6 +801,7 @@ var pgnMainnet = {
   id: 424,
   name: "pgn-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -882,6 +890,7 @@ var luksoTestnet = {
   id: 4201,
   name: "lukso-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.execution.testnet.lukso.network/",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -928,6 +937,7 @@ var base = {
   id: 8453,
   name: "base",
   type: "mainnet",
+  blockExplorer: "https://basescan.org/",
   icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
@@ -1015,6 +1025,7 @@ var arbitrum = {
   id: 42161,
   name: "arbitrum",
   type: "mainnet",
+  blockExplorer: "https://arbiscan.io/",
   icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
@@ -1140,6 +1151,7 @@ var celoMainnet = {
   id: 42220,
   name: "celo-mainnet",
   type: "mainnet",
+  blockExplorer: "https://celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
@@ -1197,6 +1209,7 @@ var avalancheFuji = {
   id: 43113,
   name: "avalanche-fuji",
   type: "testnet",
+  blockExplorer: "https://fuji.avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
@@ -1274,6 +1287,7 @@ var avalanche = {
   id: 43114,
   name: "avalanche",
   type: "mainnet",
+  blockExplorer: "https://avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
@@ -1361,6 +1375,7 @@ var celoTestnet = {
   id: 44787,
   name: "celo-testnet",
   type: "testnet",
+  blockExplorer: "https://alfajores.celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
@@ -1407,6 +1422,7 @@ var pgnTestnet = {
   id: 58008,
   name: "pgn-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.sepolia.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -1479,6 +1495,7 @@ var polygonMumbai = {
   id: 80001,
   name: "polygon-mumbai",
   type: "testnet",
+  blockExplorer: "https://mumbai.polygonscan.com/",
   icon: "https://ipfs.io/ipfs/",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
@@ -1563,6 +1580,7 @@ var scrollSepolia = {
   id: 534351,
   name: "scroll-sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.scrollscan.com",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1630,6 +1648,7 @@ var scrollMainnet = {
   id: 534352,
   name: "scroll-mainnet",
   type: "mainnet",
+  blockExplorer: "https://scrollscan.com/",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1722,6 +1741,7 @@ var seiDevnet = {
   id: 713715,
   name: "sei-devnet",
   type: "testnet",
+  blockExplorer: "https://seitrace.com/?chain=arctic-1",
   icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
@@ -1779,6 +1799,7 @@ var sepolia = {
   id: 11155111,
   name: "sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
@@ -1979,11 +2000,11 @@ var supportedChainIds = [
   import_chains.scroll.id,
   // scrollSepolia.id,
   import_chains.pgn.id,
-  // pgnTestnet.id,
+  import_chains.pgnTestnet.id,
   import_chains.seiDevnet.id
 ];
 var fetchChainData = () => {
-  let chains2 = [];
+  let chains = [];
   for (const chainId of supportedChainIds) {
     let response;
     try {
@@ -1995,9 +2016,9 @@ var fetchChainData = () => {
       console.error("Error fetching chains", error);
       return [];
     }
-    chains2.push(response);
+    chains.push(response);
   }
-  return chains2;
+  return chains;
 };
 var fetchChainDataById = (chainId) => {
   let chain;
@@ -2020,9 +2041,9 @@ var getChainById = (chainId) => {
 };
 var getTokens = () => {
   try {
-    const chains2 = fetchChainData();
+    const chains = fetchChainData();
     const tokens = [];
-    for (const chain of chains2) {
+    for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
         tokens.push(...chain.tokens);
       } else {
@@ -2051,7 +2072,6 @@ var getTokenByChainIdAndAddress = (chainId, address) => {
   }
   return token;
 };
-var chains = fetchChainData();
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   getChainById,

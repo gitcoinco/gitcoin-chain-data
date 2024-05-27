@@ -4,6 +4,7 @@ export const pgnTestnet: TChain = {
   id: 58008,
   name: "pgn-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.sepolia.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,

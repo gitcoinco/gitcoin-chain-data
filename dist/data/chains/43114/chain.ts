@@ -4,6 +4,7 @@ export const avalanche: TChain = {
   id: 43114,
   name: "avalanche",
   type: "mainnet",
+  blockExplorer: "https://avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,

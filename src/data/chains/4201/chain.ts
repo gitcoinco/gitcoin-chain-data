@@ -4,6 +4,7 @@ export const luksoTestnet: TChain = {
   id: 4201,
   name: "lukso-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.execution.testnet.lukso.network/",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,

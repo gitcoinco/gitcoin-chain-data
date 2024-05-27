@@ -4,6 +4,7 @@ export const sepolia: TChain = {
   id: 11155111,
   name: "sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,

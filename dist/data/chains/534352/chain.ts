@@ -4,6 +4,7 @@ export const scrollMainnet: TChain = {
   id: 534352,
   name: "scroll-mainnet",
   type: "mainnet",
+  blockExplorer: "https://scrollscan.com/",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,

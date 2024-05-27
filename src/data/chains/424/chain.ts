@@ -4,6 +4,7 @@ export const pgnMainnet: TChain = {
   id: 424,
   name: "pgn-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
