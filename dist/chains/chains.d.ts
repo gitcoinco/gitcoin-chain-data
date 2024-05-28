@@ -20,9 +20,9 @@ export declare const getChainById: (chainId: number) => TChain;
 /**
  * Fetches tokens from all chains.
  *
- * @returns `TToken]>`
+ * @returns `Record<ChainId, TToken[]>`
  */
-export declare const getTokens: () => TToken[];
+export declare const getTokens: () => Record<number, TToken[]>;
 /**
  * Get all supported tokens for a specific chain by its ID
  *

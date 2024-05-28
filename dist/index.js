@@ -2126,15 +2126,15 @@ var getChainById = (chainId) => {
 var getTokens = () => {
   try {
     const chains = fetchChainData();
-    const tokens = [];
+    const tokenMap = {};
     for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
-        tokens.push(...chain.tokens);
+        tokenMap[chain.id] = chain.tokens;
       } else {
         console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
       }
     }
-    return tokens;
+    return tokenMap;
   } catch (error) {
     console.error("Error fetching chain data:", error);
     throw error;
