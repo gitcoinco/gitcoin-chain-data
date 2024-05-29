@@ -4,6 +4,7 @@ export const base: TChain = {
   id: 8453,
   name: "base",
   type: "mainnet",
+  blockExplorer: "https://basescan.org/",
   icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
@@ -13,6 +14,7 @@ export const base: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -24,6 +26,7 @@ export const base: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -35,6 +38,7 @@ export const base: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",

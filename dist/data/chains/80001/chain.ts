@@ -4,6 +4,7 @@ export const polygonMumbai: TChain = {
   id: 80001,
   name: "polygon-mumbai",
   type: "testnet",
+  blockExplorer: "https://mumbai.polygonscan.com/",
   icon: "https://ipfs.io/ipfs/",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
@@ -12,6 +13,7 @@ export const polygonMumbai: TChain = {
       code: "MATIC",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
@@ -22,6 +24,7 @@ export const polygonMumbai: TChain = {
       code: "MATIC",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
@@ -32,6 +35,7 @@ export const polygonMumbai: TChain = {
       code: "USDC",
       address: "0x9999f7Fea5938fD3b1E26A12c3f2fb024e194f97",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",

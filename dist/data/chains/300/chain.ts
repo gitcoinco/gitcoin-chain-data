@@ -4,6 +4,7 @@ export const zksyncEraTestnet: TChain = {
   id: 300,
   name: "zksync-era-testnet",
   type: "testnet",
+  blockExplorer: "https://sepolia.explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
@@ -13,6 +14,7 @@ export const zksyncEraTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -24,6 +26,7 @@ export const zksyncEraTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",

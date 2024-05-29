@@ -4,6 +4,7 @@ export const scrollSepolia: TChain = {
   id: 534351,
   name: "scroll-sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.scrollscan.com",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -13,6 +14,7 @@ export const scrollSepolia: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -24,6 +26,7 @@ export const scrollSepolia: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000",
@@ -35,6 +38,7 @@ export const scrollSepolia: TChain = {
       icon: "",
       address: "0xc2332031de487f430fae3290c05465d907785eda",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",

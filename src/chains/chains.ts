@@ -131,22 +131,22 @@ export const getChainById = (chainId: number): TChain => {
 /**
  * Fetches tokens from all chains.
  *
- * @returns `TToken]>`
+ * @returns `Record<ChainId, TToken[]>`
  */
-export const getTokens = (): TToken[] => {
+export const getTokens = (): Record<number, TToken[]> => {
   try {
     const chains = fetchChainData();
-    const tokens: TToken[] = [];
+    const tokenMap: Record<number, TToken[]> = {};
 
     for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
-        tokens.push(...chain.tokens);
+        tokenMap[chain.id] = chain.tokens;
       } else {
         console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
       }
     }
 
-    return tokens;
+    return tokenMap;
   } catch (error) {
     console.error("Error fetching chain data:", error);
     throw error; // Rethrow the error after logging it
@@ -179,7 +179,7 @@ export const getTokensByChainId = (chainId: number): TToken[] => {
  */
 export const getTokenByChainIdAndAddress = (
   chainId: number,
-  address: Address
+  address: Address,
 ): TToken => {
   const chainData: TChain = fetchChainDataById(chainId);
   let token: TToken | undefined;

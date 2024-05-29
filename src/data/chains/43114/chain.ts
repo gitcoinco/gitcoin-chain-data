@@ -4,6 +4,7 @@ export const avalanche: TChain = {
   id: 43114,
   name: "avalanche",
   type: "mainnet",
+  blockExplorer: "https://avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
@@ -13,6 +14,7 @@ export const avalanche: TChain = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000",
@@ -24,6 +26,7 @@ export const avalanche: TChain = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000",
@@ -35,6 +38,7 @@ export const avalanche: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",

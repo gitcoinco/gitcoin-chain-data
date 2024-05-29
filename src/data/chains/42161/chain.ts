@@ -4,6 +4,7 @@ export const arbitrum: TChain = {
   id: 42161,
   name: "arbitrum",
   type: "mainnet",
+  blockExplorer: "https://arbiscan.io/",
   icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
@@ -13,6 +14,7 @@ export const arbitrum: TChain = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
@@ -24,6 +26,7 @@ export const arbitrum: TChain = {
       icon: "",
       address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
@@ -35,6 +38,7 @@ export const arbitrum: TChain = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 42161,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
@@ -46,6 +50,7 @@ export const arbitrum: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x0000000000000000000000000000000000000000",
@@ -57,6 +62,7 @@ export const arbitrum: TChain = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x0000000000000000000000000000000000000000",
@@ -68,6 +74,7 @@ export const arbitrum: TChain = {
       icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
       address: "0x7f9a7db853ca816b9a138aee3380ef34c437dee0",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",

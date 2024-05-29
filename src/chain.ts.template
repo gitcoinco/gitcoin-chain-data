@@ -5,6 +5,7 @@ export const chainName: TChain = {
   id: 0, // chain id
   name: "chain-name", // chain name
   type: "mainnet", // chain type: "mainnet" or "testnet"
+  blockExplorer: "https://<url>/",
   icon: "https://<icon-url>", // public rpc url
   rpc: "https://<rpc-url>", // public rpc url
   pricesFromTimestamp: 0, // timestamp to get prices from
@@ -14,10 +15,12 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true, // true for native currency and stable coins, protocol and other are false
       priceSource: {
         chainId: 1, // chain id
         address: "0x0000000000000000000000000000000000000000",
       },
+      // see: https://github.com/redstone-finance/redstone-node/blob/main/src/config/tokens.json
       redstoneTokenId: "ETH", // redstone token id
     },
     {
@@ -25,6 +28,7 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1, // chain id
         address: "0x0000000000000000000000000000000000000000",
@@ -36,6 +40,7 @@ export const chainName: TChain = {
       icon: "https://<icon-url>", // token icon
       address: "0x1234567890123456789012345678901234567890", // token address
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1, // chain id
         address: "0x1234567890123456789012345678901234567890", // token address

@@ -4,6 +4,7 @@ export const seiDevnet: TChain = {
   id: 713715,
   name: "sei-devnet",
   type: "testnet",
+  blockExplorer: "https://seitrace.com/?chain=arctic-1",
   icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
@@ -13,6 +14,7 @@ export const seiDevnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x0000000000000000000000000000000000000000",
@@ -24,6 +26,7 @@ export const seiDevnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x0000000000000000000000000000000000000000",
@@ -35,6 +38,7 @@ export const seiDevnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",

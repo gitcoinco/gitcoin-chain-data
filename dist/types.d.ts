@@ -5,6 +5,7 @@ export type TToken = {
     icon?: string;
     address: Address;
     decimals: number;
+    canVote: boolean;
     priceSource?: {
         chainId: CoingeckoSupportedChainId;
         address: Address;
@@ -22,6 +23,7 @@ export type TSubscription = {
 };
 export type TChain = {
     rpc: string;
+    blockExplorer: string;
     name: string;
     icon: string;
     type: TNetworkType;

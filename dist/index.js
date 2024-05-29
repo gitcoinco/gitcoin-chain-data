@@ -36,6 +36,7 @@ var mainnet = {
   id: 1,
   name: "mainnet",
   type: "mainnet",
+  blockExplorer: "https://etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
@@ -46,6 +47,7 @@ var mainnet = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -57,6 +59,7 @@ var mainnet = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -68,6 +71,7 @@ var mainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -79,6 +83,7 @@ var mainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -90,6 +95,7 @@ var mainnet = {
       icon: "",
       address: "0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1"
@@ -101,6 +107,7 @@ var mainnet = {
       icon: "",
       address: "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28"
@@ -156,6 +163,7 @@ var optimism = {
   id: 10,
   name: "optimism",
   type: "mainnet",
+  blockExplorer: "https://optimistic.etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
@@ -166,6 +174,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607"
@@ -177,6 +186,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
@@ -188,6 +198,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzBg",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3"
@@ -200,6 +211,7 @@ var optimism = {
       address: "0x93a5347036f69bc6f37ed2b59cbcdda927719217",
       decimals: 18,
       voteAmountCap: BigInt("1000000000000000000"),
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
@@ -211,6 +223,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x0000000000000000000000000000000000000000"
@@ -222,6 +235,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x0000000000000000000000000000000000000000"
@@ -233,6 +247,7 @@ var optimism = {
       icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
       address: "0x4200000000000000000000000000000000000042",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 10,
         address: "0x4200000000000000000000000000000000000042"
@@ -288,6 +303,7 @@ var lukso = {
   id: 42,
   name: "lukso-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -298,6 +314,7 @@ var lukso = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000"
@@ -309,6 +326,7 @@ var lukso = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000"
@@ -320,6 +338,7 @@ var lukso = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0x2db41674f2b882889e5e1bd09a3f3613952bc472",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x2db41674f2b882889e5e1bd09a3f3613952bc472"
@@ -346,6 +365,7 @@ var polygon = {
   id: 137,
   name: "polygon",
   type: "mainnet",
+  blockExplorer: "https://polygonscan.com/",
   icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
@@ -356,6 +376,7 @@ var polygon = {
       icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
@@ -367,6 +388,7 @@ var polygon = {
       icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
@@ -378,6 +400,7 @@ var polygon = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -389,6 +412,7 @@ var polygon = {
       icon: "https://ipfs.io/ipfs/QmRy2AaexbGSXXct2N6Ph8DGgEXHRuT5bzE2snmZRBDtjQ",
       address: "0x3a9A81d576d83FF21f26f325066054540720fC34",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x8f693ca8d21b157107184d29d398a8d082b38b76"
@@ -400,6 +424,7 @@ var polygon = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 10,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3"
@@ -456,6 +481,7 @@ var fantom = {
   id: 250,
   name: "fantom",
   type: "mainnet",
+  blockExplorer: "https://ftmscan.com/",
   icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
@@ -465,6 +491,7 @@ var fantom = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 250,
         address: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75"
@@ -476,6 +503,7 @@ var fantom = {
       address: "0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50",
       decimals: 18,
       icon: "BUSD",
+      canVote: true,
       priceSource: {
         chainId: 250,
         address: "0xC931f61B1534EB21D8c11B24f3f5Ab2471d4aB50"
@@ -487,6 +515,7 @@ var fantom = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 250,
         address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
@@ -498,6 +527,7 @@ var fantom = {
       icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 250,
         address: "0x0000000000000000000000000000000000000000"
@@ -509,6 +539,7 @@ var fantom = {
       icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -521,6 +552,7 @@ var fantom = {
       address: "0x83791638da5EB2fAa432aff1c65fbA47c5D29510",
       decimals: 18,
       voteAmountCap: BigInt("1000000000000000000"),
+      canVote: false,
       priceSource: {
         chainId: 250,
         address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
@@ -532,6 +564,7 @@ var fantom = {
       address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       decimals: 18,
       icon: "FTM",
+      canVote: true,
       priceSource: {
         chainId: 250,
         address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
@@ -588,6 +621,7 @@ var zksyncEraTestnet = {
   id: 300,
   name: "zksync-era-testnet",
   type: "testnet",
+  blockExplorer: "https://sepolia.explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
@@ -597,6 +631,7 @@ var zksyncEraTestnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -608,6 +643,7 @@ var zksyncEraTestnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -663,6 +699,7 @@ var zkSyncEraMainnet = {
   id: 324,
   name: "zksync-era-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.zksync.io/",
   icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
@@ -672,6 +709,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -683,6 +721,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -694,6 +733,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -705,6 +745,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmTDFjdejwv6gGXYUu8VbTw2eCjPhhJ217VM4vpXiSu5Xx",
       address: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
@@ -716,6 +757,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -727,6 +769,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmaPosCSRnPjmjP6ekQtE2RXgv1MFy1eQSDyfPeuA6oSgw",
       address: "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x5f98805a4e8be255a32880fdec7f6728c6568ba0"
@@ -738,6 +781,7 @@ var zkSyncEraMainnet = {
       icon: "https://ipfs.io/ipfs/QmeHDSK2cKXhnAFzMCRh9UP7VSJpuv4ENagugisM757vYs",
       address: "0x0e97c7a0f8b2c9885c8ac9fc6136e829cbc21d42",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0xa49d7499271ae71cd8ab9ac515e6694c755d400c"
@@ -794,6 +838,7 @@ var pgnMainnet = {
   id: 424,
   name: "pgn-mainnet",
   type: "mainnet",
+  blockExplorer: "https://explorer.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -803,6 +848,7 @@ var pgnMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -814,6 +860,7 @@ var pgnMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -825,6 +872,7 @@ var pgnMainnet = {
       icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
       address: "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f"
@@ -836,6 +884,7 @@ var pgnMainnet = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x6C121674ba6736644A7e73A8741407fE8a5eE5BA",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -882,6 +931,7 @@ var luksoTestnet = {
   id: 4201,
   name: "lukso-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.execution.testnet.lukso.network/",
   icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
@@ -891,6 +941,7 @@ var luksoTestnet = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000"
@@ -902,6 +953,7 @@ var luksoTestnet = {
       icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000"
@@ -928,6 +980,7 @@ var base = {
   id: 8453,
   name: "base",
   type: "mainnet",
+  blockExplorer: "https://basescan.org/",
   icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
@@ -937,6 +990,7 @@ var base = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -948,6 +1002,7 @@ var base = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -959,6 +1014,7 @@ var base = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1015,6 +1071,7 @@ var arbitrum = {
   id: 42161,
   name: "arbitrum",
   type: "mainnet",
+  blockExplorer: "https://arbiscan.io/",
   icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
@@ -1024,6 +1081,7 @@ var arbitrum = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
@@ -1035,6 +1093,7 @@ var arbitrum = {
       icon: "",
       address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x912ce59144191c1204e64559fe8253a0e49e6548"
@@ -1046,6 +1105,7 @@ var arbitrum = {
       icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 42161,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3"
@@ -1057,6 +1117,7 @@ var arbitrum = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x0000000000000000000000000000000000000000"
@@ -1068,6 +1129,7 @@ var arbitrum = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42161,
         address: "0x0000000000000000000000000000000000000000"
@@ -1079,6 +1141,7 @@ var arbitrum = {
       icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
       address: "0x7f9a7db853ca816b9a138aee3380ef34c437dee0",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f"
@@ -1140,6 +1203,7 @@ var celoMainnet = {
   id: 42220,
   name: "celo-mainnet",
   type: "mainnet",
+  blockExplorer: "https://celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
@@ -1149,6 +1213,7 @@ var celoMainnet = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000"
@@ -1160,6 +1225,7 @@ var celoMainnet = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000"
@@ -1171,6 +1237,7 @@ var celoMainnet = {
       icon: "https://ipfs.io/ipfs/QmRxcma8Q1545Hcw6K7Z3gwS63FsZQieuGG7uQxeG8vHXS",
       address: "0x765de816845861e75a25fca122bb6898b8b1282a",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x765de816845861e75a25fca122bb6898b8b1282a"
@@ -1197,6 +1264,7 @@ var avalancheFuji = {
   id: 43113,
   name: "avalanche-fuji",
   type: "testnet",
+  blockExplorer: "https://fuji.avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
@@ -1206,6 +1274,7 @@ var avalancheFuji = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000"
@@ -1217,6 +1286,7 @@ var avalancheFuji = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000"
@@ -1228,6 +1298,7 @@ var avalancheFuji = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -1274,6 +1345,7 @@ var avalanche = {
   id: 43114,
   name: "avalanche",
   type: "mainnet",
+  blockExplorer: "https://avascan.info/",
   icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
@@ -1283,6 +1355,7 @@ var avalanche = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000"
@@ -1294,6 +1367,7 @@ var avalanche = {
       icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 43114,
         address: "0x0000000000000000000000000000000000000000"
@@ -1305,6 +1379,7 @@ var avalanche = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -1361,6 +1436,7 @@ var celoTestnet = {
   id: 44787,
   name: "celo-testnet",
   type: "testnet",
+  blockExplorer: "https://alfajores.celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
@@ -1370,6 +1446,7 @@ var celoTestnet = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000"
@@ -1381,6 +1458,7 @@ var celoTestnet = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000"
@@ -1407,6 +1485,7 @@ var pgnTestnet = {
   id: 58008,
   name: "pgn-testnet",
   type: "testnet",
+  blockExplorer: "https://explorer.sepolia.publicgoods.network/",
   icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,
@@ -1416,6 +1495,7 @@ var pgnTestnet = {
       icon: "",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1427,6 +1507,7 @@ var pgnTestnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1438,6 +1519,7 @@ var pgnTestnet = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -1449,6 +1531,7 @@ var pgnTestnet = {
       address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
       icon: "DAI",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -1479,6 +1562,7 @@ var polygonMumbai = {
   id: 80001,
   name: "polygon-mumbai",
   type: "testnet",
+  blockExplorer: "https://mumbai.polygonscan.com/",
   icon: "https://ipfs.io/ipfs/",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
@@ -1487,6 +1571,7 @@ var polygonMumbai = {
       code: "MATIC",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
@@ -1497,6 +1582,7 @@ var polygonMumbai = {
       code: "MATIC",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
@@ -1507,6 +1593,7 @@ var polygonMumbai = {
       code: "USDC",
       address: "0x9999f7Fea5938fD3b1E26A12c3f2fb024e194f97",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -1563,6 +1650,7 @@ var scrollSepolia = {
   id: 534351,
   name: "scroll-sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.scrollscan.com",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1572,6 +1660,7 @@ var scrollSepolia = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1583,6 +1672,7 @@ var scrollSepolia = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1594,6 +1684,7 @@ var scrollSepolia = {
       icon: "",
       address: "0xc2332031de487f430fae3290c05465d907785eda",
       decimals: 18,
+      canVote: false,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -1630,6 +1721,7 @@ var scrollMainnet = {
   id: 534352,
   name: "scroll-mainnet",
   type: "mainnet",
+  blockExplorer: "https://scrollscan.com/",
   icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
@@ -1639,6 +1731,7 @@ var scrollMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1650,6 +1743,7 @@ var scrollMainnet = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1661,6 +1755,7 @@ var scrollMainnet = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       decimals: 6,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
@@ -1722,6 +1817,7 @@ var seiDevnet = {
   id: 713715,
   name: "sei-devnet",
   type: "testnet",
+  blockExplorer: "https://seitrace.com/?chain=arctic-1",
   icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
@@ -1731,6 +1827,7 @@ var seiDevnet = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x0000000000000000000000000000000000000000"
@@ -1742,6 +1839,7 @@ var seiDevnet = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x0000000000000000000000000000000000000000"
@@ -1753,6 +1851,7 @@ var seiDevnet = {
       icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
       address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 713715,
         address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330"
@@ -1779,6 +1878,7 @@ var sepolia = {
   id: 11155111,
   name: "sepolia",
   type: "testnet",
+  blockExplorer: "https://sepolia.etherscan.io/",
   icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
@@ -1788,6 +1888,7 @@ var sepolia = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0x8db0F9eE54753B91ec1d81Bf68074Be82ED30fEb",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -1799,6 +1900,7 @@ var sepolia = {
       icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
       address: "0xa9dd7983B57E1865024d27110bAB098B66087e8F",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -1810,6 +1912,7 @@ var sepolia = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1821,6 +1924,7 @@ var sepolia = {
       icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0x0000000000000000000000000000000000000000"
@@ -1832,6 +1936,7 @@ var sepolia = {
       icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
       address: "0x78e0D07C4A08adFfe610113310163b40E7e47e81",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -1979,11 +2084,11 @@ var supportedChainIds = [
   import_chains.scroll.id,
   // scrollSepolia.id,
   import_chains.pgn.id,
-  // pgnTestnet.id,
+  import_chains.pgnTestnet.id,
   import_chains.seiDevnet.id
 ];
 var fetchChainData = () => {
-  let chains2 = [];
+  let chains = [];
   for (const chainId of supportedChainIds) {
     let response;
     try {
@@ -1995,9 +2100,9 @@ var fetchChainData = () => {
       console.error("Error fetching chains", error);
       return [];
     }
-    chains2.push(response);
+    chains.push(response);
   }
-  return chains2;
+  return chains;
 };
 var fetchChainDataById = (chainId) => {
   let chain;
@@ -2020,16 +2125,16 @@ var getChainById = (chainId) => {
 };
 var getTokens = () => {
   try {
-    const chains2 = fetchChainData();
-    const tokens = [];
-    for (const chain of chains2) {
+    const chains = fetchChainData();
+    const tokenMap = {};
+    for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
-        tokens.push(...chain.tokens);
+        tokenMap[chain.id] = chain.tokens;
       } else {
         console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
       }
     }
-    return tokens;
+    return tokenMap;
   } catch (error) {
     console.error("Error fetching chain data:", error);
     throw error;
@@ -2051,7 +2156,6 @@ var getTokenByChainIdAndAddress = (chainId, address) => {
   }
   return token;
 };
-var chains = fetchChainData();
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   getChainById,

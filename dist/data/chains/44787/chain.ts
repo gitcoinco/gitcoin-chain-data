@@ -4,6 +4,7 @@ export const celoTestnet: TChain = {
   id: 44787,
   name: "celo-testnet",
   type: "testnet",
+  blockExplorer: "https://alfajores.celoscan.io/",
   icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
@@ -13,6 +14,7 @@ export const celoTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000",
@@ -24,6 +26,7 @@ export const celoTestnet: TChain = {
       icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x0000000000000000000000000000000000000000",
