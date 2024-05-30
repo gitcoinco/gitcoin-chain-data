@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { celoIcon, cusdIcon } from "../../icons";
 
 export const celoMainnet: TChain = {
   id: 42220,
   name: "celo-mainnet",
+  prettyName: "Celo",
   type: "mainnet",
   blockExplorer: "https://celoscan.io/",
-  icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  icon: celoIcon,
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celoIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const celoMainnet: TChain = {
     },
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celoIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const celoMainnet: TChain = {
     },
     {
       code: "CUSD",
-      icon: "https://ipfs.io/ipfs/QmRxcma8Q1545Hcw6K7Z3gwS63FsZQieuGG7uQxeG8vHXS",
+      icon: cusdIcon,
       address: "0x765de816845861e75a25fca122bb6898b8b1282a",
       decimals: 18,
       canVote: true,

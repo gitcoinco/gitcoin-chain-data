@@ -28,20 +28,90 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 
+// src/data/icons/ethereum.svg
+var ethereum_default = "./ethereum-Q7V2VSRJ.svg";
+
+// src/data/icons/usdc.svg
+var usdc_default = "./usdc-OTDKU5LK.svg";
+
+// src/data/icons/dai.svg
+var dai_default = "./dai-7FY3WKWX.svg";
+
+// src/data/icons/op.svg
+var op_default = "./op-ZWKN4636.svg";
+
+// src/data/icons/usdglo.svg
+var usdglo_default = "./usdglo-UEEVFMWC.svg";
+
+// src/data/icons/lukso.svg
+var lukso_default = "./lukso-ONAZD4RO.svg";
+
+// src/data/icons/polygon.svg
+var polygon_default = "./polygon-JXQSLY66.svg";
+
+// src/data/icons/data.svg
+var data_default = "./data-W6TXHVJM.svg";
+
+// src/data/icons/fantom.svg
+var fantom_default = "./fantom-IPZOAM5R.svg";
+
+// src/data/icons/gcv.svg
+var gcv_default = "./gcv-EXZ5CFO2.svg";
+
+// src/data/icons/zkera.svg
+var zkera_default = "./zkera-UTXLU26U.svg";
+
+// src/data/icons/usdt.svg
+var usdt_default = "./usdt-MF2J3YK5.svg";
+
+// src/data/icons/lusd.svg
+var lusd_default = "./lusd-LA47NQHP.svg";
+
+// src/data/icons/mute.svg
+var mute_default = "./mute-SIMC74KZ.svg";
+
+// src/data/icons/pgn.svg
+var pgn_default = "./pgn-IXWAJRKN.svg";
+
+// src/data/icons/gtc.svg
+var gtc_default = "./gtc-GXOQBBNV.svg";
+
+// src/data/icons/sei.svg
+var sei_default = "./sei-HFDMXCVI.svg";
+
+// src/data/icons/arbitrum.svg
+var arbitrum_default = "./arbitrum-3OJSOXH4.svg";
+
+// src/data/icons/celo.svg
+var celo_default = "./celo-5H4URDIS.svg";
+
+// src/data/icons/cusd.svg
+var cusd_default = "./cusd-2FPJQEAU.svg";
+
+// src/data/icons/avalanche.svg
+var avalanche_default = "./avalanche-63KX2GJZ.svg";
+
+// src/data/icons/scroll.svg
+var scroll_default = "./scroll-T73ZEAAX.svg";
+
+// src/data/icons/base.svg
+var base_default = "./base-UBURCJ3E.svg";
+
 // src/data/chains/1/chain.ts
 var mainnet = {
   id: 1,
   name: "mainnet",
+  prettyName: "Ethereum",
   type: "mainnet",
   blockExplorer: "https://etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+  icon: ethereum_default,
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       decimals: 6,
       canVote: true,
@@ -53,7 +123,7 @@ var mainnet = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
       decimals: 18,
       canVote: true,
@@ -65,7 +135,7 @@ var mainnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -77,7 +147,7 @@ var mainnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -159,16 +229,17 @@ var mainnet = {
 var optimism = {
   id: 10,
   name: "optimism",
+  prettyName: "Optimism",
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
+  icon: op_default,
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       decimals: 6,
       canVote: true,
@@ -180,7 +251,7 @@ var optimism = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       decimals: 18,
       canVote: true,
@@ -192,7 +263,7 @@ var optimism = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzBg",
+      icon: usdglo_default,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,
@@ -217,7 +288,7 @@ var optimism = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -229,7 +300,7 @@ var optimism = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -241,7 +312,7 @@ var optimism = {
     },
     {
       code: "OP",
-      icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
+      icon: op_default,
       address: "0x4200000000000000000000000000000000000042",
       decimals: 18,
       canVote: true,
@@ -299,16 +370,17 @@ var optimism = {
 var lukso = {
   id: 42,
   name: "lukso-mainnet",
+  prettyName: "LUKSO",
   type: "mainnet",
   blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
-  icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+  icon: lukso_default,
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: lukso_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -320,7 +392,7 @@ var lukso = {
     },
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: lukso_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -332,7 +404,7 @@ var lukso = {
     },
     {
       code: "WLYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: lukso_default,
       address: "0x2db41674f2b882889e5e1bd09a3f3613952bc472",
       decimals: 18,
       canVote: true,
@@ -361,16 +433,17 @@ var lukso = {
 var polygon = {
   id: 137,
   name: "polygon",
+  prettyName: "Polygon",
   type: "mainnet",
   blockExplorer: "https://polygonscan.com/",
-  icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+  icon: polygon_default,
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "MATIC",
-      icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+      icon: polygon_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -382,7 +455,7 @@ var polygon = {
     },
     {
       code: "MATIC",
-      icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+      icon: polygon_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -394,7 +467,7 @@ var polygon = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       decimals: 6,
       canVote: true,
@@ -406,7 +479,7 @@ var polygon = {
     },
     {
       code: "DATA",
-      icon: "https://ipfs.io/ipfs/QmRy2AaexbGSXXct2N6Ph8DGgEXHRuT5bzE2snmZRBDtjQ",
+      icon: data_default,
       address: "0x3a9A81d576d83FF21f26f325066054540720fC34",
       decimals: 18,
       canVote: false,
@@ -418,7 +491,7 @@ var polygon = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
+      icon: usdglo_default,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,
@@ -477,15 +550,16 @@ var polygon = {
 var fantom = {
   id: 250,
   name: "fantom",
+  prettyName: "Fantom",
   type: "mainnet",
   blockExplorer: "https://ftmscan.com/",
-  icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+  icon: fantom_default,
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       decimals: 6,
       canVote: true,
@@ -509,7 +583,7 @@ var fantom = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
       decimals: 18,
       canVote: true,
@@ -521,7 +595,7 @@ var fantom = {
     },
     {
       code: "FTM",
-      icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+      icon: fantom_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -533,7 +607,7 @@ var fantom = {
     },
     {
       code: "FTM",
-      icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+      icon: fantom_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -545,7 +619,7 @@ var fantom = {
     },
     {
       code: "GcV",
-      icon: "https://ipfs.io/ipfs/QmX2KeJ9xd3RWc4HxGVUWmyq4ELT2z4kJekfv4AgZqp6dz",
+      icon: gcv_default,
       address: "0x83791638da5EB2fAa432aff1c65fbA47c5D29510",
       decimals: 18,
       voteAmountCap: BigInt("1000000000000000000"),
@@ -560,7 +634,7 @@ var fantom = {
       code: "WFTM",
       address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       decimals: 18,
-      icon: "FTM",
+      icon: fantom_default,
       canVote: true,
       priceSource: {
         chainId: 250,
@@ -617,15 +691,16 @@ var fantom = {
 var zksyncEraTestnet = {
   id: 300,
   name: "zksync-era-testnet",
+  prettyName: "zkSync Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.explorer.zksync.io/",
-  icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
+  icon: zkera_default,
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -637,7 +712,7 @@ var zksyncEraTestnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -695,15 +770,16 @@ var zksyncEraTestnet = {
 var zkSyncEraMainnet = {
   id: 324,
   name: "zksync-era-mainnet",
+  prettyName: "zkSync Era",
   type: "mainnet",
   blockExplorer: "https://explorer.zksync.io/",
-  icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
+  icon: zkera_default,
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -715,7 +791,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -727,7 +803,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
       decimals: 6,
       canVote: true,
@@ -739,7 +815,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "USDT",
-      icon: "https://ipfs.io/ipfs/QmTDFjdejwv6gGXYUu8VbTw2eCjPhhJ217VM4vpXiSu5Xx",
+      icon: usdt_default,
       address: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
       decimals: 6,
       canVote: true,
@@ -751,7 +827,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
       decimals: 18,
       canVote: true,
@@ -763,7 +839,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "LUSD",
-      icon: "https://ipfs.io/ipfs/QmaPosCSRnPjmjP6ekQtE2RXgv1MFy1eQSDyfPeuA6oSgw",
+      icon: lusd_default,
       address: "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
       decimals: 18,
       canVote: true,
@@ -775,7 +851,7 @@ var zkSyncEraMainnet = {
     },
     {
       code: "MUTE",
-      icon: "https://ipfs.io/ipfs/QmeHDSK2cKXhnAFzMCRh9UP7VSJpuv4ENagugisM757vYs",
+      icon: mute_default,
       address: "0x0e97c7a0f8b2c9885c8ac9fc6136e829cbc21d42",
       decimals: 18,
       canVote: false,
@@ -834,15 +910,16 @@ var zkSyncEraMainnet = {
 var pgnMainnet = {
   id: 424,
   name: "pgn-mainnet",
+  prettyName: "Public Goods Network",
   type: "mainnet",
   blockExplorer: "https://explorer.publicgoods.network/",
-  icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
+  icon: pgn_default,
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -854,7 +931,7 @@ var pgnMainnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -866,7 +943,7 @@ var pgnMainnet = {
     },
     {
       code: "GTC",
-      icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
+      icon: gtc_default,
       address: "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2",
       decimals: 18,
       canVote: true,
@@ -878,7 +955,7 @@ var pgnMainnet = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x6C121674ba6736644A7e73A8741407fE8a5eE5BA",
       decimals: 18,
       canVote: true,
@@ -927,15 +1004,16 @@ var pgnMainnet = {
 var luksoTestnet = {
   id: 4201,
   name: "lukso-testnet",
+  prettyName: "LUKSO Testnet",
   type: "testnet",
   blockExplorer: "https://explorer.execution.testnet.lukso.network/",
-  icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+  icon: lukso_default,
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: lukso_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -947,7 +1025,7 @@ var luksoTestnet = {
     },
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: lukso_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -976,15 +1054,16 @@ var luksoTestnet = {
 var base = {
   id: 8453,
   name: "base",
+  prettyName: "Base",
   type: "mainnet",
   blockExplorer: "https://basescan.org/",
-  icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
+  icon: base_default,
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       decimals: 6,
       canVote: true,
@@ -996,7 +1075,7 @@ var base = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1008,7 +1087,7 @@ var base = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1067,15 +1146,16 @@ var base = {
 var arbitrum = {
   id: 42161,
   name: "arbitrum",
+  prettyName: "Arbitrum",
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
-  icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
+  icon: arbitrum_default,
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       decimals: 6,
       canVote: true,
@@ -1087,7 +1167,7 @@ var arbitrum = {
     },
     {
       code: "ARB",
-      icon: "",
+      icon: arbitrum_default,
       address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       decimals: 18,
       canVote: true,
@@ -1099,7 +1179,7 @@ var arbitrum = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
+      icon: usdglo_default,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,
@@ -1111,7 +1191,7 @@ var arbitrum = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1123,7 +1203,7 @@ var arbitrum = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1135,7 +1215,7 @@ var arbitrum = {
     },
     {
       code: "GTC",
-      icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
+      icon: gtc_default,
       address: "0x7f9a7db853ca816b9a138aee3380ef34c437dee0",
       decimals: 18,
       canVote: true,
@@ -1199,15 +1279,16 @@ var arbitrum = {
 var celoMainnet = {
   id: 42220,
   name: "celo-mainnet",
+  prettyName: "Celo",
   type: "mainnet",
   blockExplorer: "https://celoscan.io/",
-  icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  icon: celo_default,
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celo_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1219,7 +1300,7 @@ var celoMainnet = {
     },
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celo_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1231,7 +1312,7 @@ var celoMainnet = {
     },
     {
       code: "CUSD",
-      icon: "https://ipfs.io/ipfs/QmRxcma8Q1545Hcw6K7Z3gwS63FsZQieuGG7uQxeG8vHXS",
+      icon: cusd_default,
       address: "0x765de816845861e75a25fca122bb6898b8b1282a",
       decimals: 18,
       canVote: true,
@@ -1260,15 +1341,16 @@ var celoMainnet = {
 var avalancheFuji = {
   id: 43113,
   name: "avalanche-fuji",
+  prettyName: "Avalanche Fuji",
   type: "testnet",
   blockExplorer: "https://fuji.avascan.info/",
-  icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+  icon: avalanche_default,
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
   tokens: [
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalanche_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1280,7 +1362,7 @@ var avalancheFuji = {
     },
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalanche_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1292,7 +1374,7 @@ var avalancheFuji = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
       canVote: true,
@@ -1341,15 +1423,16 @@ var avalancheFuji = {
 var avalanche = {
   id: 43114,
   name: "avalanche",
+  prettyName: "Avalanche",
   type: "mainnet",
   blockExplorer: "https://avascan.info/",
-  icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+  icon: avalanche_default,
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
   tokens: [
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalanche_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1361,7 +1444,7 @@ var avalanche = {
     },
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalanche_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1373,7 +1456,7 @@ var avalanche = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
       canVote: true,
@@ -1432,15 +1515,16 @@ var avalanche = {
 var celoTestnet = {
   id: 44787,
   name: "celo-testnet",
+  prettyName: "Celo Testnet",
   type: "testnet",
   blockExplorer: "https://alfajores.celoscan.io/",
-  icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  icon: celo_default,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celo_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1452,7 +1536,7 @@ var celoTestnet = {
     },
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celo_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1481,9 +1565,10 @@ var celoTestnet = {
 var pgnTestnet = {
   id: 58008,
   name: "pgn-testnet",
+  prettyName: "PGN Testnet",
   type: "testnet",
   blockExplorer: "https://explorer.sepolia.publicgoods.network/",
-  icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
+  icon: pgn_default,
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,
   tokens: [
@@ -1501,7 +1586,7 @@ var pgnTestnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1513,7 +1598,7 @@ var pgnTestnet = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
       decimals: 18,
       canVote: true,
@@ -1558,15 +1643,17 @@ var pgnTestnet = {
 var polygonMumbai = {
   id: 80001,
   name: "polygon-mumbai",
+  prettyName: "Polygon Mumbai",
   type: "testnet",
   blockExplorer: "https://mumbai.polygonscan.com/",
-  icon: "https://ipfs.io/ipfs/",
+  icon: polygon_default,
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "MATIC",
       address: "0x0000000000000000000000000000000000000000",
+      icon: polygon_default,
       decimals: 18,
       canVote: true,
       priceSource: {
@@ -1578,6 +1665,7 @@ var polygonMumbai = {
     {
       code: "MATIC",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      icon: polygon_default,
       decimals: 18,
       canVote: true,
       priceSource: {
@@ -1589,6 +1677,7 @@ var polygonMumbai = {
     {
       code: "USDC",
       address: "0x9999f7Fea5938fD3b1E26A12c3f2fb024e194f97",
+      icon: usdc_default,
       decimals: 6,
       canVote: true,
       priceSource: {
@@ -1646,15 +1735,16 @@ var polygonMumbai = {
 var scrollSepolia = {
   id: 534351,
   name: "scroll-sepolia",
+  prettyName: "Scroll Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.scrollscan.com",
-  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  icon: scroll_default,
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1666,7 +1756,7 @@ var scrollSepolia = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1717,15 +1807,16 @@ var scrollSepolia = {
 var scrollMainnet = {
   id: 534352,
   name: "scroll-mainnet",
+  prettyName: "Scroll",
   type: "mainnet",
   blockExplorer: "https://scrollscan.com/",
-  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  icon: scroll_default,
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1737,7 +1828,7 @@ var scrollMainnet = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1749,7 +1840,7 @@ var scrollMainnet = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       decimals: 6,
       canVote: true,
@@ -1813,15 +1904,16 @@ var scrollMainnet = {
 var seiDevnet = {
   id: 713715,
   name: "sei-devnet",
+  prettyName: "SEI Devnet",
   type: "testnet",
   blockExplorer: "https://seitrace.com/?chain=arctic-1",
-  icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+  icon: sei_default,
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: sei_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1833,7 +1925,7 @@ var seiDevnet = {
     },
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: sei_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1845,7 +1937,7 @@ var seiDevnet = {
     },
     {
       code: "WSEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: sei_default,
       address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       decimals: 18,
       canVote: true,
@@ -1874,15 +1966,16 @@ var seiDevnet = {
 var seiMainnet = {
   id: 1329,
   name: "sei-mainnet",
+  prettyName: "SEI Mainnet",
   type: "mainnet",
   blockExplorer: "https://seitrace.com/",
-  icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+  icon: sei_default,
   rpc: "https://evm-rpc.sei-apis.com",
   pricesFromTimestamp: 1704067200,
   tokens: [
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: sei_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1894,7 +1987,7 @@ var seiMainnet = {
     },
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: sei_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1924,15 +2017,16 @@ var seiMainnet = {
 var sepolia = {
   id: 11155111,
   name: "sepolia",
+  prettyName: "Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+  icon: ethereum_default,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
   tokens: [
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0x8db0F9eE54753B91ec1d81Bf68074Be82ED30fEb",
       decimals: 18,
       canVote: true,
@@ -1944,7 +2038,7 @@ var sepolia = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: dai_default,
       address: "0xa9dd7983B57E1865024d27110bAB098B66087e8F",
       decimals: 18,
       canVote: true,
@@ -1956,7 +2050,7 @@ var sepolia = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -1968,7 +2062,7 @@ var sepolia = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethereum_default,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -1980,7 +2074,7 @@ var sepolia = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdc_default,
       address: "0x78e0D07C4A08adFfe610113310163b40E7e47e81",
       decimals: 18,
       canVote: true,

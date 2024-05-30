@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { ethIcon, scrollIcon } from "../../icons";
 
 export const scrollSepolia: TChain = {
   id: 534351,
   name: "scroll-sepolia",
+  prettyName: "Scroll Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.scrollscan.com",
-  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  icon: scrollIcon,
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const scrollSepolia: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

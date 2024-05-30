@@ -1,17 +1,25 @@
 import { TChain } from "../../../types";
+import {
+  arbitrumIcon,
+  ethIcon,
+  gtcIcon,
+  usdGloIcon,
+  usdcIcon,
+} from "../../icons";
 
 export const arbitrum: TChain = {
   id: 42161,
   name: "arbitrum",
+  prettyName: "Arbitrum",
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
-  icon: "https://ipfs.io/ipfs/QmZcLbB9U1VEdY8eXkW14CHhL21WVbJSUQ5s1dDTb1MSwJ",
+  icon: arbitrumIcon,
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       decimals: 6,
       canVote: true,
@@ -23,7 +31,7 @@ export const arbitrum: TChain = {
     },
     {
       code: "ARB",
-      icon: "",
+      icon: arbitrumIcon,
       address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       decimals: 18,
       canVote: true,
@@ -35,7 +43,7 @@ export const arbitrum: TChain = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
+      icon: usdGloIcon,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,
@@ -47,7 +55,7 @@ export const arbitrum: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -59,7 +67,7 @@ export const arbitrum: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -71,7 +79,7 @@ export const arbitrum: TChain = {
     },
     {
       code: "GTC",
-      icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
+      icon: gtcIcon,
       address: "0x7f9a7db853ca816b9a138aee3380ef34c437dee0",
       decimals: 18,
       canVote: true,

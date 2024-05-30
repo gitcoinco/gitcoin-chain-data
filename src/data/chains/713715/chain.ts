@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { seiIcon } from "../../icons";
 
 export const seiDevnet: TChain = {
   id: 713715,
   name: "sei-devnet",
+  prettyName: "SEI Devnet",
   type: "testnet",
   blockExplorer: "https://seitrace.com/?chain=arctic-1",
-  icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+  icon: seiIcon,
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: seiIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const seiDevnet: TChain = {
     },
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: seiIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const seiDevnet: TChain = {
     },
     {
       code: "WSEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: seiIcon,
       address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
       decimals: 18,
       canVote: true,

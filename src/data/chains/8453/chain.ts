@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { baseIcon, ethIcon, usdcIcon } from "../../icons";
 
 export const base: TChain = {
   id: 8453,
   name: "base",
+  prettyName: "Base",
   type: "mainnet",
   blockExplorer: "https://basescan.org/",
-  icon: "https://ipfs.io/ipfs/QmQaAsfJpUuKmpX3eJEzgdZjqqFWmWHXnDy3MpPVJyDzcj",
+  icon: baseIcon,
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       decimals: 6,
       canVote: true,
@@ -23,7 +25,7 @@ export const base: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const base: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

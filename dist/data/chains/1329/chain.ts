@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { seiIcon } from "../../icons";
 
 export const seiMainnet: TChain = {
   id: 1329,
   name: "sei-mainnet",
+  prettyName: "SEI Mainnet",
   type: "mainnet",
   blockExplorer: "https://seitrace.com/",
-  icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+  icon: seiIcon,
   rpc: "https://evm-rpc.sei-apis.com",
   pricesFromTimestamp: 1704067200,
   tokens: [
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: seiIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const seiMainnet: TChain = {
     },
     {
       code: "SEI",
-      icon: "https://ipfs.io/ipfs/QmUvNaLwzNf1bHjqTMW1aBjRgd5FrsTDqjSnyypLwxv8x5",
+      icon: seiIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

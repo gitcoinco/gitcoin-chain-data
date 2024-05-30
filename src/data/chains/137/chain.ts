@@ -1,18 +1,20 @@
 import { TChain } from "../../../types";
+import { dataIcon, polygonIcon, usdGloIcon, usdcIcon } from "../../icons";
 
 export const polygon: TChain = {
   id: 137,
   name: "polygon",
+  prettyName: "Polygon",
   type: "mainnet",
   blockExplorer: "https://polygonscan.com/",
-  icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+  icon: polygonIcon,
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "MATIC",
-      icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+      icon: polygonIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -24,7 +26,7 @@ export const polygon: TChain = {
     },
     {
       code: "MATIC",
-      icon: "https://ipfs.io/ipfs/Qmcg4P1KcBQWYezSrV7KTCJxiq9a2aRtr1GBrXLAxNJqXy",
+      icon: polygonIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -36,7 +38,7 @@ export const polygon: TChain = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       decimals: 6,
       canVote: true,
@@ -48,7 +50,7 @@ export const polygon: TChain = {
     },
     {
       code: "DATA",
-      icon: "https://ipfs.io/ipfs/QmRy2AaexbGSXXct2N6Ph8DGgEXHRuT5bzE2snmZRBDtjQ",
+      icon: dataIcon,
       address: "0x3a9A81d576d83FF21f26f325066054540720fC34",
       decimals: 18,
       canVote: false,
@@ -60,7 +62,7 @@ export const polygon: TChain = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzB",
+      icon: usdGloIcon,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,

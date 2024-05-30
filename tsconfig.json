@@ -7,10 +7,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "outDir": "./dist",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/types"
-    ],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "rootDir": "./src/",
     "allowImportingTsExtensions": true,
     "emitDeclarationOnly": true,

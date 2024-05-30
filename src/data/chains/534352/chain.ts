@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { ethIcon, scrollIcon, usdcIcon } from "../../icons";
 
 export const scrollMainnet: TChain = {
   id: 534352,
   name: "scroll-mainnet",
+  prettyName: "Scroll",
   type: "mainnet",
   blockExplorer: "https://scrollscan.com/",
-  icon: "https://ipfs.io/ipfs/QmYRA5tXMmGxhw7HUNdr9DYN2GRX3MnLoJVweeWKgfxBZX",
+  icon: scrollIcon,
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const scrollMainnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const scrollMainnet: TChain = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       decimals: 6,
       canVote: true,

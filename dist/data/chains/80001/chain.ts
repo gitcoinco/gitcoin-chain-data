@@ -1,17 +1,20 @@
 import { TChain } from "../../../types";
+import { polygonIcon, usdcIcon } from "../../icons";
 
 export const polygonMumbai: TChain = {
   id: 80001,
   name: "polygon-mumbai",
+  prettyName: "Polygon Mumbai",
   type: "testnet",
   blockExplorer: "https://mumbai.polygonscan.com/",
-  icon: "https://ipfs.io/ipfs/",
+  icon: polygonIcon,
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "MATIC",
       address: "0x0000000000000000000000000000000000000000",
+      icon: polygonIcon,
       decimals: 18,
       canVote: true,
       priceSource: {
@@ -23,6 +26,7 @@ export const polygonMumbai: TChain = {
     {
       code: "MATIC",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      icon: polygonIcon,
       decimals: 18,
       canVote: true,
       priceSource: {
@@ -34,6 +38,7 @@ export const polygonMumbai: TChain = {
     {
       code: "USDC",
       address: "0x9999f7Fea5938fD3b1E26A12c3f2fb024e194f97",
+      icon: usdcIcon,
       decimals: 6,
       canVote: true,
       priceSource: {

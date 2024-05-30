@@ -1,18 +1,20 @@
 import { TChain } from "../../../types";
+import { luksoIcon } from "../../icons";
 
 export const lukso: TChain = {
   id: 42,
   name: "lukso-mainnet",
+  prettyName: "LUKSO",
   type: "mainnet",
   blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
-  icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+  icon: luksoIcon,
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: luksoIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -24,7 +26,7 @@ export const lukso: TChain = {
     },
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: luksoIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -36,7 +38,7 @@ export const lukso: TChain = {
     },
     {
       code: "WLYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: luksoIcon,
       address: "0x2db41674f2b882889e5e1bd09a3f3613952bc472",
       decimals: 18,
       canVote: true,

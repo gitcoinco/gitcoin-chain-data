@@ -1,18 +1,20 @@
 import { TChain } from "../../../types";
+import { daiIcon, ethIcon, opIcon, usdGloIcon, usdcIcon } from "../../icons";
 
 export const optimism: TChain = {
   id: 10,
   name: "optimism",
+  prettyName: "Optimism",
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
+  icon: opIcon,
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
       decimals: 6,
       canVote: true,
@@ -24,7 +26,7 @@ export const optimism: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       decimals: 18,
       canVote: true,
@@ -36,7 +38,7 @@ export const optimism: TChain = {
     },
     {
       code: "USDGLO",
-      icon: "https://ipfs.io/ipfs/QmbZt8kxgqd1hHUBYv3jSLMXSVxZ4XzmQL2LToggfcuRzBg",
+      icon: usdGloIcon,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
       canVote: false,
@@ -61,7 +63,7 @@ export const optimism: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -73,7 +75,7 @@ export const optimism: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -85,7 +87,7 @@ export const optimism: TChain = {
     },
     {
       code: "OP",
-      icon: "https://ipfs.io/ipfs/QmZzq5SpFNGJr9DTgaUck9iBVAWRpNnJVndTxgTGbrrZn2",
+      icon: opIcon,
       address: "0x4200000000000000000000000000000000000042",
       decimals: 18,
       canVote: true,

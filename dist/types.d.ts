@@ -25,6 +25,7 @@ export type TChain = {
     rpc: string;
     blockExplorer: string;
     name: string;
+    prettyName: string;
     icon: string;
     type: TNetworkType;
     id: number;

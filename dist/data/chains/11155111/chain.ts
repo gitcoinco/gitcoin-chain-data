@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { daiIcon, ethIcon, usdcIcon } from "../../icons";
 
 export const sepolia: TChain = {
   id: 11155111,
   name: "sepolia",
+  prettyName: "Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+  icon: ethIcon,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
   tokens: [
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x8db0F9eE54753B91ec1d81Bf68074Be82ED30fEb",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const sepolia: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0xa9dd7983B57E1865024d27110bAB098B66087e8F",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const sepolia: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -47,7 +49,7 @@ export const sepolia: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -59,7 +61,7 @@ export const sepolia: TChain = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x78e0D07C4A08adFfe610113310163b40E7e47e81",
       decimals: 18,
       canVote: true,

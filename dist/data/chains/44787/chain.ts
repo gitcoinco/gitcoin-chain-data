@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { celoIcon } from "../../icons";
 
 export const celoTestnet: TChain = {
   id: 44787,
   name: "celo-testnet",
+  prettyName: "Celo Testnet",
   type: "testnet",
   blockExplorer: "https://alfajores.celoscan.io/",
-  icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+  icon: celoIcon,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celoIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const celoTestnet: TChain = {
     },
     {
       code: "CELO",
-      icon: "https://ipfs.io/ipfs/QmQ16s5NLSQCRpaETRqBAq93hWU8nuDebZMT5D4JhQumf6",
+      icon: celoIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
