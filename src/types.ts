@@ -7,6 +7,7 @@ type CoingeckoSupportedChainId =
   | 42161
   | 43114
   | 713715
+  | 1329
   | 42
   | 42220;
 
@@ -17,7 +18,7 @@ export type TToken = {
   decimals: number;
   canVote: boolean;
   priceSource?: { chainId: CoingeckoSupportedChainId; address: Address };
-  redstoneTokenId?: string;
+  redstoneTokenId: string;
   voteAmountCap?: bigint;
   permitVersion?: string;
   default?: boolean;
