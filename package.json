@@ -22,7 +22,6 @@
     "new-chain": "node scripts/newChain.ts"
   },
   "dependencies": {
-    "ethers": "^6.12.1",
     "viem": "^2.9.32"
   },
   "devDependencies": {
