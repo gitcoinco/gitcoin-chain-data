@@ -1,7 +1,7 @@
 import type { TChain, TToken } from "../types";
 import { Address } from "viem";
 /**
- * Get all supported chains
+ * Fetch chains for all supported networks.
  *
  * @returns `TChain`
  */

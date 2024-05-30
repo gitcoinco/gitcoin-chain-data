@@ -28,9 +28,6 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/chains/chains.ts
-var import_chains = require("viem/chains");
-
 // src/data/chains/1/chain.ts
 var mainnet = {
   id: 1,
@@ -2062,76 +2059,20 @@ var chainImportMap = {
 var chainImportMap_default = chainImportMap;
 
 // src/chains/chains.ts
-var supportedChainIds = [
-  import_chains.mainnet.id,
-  import_chains.sepolia.id,
-  import_chains.lukso.id,
-  import_chains.luksoTestnet.id,
-  import_chains.polygon.id,
-  import_chains.polygonMumbai.id,
-  import_chains.fantom.id,
-  import_chains.zkSyncSepoliaTestnet.id,
-  import_chains.zkSync.id,
-  import_chains.base.id,
-  import_chains.optimism.id,
-  // optimismSepolia.id,
-  import_chains.celo.id,
-  import_chains.celoAlfajores.id,
-  import_chains.arbitrum.id,
-  // arbitrumSepolia.id,
-  import_chains.avalanche.id,
-  import_chains.avalancheFuji.id,
-  import_chains.scroll.id,
-  // scrollSepolia.id,
-  import_chains.pgn.id,
-  import_chains.pgnTestnet.id,
-  import_chains.seiDevnet.id
-];
-var fetchChainData = () => {
-  let chains = [];
-  for (const chainId of supportedChainIds) {
-    let response;
-    try {
-      response = chainImportMap_default[chainId];
-      if (!response) {
-        throw new Error(`Chain data not found for chainId: ${chainId}`);
-      }
-    } catch (error) {
-      console.error("Error fetching chains", error);
-      return [];
-    }
-    chains.push(response);
-  }
-  return chains;
-};
-var fetchChainDataById = (chainId) => {
-  let chain;
-  try {
-    chain = chainImportMap_default[chainId];
-    if (!chain) {
-      throw new Error(`Chain data not found for chainId: ${chainId}`);
-    }
-  } catch (error) {
-    console.error("Error fetching chains", error);
-    return {};
-  }
-  return chain;
-};
 var getChains = () => {
-  return fetchChainData();
+  const chainIds = Object.keys(chainImportMap_default).map(Number);
+  return chainIds.map((chainId) => chainImportMap_default[chainId]);
 };
-var getChainById = (chainId) => {
-  return fetchChainDataById(chainId);
-};
+var getChainById = (chainId) => chainImportMap_default[chainId];
 var getTokens = () => {
   try {
-    const chains = fetchChainData();
+    const chains = getChains();
     const tokenMap = {};
     for (const chain of chains) {
       if (chain.tokens && chain.tokens.length > 0) {
         tokenMap[chain.id] = chain.tokens;
       } else {
-        console.warn(`Chain ${chain.name} does not have a valid tokens array.`);
+        console.warn(`No tokens found for ${chain.name}.`);
       }
     }
     return tokenMap;
@@ -2141,20 +2082,12 @@ var getTokens = () => {
   }
 };
 var getTokensByChainId = (chainId) => {
-  const chainData = fetchChainDataById(chainId);
-  const tokens = [];
-  if (chainData) {
-    tokens.push(...chainData.tokens);
-  }
-  return tokens;
+  const chainData = getChainById(chainId);
+  return chainData ? [...chainData.tokens] : [];
 };
 var getTokenByChainIdAndAddress = (chainId, address) => {
-  const chainData = fetchChainDataById(chainId);
-  let token;
-  if (chainData) {
-    token = chainData.tokens.find((token2) => token2.address === address);
-  }
-  return token;
+  const chainData = getChainById(chainId);
+  return chainData?.tokens.find((token) => token.address === address);
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
