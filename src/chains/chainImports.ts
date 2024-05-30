@@ -1,4 +1,3 @@
-// chainImportMap.ts
 import { mainnet } from "../data/chains/1/chain.js";
 import { optimism } from "../data/chains/10/chain.js";
 import { lukso } from "../data/chains/42/chain.js";
@@ -24,7 +23,7 @@ import { sepolia } from "../data/chains/11155111/chain.js";
 
 import { TChain } from "../types.js";
 
-const chainImportMap: { [key: number]: TChain } = {
+const chainImports: { [key: number]: TChain } = {
   1: {
     ...mainnet,
   },
@@ -90,4 +89,4 @@ const chainImportMap: { [key: number]: TChain } = {
   },
 };
 
-export default chainImportMap;
+export default chainImports;

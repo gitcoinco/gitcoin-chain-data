@@ -1,5 +1,5 @@
 import type { TChain, TToken } from "../types";
-import chainImportMap from "./chainImportMap";
+import chainImports from "./chainImports";
 import { Address } from "viem";
 
 /**
@@ -8,8 +8,8 @@ import { Address } from "viem";
  * @returns `TChain`
  */
 export const getChains = (): TChain[] => {
-  const chainIds = Object.keys(chainImportMap).map(Number);
-  return chainIds.map(chainId => chainImportMap[chainId])
+  const chainIds = Object.keys(chainImports).map(Number);
+  return chainIds.map(chainId => chainImports[chainId])
 };
 
 
@@ -19,7 +19,7 @@ export const getChains = (): TChain[] => {
  * @param chainId The ID of the network to fetch data for.
  * @returns `TChain`
  */
-export const getChainById = (chainId: number): TChain => chainImportMap[chainId];
+export const getChainById = (chainId: number): TChain => chainImports[chainId];
 
 /**
  *

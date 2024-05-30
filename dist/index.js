@@ -1990,8 +1990,8 @@ var sepolia = {
   ]
 };
 
-// src/chains/chainImportMap.ts
-var chainImportMap = {
+// src/chains/chainImports.ts
+var chainImports = {
   1: {
     ...mainnet
   },
@@ -2056,14 +2056,14 @@ var chainImportMap = {
     ...sepolia
   }
 };
-var chainImportMap_default = chainImportMap;
+var chainImports_default = chainImports;
 
-// src/chains/chains.ts
+// src/chains/index.ts
 var getChains = () => {
-  const chainIds = Object.keys(chainImportMap_default).map(Number);
-  return chainIds.map((chainId) => chainImportMap_default[chainId]);
+  const chainIds = Object.keys(chainImports_default).map(Number);
+  return chainIds.map((chainId) => chainImports_default[chainId]);
 };
-var getChainById = (chainId) => chainImportMap_default[chainId];
+var getChainById = (chainId) => chainImports_default[chainId];
 var getTokens = () => {
   try {
     const chains = getChains();
