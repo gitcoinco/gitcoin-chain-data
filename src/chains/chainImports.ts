@@ -5,7 +5,6 @@ import { polygon } from "../data/chains/137/chain.js";
 import { fantom } from "../data/chains/250/chain.js";
 import { zksyncEraTestnet } from "../data/chains/300/chain.js";
 import { zkSyncEraMainnet } from "../data/chains/324/chain.js";
-import { pgnMainnet } from "../data/chains/424/chain.js";
 import { luksoTestnet } from "../data/chains/4201/chain.js";
 import { base } from "../data/chains/8453/chain.js";
 import { arbitrum } from "../data/chains/42161/chain.js";
@@ -13,7 +12,6 @@ import { celoMainnet } from "../data/chains/42220/chain.js";
 import { avalancheFuji } from "../data/chains/43113/chain.js";
 import { avalanche } from "../data/chains/43114/chain.js";
 import { celoTestnet } from "../data/chains/44787/chain.js";
-import { pgnTestnet } from "../data/chains/58008/chain.js";
 import { polygonMumbai } from "../data/chains/80001/chain.js";
 import { scrollSepolia } from "../data/chains/534351/chain.js";
 import { scrollMainnet } from "../data/chains/534352/chain.js";
@@ -46,9 +44,6 @@ const chainImports: { [key: number]: TChain } = {
   324: {
     ...zkSyncEraMainnet,
   },
-  424: {
-    ...pgnMainnet,
-  },
   4201: {
     ...luksoTestnet,
   },
@@ -72,9 +67,6 @@ const chainImports: { [key: number]: TChain } = {
   },
   44787: {
     ...celoTestnet,
-  },
-  58008: {
-    ...pgnTestnet,
   },
   534351: {
     ...scrollSepolia,
