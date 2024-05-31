@@ -11,6 +11,7 @@ export const polygon: TChain = {
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
   maxGetLogsRange: 0,
+  multiRoundCheckoutContract: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
   tokens: [
     {
       code: "MATIC",

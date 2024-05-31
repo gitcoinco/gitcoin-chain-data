@@ -4,12 +4,13 @@ import { celoIcon } from "../../icons";
 export const celoTestnet: TChain = {
   id: 44787,
   name: "celo-testnet",
-  prettyName: "Celo Testnet",
+  prettyName: "Celo Alfajores",
   type: "testnet",
   blockExplorer: "https://alfajores.celoscan.io/",
   icon: celoIcon,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
   tokens: [
     {
       code: "CELO",

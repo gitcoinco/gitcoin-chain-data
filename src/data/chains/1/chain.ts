@@ -11,6 +11,7 @@ export const mainnet: TChain = {
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
+  multiRoundCheckoutContract: "0x3bA9DF642f5e895DC76d3Aa9e4CE8291108E65b1",
   tokens: [
     {
       code: "USDC",

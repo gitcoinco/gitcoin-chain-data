@@ -10,6 +10,7 @@ export const sepolia: TChain = {
   icon: ethIcon,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
+  multiRoundCheckoutContract: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
   tokens: [
     {
       code: "DAI",
@@ -24,7 +25,7 @@ export const sepolia: TChain = {
       redstoneTokenId: "DAI",
     },
     {
-      code: "DAI",
+      code: "DAI(GS)",
       icon: daiIcon,
       address: "0xa9dd7983B57E1865024d27110bAB098B66087e8F",
       decimals: 18,

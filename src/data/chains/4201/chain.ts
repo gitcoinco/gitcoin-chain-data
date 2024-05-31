@@ -10,6 +10,7 @@ export const luksoTestnet: TChain = {
   icon: luksoIcon,
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0xC1087157eF2aaeBcaDB913251EA5B82c678424F7",
   tokens: [
     {
       code: "LYX",

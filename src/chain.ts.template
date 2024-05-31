@@ -9,6 +9,7 @@ export const chainName: TChain = {
   blockExplorer: "https://<url>/",
   icon: svgIcon, // imported svg icon
   rpc: "https://<rpc-url>", // public rpc url
+  multiRoundCheckoutContract: "0x...", // Grants Stacks MultiRoundCheckout contract
   pricesFromTimestamp: 0, // timestamp to get prices from
   tokens: [
     {

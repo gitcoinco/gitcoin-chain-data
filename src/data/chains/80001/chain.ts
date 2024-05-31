@@ -10,6 +10,7 @@ export const polygonMumbai: TChain = {
   icon: polygonIcon,
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
   tokens: [
     {
       code: "MATIC",
