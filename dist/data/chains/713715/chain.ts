@@ -10,6 +10,7 @@ export const seiDevnet: TChain = {
   icon: seiIcon,
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0x313eC6CA225C40Bc670d8cd4b063734BD22ad1ab",
   tokens: [
     {
       code: "SEI",

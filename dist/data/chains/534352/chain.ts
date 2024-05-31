@@ -10,6 +10,7 @@ export const scrollMainnet: TChain = {
   icon: scrollIcon,
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
   tokens: [
     {
       code: "ETH",

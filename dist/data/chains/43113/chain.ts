@@ -10,6 +10,7 @@ export const avalancheFuji: TChain = {
   icon: avalancheIcon,
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
+  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
   tokens: [
     {
       code: "AVAX",

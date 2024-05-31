@@ -16,6 +16,7 @@ export const arbitrum: TChain = {
   icon: arbitrumIcon,
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
+  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
   tokens: [
     {
       code: "USDC",

@@ -10,6 +10,7 @@ export const celoMainnet: TChain = {
   icon: celoIcon,
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
+  multiRoundCheckoutContract: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
   tokens: [
     {
       code: "CELO",

@@ -11,6 +11,7 @@ export const lukso: TChain = {
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
+  multiRoundCheckoutContract: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
   tokens: [
     {
       code: "LYX",

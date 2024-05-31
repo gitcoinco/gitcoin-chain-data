@@ -29,6 +29,7 @@ export type TChain = {
     icon: string;
     type: TNetworkType;
     id: number;
+    multiRoundCheckoutContract: Address;
     pricesFromTimestamp?: number;
     maxGetLogsRange?: number;
     tokens: TToken[];
