@@ -37272,7 +37272,7 @@ var mainnet = {
   type: "mainnet",
   blockExplorer: "https://etherscan.io/",
   icon: ethereum_default,
-  rpc: "https://mainnet.infura.io/v3/",
+  rpc: "https://ethereum-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   contracts: {
@@ -37405,7 +37405,7 @@ var optimism = {
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
   icon: op_default,
-  rpc: "https://opt-mainnet.g.alchemy.com/v2/",
+  rpc: "https://optimism-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   contracts: {
@@ -38268,7 +38268,7 @@ var arbitrum = {
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
   icon: arbitrum_default,
-  rpc: "https://arb-mainnet.g.alchemy.com/v2/",
+  rpc: "https://arbitrum-one.publicnode.com/",
   pricesFromTimestamp: 1688263577,
   contracts: {
     multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
@@ -38455,12 +38455,12 @@ var celoMainnet = {
     {
       contractName: "AlloV2/Registry/V1",
       address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
-      fromBlock: 25005539
+      fromBlock: 22257e3
     },
     {
       contractName: "AlloV2/Allo/V1",
       address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
-      fromBlock: 25005539
+      fromBlock: 22258e3
     }
   ]
 };

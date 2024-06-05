@@ -8,7 +8,7 @@ export const mainnet: TChain = {
   type: "mainnet",
   blockExplorer: "https://etherscan.io/",
   icon: ethIcon,
-  rpc: "https://mainnet.infura.io/v3/",
+  rpc: "https://ethereum-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   contracts: {

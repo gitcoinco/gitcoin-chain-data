@@ -8,7 +8,7 @@ export const optimism: TChain = {
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
   icon: opIcon,
-  rpc: "https://opt-mainnet.g.alchemy.com/v2/",
+  rpc: "https://optimism-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   contracts: {
