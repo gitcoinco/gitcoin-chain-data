@@ -4,12 +4,17 @@ import { seiIcon } from "../../icons";
 export const seiMainnet: TChain = {
   id: 1329,
   name: "sei-mainnet",
-  prettyName: "SEI Mainnet",
+  prettyName: "SEI",
   type: "mainnet",
   blockExplorer: "https://seitrace.com/",
   icon: seiIcon,
   rpc: "https://evm-rpc.sei-apis.com",
   pricesFromTimestamp: 1704067200,
+  contracts: {
+    multiRoundCheckout: "0x1E18cdce56B3754c4Dca34CB3a7439C24E8363de",
+    quadraticFunding: "0xf5cA96151d1a9998d234963433bfd3f6feC7aAc2",
+    directGrants: "0xf24C89aF130Bb1ca22FD458BB9eeFA344aBC1573",
+  },
   tokens: [
     {
       code: "SEI",

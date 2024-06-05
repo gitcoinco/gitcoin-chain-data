@@ -85,38 +85,41 @@ fill="#001e00" stroke="none">
 </svg>`;
 
 // src/data/icons/lukso.ts
-var lukso_default = `<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 550 604" style="enable-background:new 0 0 550 604;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FE005B;}
-	.st1{fill:#FFF1F8;}
+var lukso_default = `<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+    .st0{fill:#FE005B;}
+    .st1{fill:#FFF1F8;}
 </style>
-<path class="st0" d="M499.5,114.6L325,13.9C294.1-4,255.9-4,225,13.9L50.5,114.6c-30.9,17.9-50,50.9-50,86.6v201.5
-	c0,35.7,19.1,68.7,50,86.6L225,590.1c30.9,17.9,69.1,17.9,100,0l174.5-100.8c30.9-17.9,50-50.9,50-86.6V201.2
-	C549.5,165.5,530.5,132.5,499.5,114.6z M413.5,322l-51.9,89.9c-7.1,12.4-20.3,20-34.6,20H223.1c-14.3,0-27.5-7.6-34.6-20L136.5,322
-	c-7.1-12.4-7.1-27.6,0-40l51.9-89.9c7.1-12.4,20.3-20,34.6-20h103.8c14.3,0,27.5,7.6,34.6,20l51.9,89.9
-	C420.6,294.4,420.6,309.6,413.5,322z"/>
-<path class="st1" d="M413.5,322l-51.9,89.9c-7.1,12.4-20.3,20-34.6,20H223.1c-14.3,0-27.5-7.6-34.6-20L136.5,322
-	c-7.1-12.4-7.1-27.6,0-40l51.9-89.9c7.1-12.4,20.3-20,34.6-20h103.8c14.3,0,27.5,7.6,34.6,20l51.9,89.9
-	C420.6,294.4,420.6,309.6,413.5,322z"/>
+  </defs>
+  <path class="st0" d="M 424.938 97.592 L 288.64 16.794 C 264.114 2.324 233.496 2.324 208.972 16.794 L 72.676 97.591 C 48.258 112.246 32.946 139.42 32.842 168.465 L 32.842 330.143 C 32.946 359.189 48.254 386.362 72.673 401.016 L 208.972 481.897 C 233.497 496.366 264.115 496.366 288.641 481.896 L 424.937 401.018 C 449.356 386.363 464.666 359.19 464.771 330.145 L 464.771 168.467 C 464.666 139.422 449.435 112.249 424.938 97.592 Z M 355.631 264.59 L 315.088 336.73 C 309.832 346.381 300.199 352.075 289.421 351.968 L 208.265 351.968 C 197.487 352.075 187.852 346.371 182.597 336.721 L 141.982 264.592 C 136.541 255.043 136.54 243.648 141.981 234.1 L 182.523 161.959 C 187.78 152.308 197.413 146.615 208.191 146.722 L 289.269 146.722 C 300.047 146.615 309.681 152.316 314.937 161.967 L 355.483 234.115 C 361.076 243.656 361.072 255.04 355.631 264.59 Z" style="" transform="matrix(1, 0, 0, 1, 7.105427357601002e-15, 3.552713678800501e-15)"/>
+  <path class="st1" d="M 355.631 264.59 L 315.088 336.73 C 309.832 346.381 300.199 352.075 289.421 351.968 L 208.265 351.968 C 197.487 352.075 187.852 346.371 182.597 336.721 L 141.982 264.592 C 136.541 255.043 136.54 243.648 141.981 234.1 L 182.523 161.959 C 187.78 152.308 197.413 146.615 208.191 146.722 L 289.269 146.722 C 300.047 146.615 309.681 152.316 314.937 161.967 L 355.483 234.115 C 361.076 243.656 361.072 255.04 355.631 264.59 Z" style="" transform="matrix(1, 0, 0, 1, 7.105427357601002e-15, 3.552713678800501e-15)"/>
 </svg>`;
 
 // src/data/icons/polygon.ts
-var polygon_default = `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 38.4 33.5" style="enable-background:new 0 0 38.4 33.5;" xml:space="preserve">
-<style type="text/css">
+var polygon_default = `<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 600 600" style="enable-background:new 0 0 800 600;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
 	.st0{fill:#8247E5;}
+	.st1{clip-path:url(#SVGID_00000170985874484226784740000010197121833159053193_);}
+	.st2{fill:#FFFFFF;}
 </style>
-<g>
-	<path class="st0" d="M29,10.2c-0.7-0.4-1.6-0.4-2.4,0L21,13.5l-3.8,2.1l-5.5,3.3c-0.7,0.4-1.6,0.4-2.4,0L5,16.3
-		c-0.7-0.4-1.2-1.2-1.2-2.1v-5c0-0.8,0.4-1.6,1.2-2.1l4.3-2.5c0.7-0.4,1.6-0.4,2.4,0L16,7.2c0.7,0.4,1.2,1.2,1.2,2.1v3.3l3.8-2.2V7
-		c0-0.8-0.4-1.6-1.2-2.1l-8-4.7c-0.7-0.4-1.6-0.4-2.4,0L1.2,5C0.4,5.4,0,6.2,0,7v9.4c0,0.8,0.4,1.6,1.2,2.1l8.1,4.7
-		c0.7,0.4,1.6,0.4,2.4,0l5.5-3.2l3.8-2.2l5.5-3.2c0.7-0.4,1.6-0.4,2.4,0l4.3,2.5c0.7,0.4,1.2,1.2,1.2,2.1v5c0,0.8-0.4,1.6-1.2,2.1
-		L29,28.8c-0.7,0.4-1.6,0.4-2.4,0l-4.3-2.5c-0.7-0.4-1.2-1.2-1.2-2.1V21l-3.8,2.2v3.3c0,0.8,0.4,1.6,1.2,2.1l8.1,4.7
-		c0.7,0.4,1.6,0.4,2.4,0l8.1-4.7c0.7-0.4,1.2-1.2,1.2-2.1V17c0-0.8-0.4-1.6-1.2-2.1L29,10.2z"/>
-</g>
-</svg>
-`;
+  </defs>
+  <path class="st0" d="M 296.8 45.4 C 437.2 45.4 551 159.2 551 299.6 C 551 440 437.2 553.7 296.9 553.7 C 156.5 553.7 42.8 439.9 42.8 299.6 C 42.7 159.2 156.5 45.4 296.8 45.4 Z"/>
+  <g transform="matrix(1, 0, 0, 1, -103, 0)">
+    <defs>
+      <rect id="SVGID_1_" x="231.5" y="155.3" width="333.1" height="291.9"/>
+    </defs>
+    <clipPath id="SVGID_00000119824040907289936360000005545950198423505064_">
+      <rect x="231.5" y="155.3" width="333.1" height="291.9" style="overflow: visible;"/>
+    </clipPath>
+    <g style="clip-path:url(#SVGID_00000119824040907289936360000005545950198423505064_);">
+      <path class="st2" d="M483.1,244.2c-6.1-3.5-13.9-3.5-20.8,0L413.7,273l-33,18.3L333,320c-6.1,3.5-13.9,3.5-20.8,0l-37.3-22.7&#10;&#9;&#9;&#9;c-6.1-3.5-10.4-10.5-10.4-18.3v-43.6c0-7,3.5-13.9,10.4-18.3l37.3-21.8c6.1-3.5,13.9-3.5,20.8,0l37.3,22.7&#10;&#9;&#9;&#9;c6.1,3.5,10.4,10.5,10.4,18.3v28.8l33-19.2v-29.6c0-7-3.5-13.9-10.4-18.3l-69.4-41c-6.1-3.5-13.9-3.5-20.8,0L242,198.9&#10;&#9;&#9;&#9;c-6.9,3.5-10.4,10.5-10.4,17.4v81.9c0,7,3.5,13.9,10.4,18.3l70.3,41c6.1,3.5,13.9,3.5,20.8,0l47.7-27.9l33-19.2l47.7-27.9&#10;&#9;&#9;&#9;c6.1-3.5,13.9-3.5,20.8,0l37.3,21.8c6.1,3.5,10.4,10.5,10.4,18.3v43.6c0,7-3.5,13.9-10.4,18.3l-36.4,21.8&#10;&#9;&#9;&#9;c-6.1,3.5-13.9,3.5-20.8,0L425,384.5c-6.1-3.5-10.4-10.5-10.4-18.3v-27.9l-33,19.2v28.8c0,7,3.5,13.9,10.4,18.3l70.3,41&#10;&#9;&#9;&#9;c6.1,3.5,13.9,3.5,20.8,0l70.3-41c6.1-3.5,10.4-10.5,10.4-18.3v-82.8c0-7-3.5-13.9-10.4-18.3L483.1,244.2z"/>
+    </g>
+  </g>
+</svg>`;
 
 // src/data/icons/data.ts
 var data_default = `<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37112,15 +37115,6 @@ var mute_default = `<svg width="50" height="50" viewBox="0 0 50 50" fill="none" 
 </svg>
 `;
 
-// src/data/icons/pgn.ts
-var pgn_default = `<svg width="475" height="474" viewBox="0 0 475 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="237.719" cy="236.987" r="230.938" fill="white" stroke="black" stroke-width="12"/>
-    <rect x="129.729" y="129.495" width="139.322" height="139.322" fill="black" stroke="black" stroke-width="12"/>
-    <rect x="206.385" y="205.156" width="139.322" height="139.322" fill="black" stroke="black" stroke-width="12"/>
-    <rect x="206.146" y="205.156" width="62.9055" height="62.9055" fill="white" stroke="black" stroke-width="12"/>
-</svg>
-`;
-
 // src/data/icons/gtc.ts
 var gtc_default = `<svg width="1562" height="1614" viewBox="0 0 1562 1614" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="781" cy="807" rx="781" ry="807" fill="#67DFB0"/>
@@ -37278,9 +37272,14 @@ var mainnet = {
   type: "mainnet",
   blockExplorer: "https://etherscan.io/",
   icon: ethereum_default,
-  rpc: "https://mainnet.infura.io/v3/",
+  rpc: "https://ethereum-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
+  contracts: {
+    multiRoundCheckout: "0x3bA9DF642f5e895DC76d3Aa9e4CE8291108E65b1",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37406,9 +37405,14 @@ var optimism = {
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
   icon: op_default,
-  rpc: "https://opt-mainnet.g.alchemy.com/v2/",
+  rpc: "https://optimism-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
+  contracts: {
+    multiRoundCheckout: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37543,13 +37547,18 @@ var optimism = {
 var lukso = {
   id: 42,
   name: "lukso-mainnet",
-  prettyName: "LUKSO",
+  prettyName: "LUKSO Mainnet",
   type: "mainnet",
   blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
   icon: lukso_default,
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
+  contracts: {
+    multiRoundCheckout: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+    quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "LYX",
@@ -37613,6 +37622,11 @@ var polygon = {
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
   maxGetLogsRange: 0,
+  contracts: {
+    multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "MATIC",
@@ -37729,6 +37743,11 @@ var fantom = {
   icon: fantom_default,
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
+  contracts: {
+    multiRoundCheckout: "0x03506eD3f57892C85DB20C36846e9c808aFe9ef4",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37870,6 +37889,11 @@ var zksyncEraTestnet = {
   icon: zkera_default,
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
+  contracts: {
+    multiRoundCheckout: "0x32e93A37dc02f97b8EDe446D8e468B1a894b47e0",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88"
+  },
   tokens: [
     {
       code: "ETH",
@@ -37949,6 +37973,11 @@ var zkSyncEraMainnet = {
   icon: zkera_default,
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
+  contracts: {
+    multiRoundCheckout: "0x9FD009C448ce9b5DD7D609BFaf7C1C8fb91fb3ff",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88"
+  },
   tokens: [
     {
       code: "ETH",
@@ -38079,100 +38108,6 @@ var zkSyncEraMainnet = {
   ]
 };
 
-// src/data/chains/424/chain.ts
-var pgnMainnet = {
-  id: 424,
-  name: "pgn-mainnet",
-  prettyName: "Public Goods Network",
-  type: "mainnet",
-  blockExplorer: "https://explorer.publicgoods.network/",
-  icon: pgn_default,
-  rpc: "https://rpc.publicgoods.network",
-  pricesFromTimestamp: 1683079577,
-  tokens: [
-    {
-      code: "ETH",
-      icon: ethereum_default,
-      address: "0x0000000000000000000000000000000000000000",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000"
-      },
-      redstoneTokenId: "ETH"
-    },
-    {
-      code: "ETH",
-      icon: ethereum_default,
-      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000"
-      },
-      redstoneTokenId: "ETH"
-    },
-    {
-      code: "GTC",
-      icon: gtc_default,
-      address: "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f"
-      },
-      redstoneTokenId: "GTC"
-    },
-    {
-      code: "DAI",
-      icon: dai_default,
-      address: "0x6C121674ba6736644A7e73A8741407fE8a5eE5BA",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-      },
-      redstoneTokenId: "DAI"
-    }
-  ],
-  subscriptions: [
-    {
-      contractName: "AlloV1/ProjectRegistry/V2",
-      address: "0xDF9BF58Aa1A1B73F0e214d79C652a7dd37a6074e",
-      fromBlock: 31239
-    },
-    {
-      contractName: "AlloV1/RoundFactory/V2",
-      address: "0x8AdFcF226dfb2fA73788Ad711C958Ba251369cb3",
-      fromBlock: 31239
-    },
-    {
-      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
-      address: "0x2AFA4bE0f2468347A2F086c2167630fb1E58b725",
-      fromBlock: 31239
-    },
-    {
-      contractName: "AlloV1/MerklePayoutStrategyFactory/V2",
-      address: "0x27efa1C90e097c980c669AB1a6e326AD4164f1Cb",
-      fromBlock: 31239
-    },
-    {
-      contractName: "AlloV1/DirectPayoutStrategyFactory/V2",
-      address: "0x0c33c9dEF7A3d9961b802C6C6402d306b7D48135",
-      fromBlock: 31239
-    },
-    {
-      contractName: "AlloV1/ProgramFactory/V1",
-      address: "0xd07D54b0231088Ca9BF7DA6291c911B885cBC140",
-      fromBlock: 31239
-    }
-  ]
-};
-
 // src/data/chains/4201/chain.ts
 var luksoTestnet = {
   id: 4201,
@@ -38183,6 +38118,11 @@ var luksoTestnet = {
   icon: lukso_default,
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0xC1087157eF2aaeBcaDB913251EA5B82c678424F7",
+    quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "LYX",
@@ -38233,6 +38173,11 @@ var base = {
   icon: base_default,
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
+  contracts: {
+    multiRoundCheckout: "0x7C24f3494CC958CF268a92b45D7e54310d161794",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -38319,12 +38264,17 @@ var base = {
 var arbitrum = {
   id: 42161,
   name: "arbitrum",
-  prettyName: "Arbitrum",
+  prettyName: "Arbitrum One",
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
   icon: arbitrum_default,
-  rpc: "https://arb-mainnet.g.alchemy.com/v2/",
+  rpc: "https://arbitrum-one.publicnode.com/",
   pricesFromTimestamp: 1688263577,
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -38458,6 +38408,11 @@ var celoMainnet = {
   icon: celo_default,
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "CELO",
@@ -38500,12 +38455,12 @@ var celoMainnet = {
     {
       contractName: "AlloV2/Registry/V1",
       address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3",
-      fromBlock: 25005539
+      fromBlock: 22257e3
     },
     {
       contractName: "AlloV2/Allo/V1",
       address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1",
-      fromBlock: 25005539
+      fromBlock: 22258e3
     }
   ]
 };
@@ -38520,6 +38475,11 @@ var avalancheFuji = {
   icon: avalanche_default,
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "AVAX",
@@ -38602,6 +38562,11 @@ var avalanche = {
   icon: avalanche_default,
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
+  contracts: {
+    multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "AVAX",
@@ -38688,12 +38653,17 @@ var avalanche = {
 var celoTestnet = {
   id: 44787,
   name: "celo-testnet",
-  prettyName: "Celo Testnet",
+  prettyName: "Celo Alfajores",
   type: "testnet",
   blockExplorer: "https://alfajores.celoscan.io/",
   icon: celo_default,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "CELO",
@@ -38734,84 +38704,6 @@ var celoTestnet = {
   ]
 };
 
-// src/data/chains/58008/chain.ts
-var pgnTestnet = {
-  id: 58008,
-  name: "pgn-testnet",
-  prettyName: "PGN Testnet",
-  type: "testnet",
-  blockExplorer: "https://explorer.sepolia.publicgoods.network/",
-  icon: pgn_default,
-  rpc: "https://sepolia.publicgoods.network",
-  pricesFromTimestamp: 1683079577,
-  tokens: [
-    {
-      code: "ETH",
-      icon: "",
-      address: "0x0000000000000000000000000000000000000000",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000"
-      },
-      redstoneTokenId: "ETH"
-    },
-    {
-      code: "ETH",
-      icon: ethereum_default,
-      address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x0000000000000000000000000000000000000000"
-      },
-      redstoneTokenId: "ETH"
-    },
-    {
-      code: "DAI",
-      icon: dai_default,
-      address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 1,
-        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-      },
-      redstoneTokenId: "DAI"
-    },
-    {
-      code: "TEST",
-      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      icon: "DAI",
-      decimals: 18,
-      canVote: false,
-      priceSource: {
-        chainId: 1,
-        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
-      },
-      redstoneTokenId: ""
-    }
-  ],
-  subscriptions: [
-    {
-      contractName: "AlloV1/ProjectRegistry/V2",
-      address: "0x6294bed5B884Ae18bf737793Ef9415069Bf4bc11"
-    },
-    {
-      contractName: "AlloV1/RoundFactory/V2",
-      address: "0x0479b9DA9f287539FEBd597350B1eBaEBF7479ac",
-      fromBlock: 0
-    },
-    {
-      contractName: "AlloV1/QuadraticFundingVotingStrategyFactory/V2",
-      address: "0xE8027a807Bb85e57da4B7A5ecE65b0aBDf231ce8",
-      fromBlock: 0
-    }
-  ]
-};
-
 // src/data/chains/80001/chain.ts
 var polygonMumbai = {
   id: 80001,
@@ -38822,6 +38714,11 @@ var polygonMumbai = {
   icon: polygon_default,
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "MATIC",
@@ -38914,6 +38811,11 @@ var scrollSepolia = {
   icon: scroll_default,
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "ETH",
@@ -38986,6 +38888,11 @@ var scrollMainnet = {
   icon: scroll_default,
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "ETH",
@@ -39083,6 +38990,11 @@ var seiDevnet = {
   icon: sei_default,
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
+  contracts: {
+    multiRoundCheckout: "0x313eC6CA225C40Bc670d8cd4b063734BD22ad1ab",
+    quadraticFunding: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "SEI",
@@ -39139,12 +39051,17 @@ var seiDevnet = {
 var seiMainnet = {
   id: 1329,
   name: "sei-mainnet",
-  prettyName: "SEI Mainnet",
+  prettyName: "SEI",
   type: "mainnet",
   blockExplorer: "https://seitrace.com/",
   icon: sei_default,
   rpc: "https://evm-rpc.sei-apis.com",
   pricesFromTimestamp: 1704067200,
+  contracts: {
+    multiRoundCheckout: "0x1E18cdce56B3754c4Dca34CB3a7439C24E8363de",
+    quadraticFunding: "0xf5cA96151d1a9998d234963433bfd3f6feC7aAc2",
+    directGrants: "0xf24C89aF130Bb1ca22FD458BB9eeFA344aBC1573"
+  },
   tokens: [
     {
       code: "SEI",
@@ -39196,6 +39113,11 @@ var sepolia = {
   icon: ethereum_default,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
+  contracts: {
+    multiRoundCheckout: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "DAI",
@@ -39210,7 +39132,7 @@ var sepolia = {
       redstoneTokenId: "DAI"
     },
     {
-      code: "DAI",
+      code: "DAI(GS)",
       icon: dai_default,
       address: "0xa9dd7983B57E1865024d27110bAB098B66087e8F",
       decimals: 18,
@@ -39330,9 +39252,6 @@ var chainImports = {
   324: {
     ...zkSyncEraMainnet
   },
-  424: {
-    ...pgnMainnet
-  },
   4201: {
     ...luksoTestnet
   },
@@ -39356,9 +39275,6 @@ var chainImports = {
   },
   44787: {
     ...celoTestnet
-  },
-  58008: {
-    ...pgnTestnet
   },
   534351: {
     ...scrollSepolia

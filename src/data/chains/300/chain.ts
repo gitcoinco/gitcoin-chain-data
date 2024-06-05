@@ -10,6 +10,11 @@ export const zksyncEraTestnet: TChain = {
   icon: zkeraIcon,
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
+  contracts: {
+    multiRoundCheckout: "0x32e93A37dc02f97b8EDe446D8e468B1a894b47e0",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88",
+  },
   tokens: [
     {
       code: "ETH",
