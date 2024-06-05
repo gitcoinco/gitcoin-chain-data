@@ -10,7 +10,7 @@ import {
 export const arbitrum: TChain = {
   id: 42161,
   name: "arbitrum",
-  prettyName: "Arbitrum",
+  prettyName: "Arbitrum One",
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
   icon: arbitrumIcon,

@@ -4,7 +4,7 @@ import { luksoIcon } from "../../icons";
 export const lukso: TChain = {
   id: 42,
   name: "lukso-mainnet",
-  prettyName: "LUKSO",
+  prettyName: "LUKSO Mainnet",
   type: "mainnet",
   blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
   icon: luksoIcon,

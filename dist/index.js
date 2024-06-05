@@ -37547,7 +37547,7 @@ var optimism = {
 var lukso = {
   id: 42,
   name: "lukso-mainnet",
-  prettyName: "LUKSO",
+  prettyName: "LUKSO Mainnet",
   type: "mainnet",
   blockExplorer: "https://explorer.execution.mainnet.lukso.network/",
   icon: lukso_default,
@@ -38264,7 +38264,7 @@ var base = {
 var arbitrum = {
   id: 42161,
   name: "arbitrum",
-  prettyName: "Arbitrum",
+  prettyName: "Arbitrum One",
   type: "mainnet",
   blockExplorer: "https://arbiscan.io/",
   icon: arbitrum_default,
