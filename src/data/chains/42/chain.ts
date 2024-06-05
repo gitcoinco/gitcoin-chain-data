@@ -11,7 +11,11 @@ export const lukso: TChain = {
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+  contracts: {
+    multiRoundCheckout: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+    quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0",
+  },
   tokens: [
     {
       code: "LYX",

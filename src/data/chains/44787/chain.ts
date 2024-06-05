@@ -10,7 +10,11 @@ export const celoTestnet: TChain = {
   icon: celoIcon,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
+  contracts: {
+    multiRoundCheckout: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+  },
   tokens: [
     {
       code: "CELO",

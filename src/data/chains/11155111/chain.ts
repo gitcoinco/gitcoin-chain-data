@@ -10,7 +10,11 @@ export const sepolia: TChain = {
   icon: ethIcon,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
-  multiRoundCheckoutContract: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
+  contracts: {
+    multiRoundCheckout: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+  },
   tokens: [
     {
       code: "DAI",

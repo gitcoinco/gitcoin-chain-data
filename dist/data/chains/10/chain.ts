@@ -11,7 +11,11 @@ export const optimism: TChain = {
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
+  contracts: {
+    multiRoundCheckout: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+  },
   tokens: [
     {
       code: "USDC",

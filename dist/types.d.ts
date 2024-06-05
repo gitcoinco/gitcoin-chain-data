@@ -29,11 +29,16 @@ export type TChain = {
     icon: string;
     type: TNetworkType;
     id: number;
-    multiRoundCheckoutContract: Address;
+    contracts: TContracts;
     pricesFromTimestamp?: number;
     maxGetLogsRange?: number;
     tokens: TToken[];
     subscriptions: TSubscription[];
+};
+export type TContracts = {
+    multiRoundCheckout: Address;
+    quadraticFunding: Address;
+    directGrants: Address;
 };
 export type TNetworkType = "mainnet" | "testnet";
 export {};

@@ -37275,7 +37275,11 @@ var mainnet = {
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0x3bA9DF642f5e895DC76d3Aa9e4CE8291108E65b1",
+  contracts: {
+    multiRoundCheckout: "0x3bA9DF642f5e895DC76d3Aa9e4CE8291108E65b1",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37404,7 +37408,11 @@ var optimism = {
   rpc: "https://opt-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
+  contracts: {
+    multiRoundCheckout: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37546,7 +37554,11 @@ var lukso = {
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+  contracts: {
+    multiRoundCheckout: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+    quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "LYX",
@@ -37610,7 +37622,11 @@ var polygon = {
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
   maxGetLogsRange: 0,
-  multiRoundCheckoutContract: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+  contracts: {
+    multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "MATIC",
@@ -37727,7 +37743,11 @@ var fantom = {
   icon: fantom_default,
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
-  multiRoundCheckoutContract: "0x03506eD3f57892C85DB20C36846e9c808aFe9ef4",
+  contracts: {
+    multiRoundCheckout: "0x03506eD3f57892C85DB20C36846e9c808aFe9ef4",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -37869,7 +37889,11 @@ var zksyncEraTestnet = {
   icon: zkera_default,
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
-  multiRoundCheckoutContract: "0x32e93A37dc02f97b8EDe446D8e468B1a894b47e0",
+  contracts: {
+    multiRoundCheckout: "0x32e93A37dc02f97b8EDe446D8e468B1a894b47e0",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88"
+  },
   tokens: [
     {
       code: "ETH",
@@ -37949,7 +37973,11 @@ var zkSyncEraMainnet = {
   icon: zkera_default,
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
-  multiRoundCheckoutContract: "0x9FD009C448ce9b5DD7D609BFaf7C1C8fb91fb3ff",
+  contracts: {
+    multiRoundCheckout: "0x9FD009C448ce9b5DD7D609BFaf7C1C8fb91fb3ff",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88"
+  },
   tokens: [
     {
       code: "ETH",
@@ -38090,7 +38118,11 @@ var luksoTestnet = {
   icon: lukso_default,
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0xC1087157eF2aaeBcaDB913251EA5B82c678424F7",
+  contracts: {
+    multiRoundCheckout: "0xC1087157eF2aaeBcaDB913251EA5B82c678424F7",
+    quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "LYX",
@@ -38141,7 +38173,11 @@ var base = {
   icon: base_default,
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
-  multiRoundCheckoutContract: "0x7C24f3494CC958CF268a92b45D7e54310d161794",
+  contracts: {
+    multiRoundCheckout: "0x7C24f3494CC958CF268a92b45D7e54310d161794",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -38234,7 +38270,11 @@ var arbitrum = {
   icon: arbitrum_default,
   rpc: "https://arb-mainnet.g.alchemy.com/v2/",
   pricesFromTimestamp: 1688263577,
-  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "USDC",
@@ -38368,7 +38408,11 @@ var celoMainnet = {
   icon: celo_default,
   rpc: "https://forno.celo.org",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
+  contracts: {
+    multiRoundCheckout: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "CELO",
@@ -38431,7 +38475,11 @@ var avalancheFuji = {
   icon: avalanche_default,
   rpc: "https://avalanche-fuji-c-chain.publicnode.com",
   pricesFromTimestamp: 1692497177,
-  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "AVAX",
@@ -38514,7 +38562,11 @@ var avalanche = {
   icon: avalanche_default,
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
-  multiRoundCheckoutContract: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+  contracts: {
+    multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "AVAX",
@@ -38607,7 +38659,11 @@ var celoTestnet = {
   icon: celo_default,
   rpc: "https://alfajores-forno.celo-testnet.org",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
+  contracts: {
+    multiRoundCheckout: "0x8Ad0a1111B3d8453Ea9C444cA7d708A65BF81Def",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "CELO",
@@ -38658,7 +38714,11 @@ var polygonMumbai = {
   icon: polygon_default,
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+  contracts: {
+    multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "MATIC",
@@ -38751,7 +38811,11 @@ var scrollSepolia = {
   icon: scroll_default,
   rpc: "https://sepolia-rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+  contracts: {
+    multiRoundCheckout: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "ETH",
@@ -38824,7 +38888,11 @@ var scrollMainnet = {
   icon: scroll_default,
   rpc: "https://rpc.scroll.io",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+  contracts: {
+    multiRoundCheckout: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "ETH",
@@ -38922,7 +38990,11 @@ var seiDevnet = {
   icon: sei_default,
   rpc: "https://evm-rpc-arctic-1.sei-apis.com",
   pricesFromTimestamp: 1704164777,
-  multiRoundCheckoutContract: "0x313eC6CA225C40Bc670d8cd4b063734BD22ad1ab",
+  contracts: {
+    multiRoundCheckout: "0x313eC6CA225C40Bc670d8cd4b063734BD22ad1ab",
+    quadraticFunding: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
+    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0"
+  },
   tokens: [
     {
       code: "SEI",
@@ -38979,13 +39051,17 @@ var seiDevnet = {
 var seiMainnet = {
   id: 1329,
   name: "sei-mainnet",
-  prettyName: "SEI Mainnet",
+  prettyName: "SEI",
   type: "mainnet",
   blockExplorer: "https://seitrace.com/",
   icon: sei_default,
   rpc: "https://evm-rpc.sei-apis.com",
   pricesFromTimestamp: 1704067200,
-  multiRoundCheckoutContract: "0x1E18cdce56B3754c4Dca34CB3a7439C24E8363de",
+  contracts: {
+    multiRoundCheckout: "0x1E18cdce56B3754c4Dca34CB3a7439C24E8363de",
+    quadraticFunding: "0xf5cA96151d1a9998d234963433bfd3f6feC7aAc2",
+    directGrants: "0xf24C89aF130Bb1ca22FD458BB9eeFA344aBC1573"
+  },
   tokens: [
     {
       code: "SEI",
@@ -39037,7 +39113,11 @@ var sepolia = {
   icon: ethereum_default,
   rpc: "https://ethereum-sepolia.publicnode.com",
   pricesFromTimestamp: 1667354777,
-  multiRoundCheckoutContract: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
+  contracts: {
+    multiRoundCheckout: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa"
+  },
   tokens: [
     {
       code: "DAI",

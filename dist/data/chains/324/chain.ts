@@ -18,7 +18,11 @@ export const zkSyncEraMainnet: TChain = {
   icon: zkeraIcon,
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
-  multiRoundCheckoutContract: "0x9FD009C448ce9b5DD7D609BFaf7C1C8fb91fb3ff",
+  contracts: {
+    multiRoundCheckout: "0x9FD009C448ce9b5DD7D609BFaf7C1C8fb91fb3ff",
+    quadraticFunding: "0x61E288cf14f196CF8a6104ec421ae17c7f16a749",
+    directGrants: "0x9710eedFD45a2ce5E6b09303a1E51c0cd600Fc88",
+  },
   tokens: [
     {
       code: "ETH",
