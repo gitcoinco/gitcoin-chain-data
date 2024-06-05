@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { avalancheIcon, usdcIcon } from "../../icons";
 
 export const avalanche: TChain = {
   id: 43114,
   name: "avalanche",
+  prettyName: "Avalanche",
   type: "mainnet",
   blockExplorer: "https://avascan.info/",
-  icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+  icon: avalancheIcon,
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
   tokens: [
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalancheIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const avalanche: TChain = {
     },
     {
       code: "AVAX",
-      icon: "https://ipfs.io/ipfs/QmfUQj2Rz1kvRZmBDHAfSaGx9rxsD5D1YjaXXdmZpE4JWe",
+      icon: avalancheIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const avalanche: TChain = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       decimals: 6,
       canVote: true,

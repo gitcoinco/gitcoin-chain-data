@@ -1,11 +1,13 @@
 import { TChain } from "../../../types";
+import { daiIcon, ethIcon, pgnIcon } from "../../icons";
 
 export const pgnTestnet: TChain = {
   id: 58008,
   name: "pgn-testnet",
+  prettyName: "PGN Testnet",
   type: "testnet",
   blockExplorer: "https://explorer.sepolia.publicgoods.network/",
-  icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
+  icon: pgnIcon,
   rpc: "https://sepolia.publicgoods.network",
   pricesFromTimestamp: 1683079577,
   tokens: [
@@ -23,7 +25,7 @@ export const pgnTestnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const pgnTestnet: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x5fbdb2315678afecb367f032d93f642f64180aa3",
       decimals: 18,
       canVote: true,

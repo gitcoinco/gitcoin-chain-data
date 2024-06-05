@@ -4,15 +4,16 @@ import { TChain } from "../../../types";
 export const chainName: TChain = {
   id: 0, // chain id
   name: "chain-name", // chain name
+  prettyName; "Ethereum", // pretty network name
   type: "mainnet", // chain type: "mainnet" or "testnet"
   blockExplorer: "https://<url>/",
-  icon: "https://<icon-url>", // public rpc url
+  icon: svgIcon, // imported svg icon
   rpc: "https://<rpc-url>", // public rpc url
   pricesFromTimestamp: 0, // timestamp to get prices from
   tokens: [
     {
       code: "ETH", // native token symbol
-      icon: "https://<icon-url>", // token icon
+      icon: svgIcon, // imported svg icon
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true, // true for native currency and stable coins, protocol and other are false
@@ -25,7 +26,7 @@ export const chainName: TChain = {
     },
     {
       code: "ETH", // native token symbol
-      icon: "https://<icon-url>", // token icon
+      icon: svgIcon, // imported svg icon
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -37,7 +38,7 @@ export const chainName: TChain = {
     },
     {
       code: "WETH", // ERC-20 token symbol
-      icon: "https://<icon-url>", // token icon
+      icon: svgIcon, // imported svg icon
       address: "0x1234567890123456789012345678901234567890", // token address
       decimals: 18,
       canVote: true,

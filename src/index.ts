@@ -6,4 +6,4 @@ export {
   getTokens,
   getTokensByChainId,
   getTokenByChainIdAndAddress,
-} from "./chains/chains";
+} from "./chains";

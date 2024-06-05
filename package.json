@@ -1,6 +1,6 @@
 {
   "name": "@gitcoin/gitcoin-chain-data",
-  "version": "1.0.3",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -22,7 +22,6 @@
     "new-chain": "node scripts/newChain.ts"
   },
   "dependencies": {
-    "ethers": "^6.12.1",
     "viem": "^2.9.32"
   },
   "devDependencies": {

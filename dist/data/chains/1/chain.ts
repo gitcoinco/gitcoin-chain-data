@@ -1,18 +1,20 @@
 import { TChain } from "../../../types";
+import { daiIcon, ethIcon, usdcIcon } from "../../icons";
 
 export const mainnet: TChain = {
   id: 1,
   name: "mainnet",
+  prettyName: "Ethereum",
   type: "mainnet",
   blockExplorer: "https://etherscan.io/",
-  icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+  icon: ethIcon,
   rpc: "https://mainnet.infura.io/v3/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       decimals: 6,
       canVote: true,
@@ -24,7 +26,7 @@ export const mainnet: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
       decimals: 18,
       canVote: true,
@@ -36,7 +38,7 @@ export const mainnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -48,7 +50,7 @@ export const mainnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { ethIcon, zkeraIcon } from "../../icons";
 
 export const zksyncEraTestnet: TChain = {
   id: 300,
   name: "zksync-era-testnet",
+  prettyName: "zkSync Sepolia",
   type: "testnet",
   blockExplorer: "https://sepolia.explorer.zksync.io/",
-  icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
+  icon: zkeraIcon,
   rpc: "https://sepolia.era.zksync.dev",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const zksyncEraTestnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

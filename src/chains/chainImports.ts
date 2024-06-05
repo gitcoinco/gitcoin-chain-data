@@ -1,4 +1,3 @@
-// chainImportMap.ts
 import { mainnet } from "../data/chains/1/chain.js";
 import { optimism } from "../data/chains/10/chain.js";
 import { lukso } from "../data/chains/42/chain.js";
@@ -19,12 +18,13 @@ import { polygonMumbai } from "../data/chains/80001/chain.js";
 import { scrollSepolia } from "../data/chains/534351/chain.js";
 import { scrollMainnet } from "../data/chains/534352/chain.js";
 import { seiDevnet } from "../data/chains/713715/chain.js";
+import { seiMainnet } from "../data/chains/1329/chain.js";
 import { sepolia } from "../data/chains/11155111/chain.js";
 // import { optimismSepolia } from "../data/chains/11155420/chain.js";
 
 import { TChain } from "../types.js";
 
-const chainImportMap: { [key: number]: TChain } = {
+const chainImports: { [key: number]: TChain } = {
   1: {
     ...mainnet,
   },
@@ -88,6 +88,9 @@ const chainImportMap: { [key: number]: TChain } = {
   11155111: {
     ...sepolia,
   },
+  1329: {
+    ...seiMainnet,
+  },
 };
 
-export default chainImportMap;
+export default chainImports;

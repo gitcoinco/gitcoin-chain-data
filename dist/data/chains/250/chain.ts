@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { daiIcon, fantomIcon, gcvIcon, usdcIcon } from "../../icons";
 
 export const fantom: TChain = {
   id: 250,
   name: "fantom",
+  prettyName: "Fantom",
   type: "mainnet",
   blockExplorer: "https://ftmscan.com/",
-  icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+  icon: fantomIcon,
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
   tokens: [
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       decimals: 6,
       canVote: true,
@@ -35,7 +37,7 @@ export const fantom: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
       decimals: 18,
       canVote: true,
@@ -47,7 +49,7 @@ export const fantom: TChain = {
     },
     {
       code: "FTM",
-      icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+      icon: fantomIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -59,7 +61,7 @@ export const fantom: TChain = {
     },
     {
       code: "FTM",
-      icon: "https://ipfs.io/ipfs/QmXRGMaLqDiDoKjJQ3bUKWWYaQwE36jH7BbsQru5X4XXRo",
+      icon: fantomIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -71,7 +73,7 @@ export const fantom: TChain = {
     },
     {
       code: "GcV",
-      icon: "https://ipfs.io/ipfs/QmX2KeJ9xd3RWc4HxGVUWmyq4ELT2z4kJekfv4AgZqp6dz",
+      icon: gcvIcon,
       address: "0x83791638da5EB2fAa432aff1c65fbA47c5D29510",
       decimals: 18,
       voteAmountCap: BigInt("1000000000000000000"),
@@ -86,7 +88,7 @@ export const fantom: TChain = {
       code: "WFTM",
       address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       decimals: 18,
-      icon: "FTM",
+      icon: fantomIcon,
       canVote: true,
       priceSource: {
         chainId: 250,

@@ -1,5 +1,5 @@
 import { TChain } from "../types.js";
-declare const chainImportMap: {
+declare const chainImports: {
     [key: number]: TChain;
 };
-export default chainImportMap;
+export default chainImports;

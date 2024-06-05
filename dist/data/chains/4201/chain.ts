@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { luksoIcon } from "../../icons";
 
 export const luksoTestnet: TChain = {
   id: 4201,
   name: "lukso-testnet",
+  prettyName: "LUKSO Testnet",
   type: "testnet",
   blockExplorer: "https://explorer.execution.testnet.lukso.network/",
-  icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+  icon: luksoIcon,
   rpc: "https://4201.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
   tokens: [
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: luksoIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const luksoTestnet: TChain = {
     },
     {
       code: "LYX",
-      icon: "https://ipfs.io/ipfs/QmZvBXAuN56WkYYoJPpQRDzCesfTQ1VQSKnTBxUqf1CzoJ",
+      icon: luksoIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,

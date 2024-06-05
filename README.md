@@ -35,6 +35,7 @@ To add a new chain, follow these steps:
    ```
 2. A new file will be created at `src/data/chains/<CHAIN_ID>/chain.ts`.
 3. Update `chain.ts` with the specific data for the new chain.
+4. Update `src/chains/chainImportMap.ts` to add the new chain
 
 ## Adding a New Token to a Chain
 

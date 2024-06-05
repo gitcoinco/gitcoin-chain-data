@@ -1,17 +1,19 @@
 import { TChain } from "../../../types";
+import { daiIcon, ethIcon, gtcIcon, pgnIcon } from "../../icons";
 
 export const pgnMainnet: TChain = {
   id: 424,
   name: "pgn-mainnet",
+  prettyName: "Public Goods Network",
   type: "mainnet",
   blockExplorer: "https://explorer.publicgoods.network/",
-  icon: "https://ipfs.io/ipfs/Qmagrvn2SY5TEoLgqUtcc1745ABZTFoPmod37tW37u7HYo",
+  icon: pgnIcon,
   rpc: "https://rpc.publicgoods.network",
   pricesFromTimestamp: 1683079577,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +25,7 @@ export const pgnMainnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +37,7 @@ export const pgnMainnet: TChain = {
     },
     {
       code: "GTC",
-      icon: "https://ipfs.io/ipfs/Qmb9q9uW29Vw2jbV7pyHg3HGUJMoKsHaPvbrC8iX15QLZf",
+      icon: gtcIcon,
       address: "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2",
       decimals: 18,
       canVote: true,
@@ -47,7 +49,7 @@ export const pgnMainnet: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x6C121674ba6736644A7e73A8741407fE8a5eE5BA",
       decimals: 18,
       canVote: true,

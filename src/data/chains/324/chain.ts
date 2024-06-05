@@ -1,17 +1,27 @@
 import { TChain } from "../../../types";
+import {
+  daiIcon,
+  ethIcon,
+  lusdIcon,
+  muteIcon,
+  usdcIcon,
+  usdtIcon,
+  zkeraIcon,
+} from "../../icons";
 
 export const zkSyncEraMainnet: TChain = {
   id: 324,
   name: "zksync-era-mainnet",
+  prettyName: "zkSync Era",
   type: "mainnet",
   blockExplorer: "https://explorer.zksync.io/",
-  icon: "https://ipfs.io/ipfs/Qmd6x7q8ug4e32BKWVMEWfTGdcownpAz74LMZuFHfg7Wet",
+  icon: zkeraIcon,
   rpc: "https://mainnet.era.zksync.io",
   pricesFromTimestamp: 1701486377,
   tokens: [
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
       canVote: true,
@@ -23,7 +33,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "ETH",
-      icon: "https://ipfs.io/ipfs/QmdPgVsrQAYJyDmrs17QTawu95z4gbaKGAwmBu73JFZc2f",
+      icon: ethIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
       canVote: true,
@@ -35,7 +45,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "USDC",
-      icon: "https://ipfs.io/ipfs/QmTBHBZchoxncW1LXCvptTbvRzuZDN8yzze3xXrRsh2WZz",
+      icon: usdcIcon,
       address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
       decimals: 6,
       canVote: true,
@@ -47,7 +57,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "USDT",
-      icon: "https://ipfs.io/ipfs/QmTDFjdejwv6gGXYUu8VbTw2eCjPhhJ217VM4vpXiSu5Xx",
+      icon: usdtIcon,
       address: "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
       decimals: 6,
       canVote: true,
@@ -59,7 +69,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "DAI",
-      icon: "https://ipfs.io/ipfs/QmcCsabAp3y4arCKfBgKPuUgjgteerQnZyCPZzUZFygr4x",
+      icon: daiIcon,
       address: "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
       decimals: 18,
       canVote: true,
@@ -71,7 +81,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "LUSD",
-      icon: "https://ipfs.io/ipfs/QmaPosCSRnPjmjP6ekQtE2RXgv1MFy1eQSDyfPeuA6oSgw",
+      icon: lusdIcon,
       address: "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
       decimals: 18,
       canVote: true,
@@ -83,7 +93,7 @@ export const zkSyncEraMainnet: TChain = {
     },
     {
       code: "MUTE",
-      icon: "https://ipfs.io/ipfs/QmeHDSK2cKXhnAFzMCRh9UP7VSJpuv4ENagugisM757vYs",
+      icon: muteIcon,
       address: "0x0e97c7a0f8b2c9885c8ac9fc6136e829cbc21d42",
       decimals: 18,
       canVote: false,
