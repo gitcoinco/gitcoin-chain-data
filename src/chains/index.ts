@@ -73,5 +73,5 @@ export const getTokenByChainIdAndAddress = (
   address: Address,
 ): TToken => {
   const chainData = getChainById(chainId);
-  return chainData?.tokens.find((token) => token.address === address) as TToken;
+  return chainData?.tokens.find((token) => token.address.toLocaleLowerCase() === address.toLocaleLowerCase()) as TToken;
 };

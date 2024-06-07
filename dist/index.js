@@ -39323,7 +39323,7 @@ var getTokensByChainId = (chainId) => {
 };
 var getTokenByChainIdAndAddress = (chainId, address) => {
   const chainData = getChainById(chainId);
-  return chainData?.tokens.find((token) => token.address === address);
+  return chainData?.tokens.find((token) => token.address.toLocaleLowerCase() === address.toLocaleLowerCase());
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
