@@ -18,18 +18,6 @@ export const optimism: TChain = {
   },
   tokens: [
     {
-      code: "USDC",
-      icon: usdcIcon,
-      address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      decimals: 6,
-      canVote: true,
-      priceSource: {
-        chainId: 10,
-        address: "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
-      },
-      redstoneTokenId: "USDC",
-    },
-    {
       code: "DAI",
       icon: daiIcon,
       address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
