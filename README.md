@@ -10,7 +10,7 @@ The Gitcoin Common Data Package sources all the chains and supported tokens used
 To install the package, use the following command:
 
 ```bash
-npm i "@grants-labs/gitcoin-chain-data"
+npm i "@gitcoin/gitcoin-chain-data"
 ```
 
 ## Functions
