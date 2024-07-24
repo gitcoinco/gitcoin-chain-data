@@ -57,7 +57,7 @@ export const celoMainnet: TChain = {
       icon: usdGloIcon,
       address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       decimals: 18,
-      canVote: false,
+      canVote: true,
       priceSource: {
         chainId: 42220,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
