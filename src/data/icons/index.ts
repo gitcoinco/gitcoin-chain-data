@@ -21,6 +21,7 @@ import cusdIcon from "./cusd";
 import avalancheIcon from "./avalanche";
 import scrollIcon from "./scroll";
 import baseIcon from "./base";
+import metisIcon from "./metis";
 
 export {
   ethIcon,
@@ -46,4 +47,5 @@ export {
   avalancheIcon,
   scrollIcon,
   baseIcon,
+  metisIcon,
 };

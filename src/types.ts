@@ -3,6 +3,7 @@ import type { Address } from "viem";
 type CoingeckoSupportedChainId =
   | 1
   | 10
+  | 1088
   | 250
   | 42161
   | 43114
