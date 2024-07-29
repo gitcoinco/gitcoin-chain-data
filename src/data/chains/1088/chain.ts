@@ -11,9 +11,9 @@ export const chainName: TChain = {
   icon: metisIcon, // imported svg icon
   rpc: "https://andromeda.metis.io/?owner=1088", // public rpc url
   contracts: {
-    multiRoundCheckout: "0x..",
-    quadraticFunding: "0x..",
-    directGrants: "0x..",
+    multiRoundCheckout: "0x710172b2C0aCc629A3FD23D436c347807dD5C412",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
+    directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
   },
   pricesFromTimestamp: 0, // timestamp to get prices from
   tokens: [
@@ -47,12 +47,12 @@ export const chainName: TChain = {
     {
       contractName: "AlloV2/Registry/V1",
       address: "0x4aacca72145e1df2aec137e1f3c5e3d75db8b5f3", // contract address of Registry
-      fromBlock: 0, // block number
+      fromBlock: 17860000, // block number
     },
     {
       contractName: "AlloV2/Allo/V1",
       address: "0x1133eA7Af70876e64665ecD07C0A0476d09465a1", // contract address of Allo
-      fromBlock: 0, // block number
+      fromBlock: 17860000, // block number
     },
   ],
 };
