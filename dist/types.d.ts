@@ -1,5 +1,5 @@
 import type { Address } from "viem";
-type CoingeckoSupportedChainId = 1 | 10 | 250 | 42161 | 43114 | 713715 | 1329 | 42 | 42220;
+type CoingeckoSupportedChainId = 1 | 10 | 1088 | 250 | 42161 | 43114 | 713715 | 1329 | 42 | 42220;
 export type TToken = {
     code: string;
     icon?: string;
