@@ -18,6 +18,7 @@ import { scrollMainnet } from "../data/chains/534352/chain.js";
 import { seiDevnet } from "../data/chains/713715/chain.js";
 import { seiMainnet } from "../data/chains/1329/chain.js";
 import { sepolia } from "../data/chains/11155111/chain.js";
+import { metis } from "../data/chains/1088/chain.js";
 // import { optimismSepolia } from "../data/chains/11155420/chain.js";
 
 import { TChain } from "../types.js";
@@ -82,6 +83,9 @@ const chainImports: { [key: number]: TChain } = {
   },
   1329: {
     ...seiMainnet,
+  },
+  1088: {
+    ...metis,
   },
 };
 
