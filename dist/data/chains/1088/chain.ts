@@ -1,8 +1,7 @@
 import { TChain } from "../../../types";
 import { metisIcon } from "../../icons";
 
-// TODO: replace chainName with the actual chain name
-export const chainName: TChain = {
+export const metis: TChain = {
   id: 1088, // chain id
   name: "metis-andromeda", // chain name
   prettyName: "Metis Andromeda", // pretty network name

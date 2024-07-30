@@ -1,2 +1,2 @@
 import { TChain } from "../../../types";
-export declare const chainName: TChain;
+export declare const metis: TChain;
