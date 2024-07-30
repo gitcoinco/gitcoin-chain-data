@@ -1,5 +1,5 @@
 import { TChain } from "../../../types";
-import { seiIcon } from "../../icons";
+import { seiIcon, usdcIcon } from "../../icons";
 
 export const seiMainnet: TChain = {
   id: 1329,
@@ -40,6 +40,18 @@ export const seiMainnet: TChain = {
       },
       redstoneTokenId: "SEI",
     },
+    {
+      code: "USDC",
+      icon: usdcIcon,
+      address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+      decimals: 6,
+      canVote: true,
+      priceSource: {
+        chainId: 1329,
+        address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+      },
+      redstoneTokenId: "USDC",
+    }
   ],
   subscriptions: [
     // Allo V2
