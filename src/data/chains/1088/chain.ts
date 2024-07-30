@@ -4,7 +4,7 @@ import { metisIcon } from "../../icons";
 export const metis: TChain = {
   id: 1088, // chain id
   name: "metis-andromeda", // chain name
-  prettyName: "Metis Andromeda", // pretty network name
+  prettyName: "Metis Andromeda Mainnet", // pretty network name
   type: "mainnet", // chain type: "mainnet" or "testnet"
   blockExplorer: "https://andromeda-explorer.metis.io/",
   icon: metisIcon, // imported svg icon
