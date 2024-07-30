@@ -1,7 +1,6 @@
 import { TChain } from "../../../types";
 import { metisIcon } from "../../icons";
 
-// TODO: replace chainName with the actual chain name
 export const metis: TChain = {
   id: 1088, // chain id
   name: "metis-andromeda", // chain name
