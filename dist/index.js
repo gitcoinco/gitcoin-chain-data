@@ -39105,6 +39105,18 @@ var seiMainnet = {
         address: "0x0000000000000000000000000000000000000000"
       },
       redstoneTokenId: "SEI"
+    },
+    {
+      code: "USDC",
+      icon: usdc_default,
+      address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+      decimals: 6,
+      canVote: true,
+      priceSource: {
+        chainId: 1329,
+        address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"
+      },
+      redstoneTokenId: "USDC"
     }
   ],
   subscriptions: [
