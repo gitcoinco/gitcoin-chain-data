@@ -37310,6 +37310,7 @@ var mainnet = {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     },
     {
@@ -37443,6 +37444,7 @@ var optimism = {
         chainId: 10,
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
       },
+      permitVersion: "2",
       redstoneTokenId: "DAI"
     },
     {
@@ -37669,6 +37671,7 @@ var polygon = {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     },
     {
@@ -38196,6 +38199,7 @@ var base = {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     },
     {
@@ -38293,6 +38297,7 @@ var arbitrum = {
         chainId: 42161,
         address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     },
     {
@@ -38305,6 +38310,7 @@ var arbitrum = {
         chainId: 42161,
         address: "0x912ce59144191c1204e64559fe8253a0e49e6548"
       },
+      permitVersion: "2",
       redstoneTokenId: "ARB"
     },
     {
@@ -38534,6 +38540,7 @@ var avalancheFuji = {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     }
   ],
@@ -38621,6 +38628,7 @@ var avalanche = {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     }
   ],
@@ -38773,6 +38781,7 @@ var polygonMumbai = {
         chainId: 1,
         address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     }
   ],
@@ -38947,6 +38956,7 @@ var scrollMainnet = {
         chainId: 1,
         address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC"
     }
   ],
