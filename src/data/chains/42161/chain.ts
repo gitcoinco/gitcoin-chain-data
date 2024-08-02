@@ -32,6 +32,7 @@ export const arbitrum: TChain = {
         chainId: 42161,
         address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       },
+      permitVersion: "2",
       redstoneTokenId: "USDC",
     },
     {
@@ -44,6 +45,7 @@ export const arbitrum: TChain = {
         chainId: 42161,
         address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       },
+      permitVersion: "2",
       redstoneTokenId: "ARB",
     },
     {
