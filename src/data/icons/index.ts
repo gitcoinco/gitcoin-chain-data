@@ -22,6 +22,7 @@ import avalancheIcon from "./avalanche";
 import scrollIcon from "./scroll";
 import baseIcon from "./base";
 import metisIcon from "./metis";
+import tecIcon from "./tec";
 
 export {
   ethIcon,
@@ -48,4 +49,5 @@ export {
   scrollIcon,
   baseIcon,
   metisIcon,
+  tecIcon,
 };
