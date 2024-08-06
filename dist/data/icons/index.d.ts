@@ -22,4 +22,5 @@ import avalancheIcon from "./avalanche";
 import scrollIcon from "./scroll";
 import baseIcon from "./base";
 import metisIcon from "./metis";
-export { ethIcon, usdcIcon, daiIcon, opIcon, usdGloIcon, luksoIcon, polygonIcon, dataIcon, fantomIcon, gcvIcon, zkeraIcon, usdtIcon, lusdIcon, muteIcon, pgnIcon, gtcIcon, seiIcon, arbitrumIcon, celoIcon, cusdIcon, avalancheIcon, scrollIcon, baseIcon, metisIcon, };
+import tecIcon from "./tec";
+export { ethIcon, usdcIcon, daiIcon, opIcon, usdGloIcon, luksoIcon, polygonIcon, dataIcon, fantomIcon, gcvIcon, zkeraIcon, usdtIcon, lusdIcon, muteIcon, pgnIcon, gtcIcon, seiIcon, arbitrumIcon, celoIcon, cusdIcon, avalancheIcon, scrollIcon, baseIcon, metisIcon, tecIcon, };
