@@ -45,7 +45,6 @@ export const arbitrum: TChain = {
         chainId: 42161,
         address: "0x912ce59144191c1204e64559fe8253a0e49e6548",
       },
-      permitVersion: "2",
       redstoneTokenId: "ARB",
     },
     {
