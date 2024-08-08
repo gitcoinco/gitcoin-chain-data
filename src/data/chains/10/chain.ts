@@ -1,5 +1,5 @@
 import { TChain } from "../../../types";
-import { daiIcon, ethIcon, opIcon, usdGloIcon, usdcIcon, tecIcon } from "../../icons";
+import { daiIcon, ethIcon, opIcon, usdGloIcon, usdcIcon } from "../../icons";
 
 export const optimism: TChain = {
   id: 10,
@@ -90,18 +90,6 @@ export const optimism: TChain = {
         address: "0x4200000000000000000000000000000000000042",
       },
       redstoneTokenId: "OP",
-    },
-    {
-      code: "TEC",
-      icon: tecIcon,
-      address: "0x8fc7c1109c08904160d6ae36482b79814d45eb78",
-      decimals: 18,
-      canVote: true,
-      priceSource: {
-        chainId: 10,
-        address: "0x8fc7c1109c08904160d6ae36482b79814d45eb78",
-      },
-      redstoneTokenId: "TEC",
     },
   ],
   subscriptions: [
