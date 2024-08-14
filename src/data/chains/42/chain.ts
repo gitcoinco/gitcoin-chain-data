@@ -14,7 +14,7 @@ export const lukso: TChain = {
   contracts: {
     multiRoundCheckout: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
     quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
-    directGrants: "0xdA62767Da1402398d81C8288b37DE1CC8C8fDcA0",
+    directGrants: "0xF21E0915a0b7c541483962Cc7fB4705bBd4D5248",
   },
   tokens: [
     {
