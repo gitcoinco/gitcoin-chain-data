@@ -14,6 +14,9 @@ export const avalanche: TChain = {
     multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 15,
+    directAllocationStrategyAddress:
+      "0xcdf62dd1f9f9f412485dba39b491af9e09d81652",
   },
   tokens: [
     {

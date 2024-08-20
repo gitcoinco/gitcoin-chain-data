@@ -14,6 +14,9 @@ export const fantom: TChain = {
     multiRoundCheckout: "0x03506eD3f57892C85DB20C36846e9c808aFe9ef4",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 4,
+    directAllocationStrategyAddress:
+      "0xf4ad959b0eceab17648cb964c3a1feadba8a5053",
   },
   tokens: [
     {

@@ -14,6 +14,9 @@ export const celoMainnet: TChain = {
     multiRoundCheckout: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 12,
+    directAllocationStrategyAddress:
+      "0x9da0a7978b7bd826e06800427cbf1ec1200393e3",
   },
   tokens: [
     {

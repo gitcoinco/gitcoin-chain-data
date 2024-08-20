@@ -15,6 +15,9 @@ export const lukso: TChain = {
     multiRoundCheckout: "0x029dFAf686DfA0efdace5132ba422e9279D50b5b",
     quadraticFunding: "0x91b5eeE385D8e0cfd49FD94D4C7aE15e1F17e0A2",
     directGrants: "0xF21E0915a0b7c541483962Cc7fB4705bBd4D5248",
+    directAllocationPoolId: 3,
+    directAllocationStrategyAddress:
+      "0x471168a823d909fd3ffa5641757d9bb83ba5e35c",
   },
   tokens: [
     {

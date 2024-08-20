@@ -13,6 +13,9 @@ export const metis: TChain = {
     multiRoundCheckout: "0x710172b2C0aCc629A3FD23D436c347807dD5C412",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 1,
+    directAllocationStrategyAddress:
+      "0xef78f18f49dea8b8a5caa41633bb50b0666d40f1",
   },
   pricesFromTimestamp: 0, // timestamp to get prices from
   tokens: [

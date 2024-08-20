@@ -15,6 +15,9 @@ export const optimism: TChain = {
     multiRoundCheckout: "0x15fa08599EB017F89c1712d0Fe76138899FdB9db",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 58,
+    directAllocationStrategyAddress:
+      "0x91ad709fe04e214ef53218572d8d8690a8b4fdd0",
   },
   tokens: [
     {
