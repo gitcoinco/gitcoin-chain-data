@@ -13,6 +13,9 @@ export const chainName: TChain = {
     multiRoundCheckout: "0x..",
     quadraticFunding: "0x..",
     directGrants: "0x..",
+    directAllocationPoolId: 0,
+    directAllocationStrategyAddress:
+      "0x..",
   },  pricesFromTimestamp: 0, // timestamp to get prices from
   tokens: [
     {

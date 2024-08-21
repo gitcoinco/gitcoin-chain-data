@@ -51,6 +51,8 @@ export type TContracts = {
   multiRoundCheckout: Address;
   quadraticFunding: Address;
   directGrants: Address;
+  directAllocationPoolId?: number;
+  directAllocationStrategyAddress?: Address;
 };
 
 export type TNetworkType = "mainnet" | "testnet";

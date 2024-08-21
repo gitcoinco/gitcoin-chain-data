@@ -14,6 +14,9 @@ export const sepolia: TChain = {
     multiRoundCheckout: "0xa54A0c7Bcd37745f7F5817e06b07E2563a07E309",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
+    directAllocationPoolId: 386,
+    directAllocationStrategyAddress:
+      "0xd60BCfa8714949c478d88da51A7450703A32Cf35",
   },
   tokens: [
     {
