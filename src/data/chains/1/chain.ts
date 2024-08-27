@@ -1,5 +1,6 @@
 import { TChain } from "../../../types";
 import { daiIcon, ethIcon, usdcIcon } from "../../icons";
+import ebtc from "../../icons/ebtc";
 
 export const mainnet: TChain = {
   id: 1,
@@ -92,6 +93,18 @@ export const mainnet: TChain = {
         address: "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
       },
       redstoneTokenId: "mkUSD",
+    },
+    {
+      code: "eBTC",
+      icon: ebtc,
+      address: "0x661c70333aa1850ccdbae82776bb436a0fcfeefb",
+      decimals: 18,
+      canVote: true,
+      priceSource: {
+        chainId: 1,
+        address: "0x661c70333aa1850ccdbae82776bb436a0fcfeefb",
+      },
+      redstoneTokenId: "eBTC",
     },
   ],
   subscriptions: [
