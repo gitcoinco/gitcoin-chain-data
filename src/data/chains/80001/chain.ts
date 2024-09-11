@@ -17,7 +17,7 @@ export const polygonMumbai: TChain = {
   },
   tokens: [
     {
-      code: "MATIC",
+      code: "POL",
       address: "0x0000000000000000000000000000000000000000",
       icon: polygonIcon,
       decimals: 18,
@@ -26,10 +26,10 @@ export const polygonMumbai: TChain = {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
       },
-      redstoneTokenId: "MATIC",
+      redstoneTokenId: "POL",
     },
     {
-      code: "MATIC",
+      code: "POL",
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       icon: polygonIcon,
       decimals: 18,
@@ -38,7 +38,7 @@ export const polygonMumbai: TChain = {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
       },
-      redstoneTokenId: "MATIC",
+      redstoneTokenId: "POL",
     },
     {
       code: "USDC",

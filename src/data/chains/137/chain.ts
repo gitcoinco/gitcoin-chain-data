@@ -18,7 +18,7 @@ export const polygon: TChain = {
   },
   tokens: [
     {
-      code: "MATIC",
+      code: "POL",
       icon: polygonIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
@@ -27,10 +27,10 @@ export const polygon: TChain = {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
       },
-      redstoneTokenId: "MATIC",
+      redstoneTokenId: "POL",
     },
     {
-      code: "MATIC",
+      code: "POL",
       icon: polygonIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
@@ -39,7 +39,7 @@ export const polygon: TChain = {
         chainId: 1,
         address: "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
       },
-      redstoneTokenId: "MATIC",
+      redstoneTokenId: "POL",
     },
     {
       code: "USDC",
