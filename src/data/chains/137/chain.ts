@@ -18,7 +18,7 @@ export const polygon: TChain = {
   },
   tokens: [
     {
-      code: "MATIC",
+      code: "POL",
       icon: polygonIcon,
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
@@ -30,7 +30,7 @@ export const polygon: TChain = {
       redstoneTokenId: "MATIC",
     },
     {
-      code: "MATIC",
+      code: "POL",
       icon: polygonIcon,
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
       decimals: 18,
