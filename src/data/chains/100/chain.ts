@@ -12,7 +12,7 @@ export const gnosis: TChain = {
   rpc: "https://rpc.gnosischain.com", // public rpc url
   contracts: {
     multiRoundCheckout: "0xDE915119349E817f5012fa03f88F5C784d56A1fE",
-    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f.",
+    quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
     directGrants: "0x79A5EEc2C87Cd2116195E71af7A38647f89C8Ffa",
     directAllocationPoolId: 1,
     directAllocationStrategyAddress:
