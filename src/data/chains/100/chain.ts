@@ -51,8 +51,8 @@ export const gnosis: TChain = {
       decimals: 6,
       canVote: true,
       priceSource: {
-        chainId: 1, // chain id
-        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", // token address
+        chainId: 100, // chain id
+        address: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83", // token address
       },
       redstoneTokenId: "USDC",
     },
