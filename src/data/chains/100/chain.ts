@@ -27,7 +27,7 @@ export const gnosis: TChain = {
       decimals: 18,
       canVote: true,
       priceSource: {
-        chainId: 1, // chain id
+        chainId: 100, // chain id
         address: "0x0000000000000000000000000000000000000000",
       },
       redstoneTokenId: "DAI", // xDAI not supported.
@@ -39,7 +39,7 @@ export const gnosis: TChain = {
       decimals: 18,
       canVote: true,
       priceSource: {
-        chainId: 1,
+        chainId: 100,
         address: "0x0000000000000000000000000000000000000000",
       },
       redstoneTokenId: "DAI",
