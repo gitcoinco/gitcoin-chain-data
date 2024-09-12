@@ -1,7 +1,7 @@
 import { TChain } from "../../../types";
 import svgIcon from "../../icons/gnosis";
+import { usdcIcon } from "../../icons";
 
-// TODO: replace chainName with the actual chain name
 export const gnosis: TChain = {
   id: 100, // chain id
   name: "gnosis", // chain name
@@ -46,7 +46,7 @@ export const gnosis: TChain = {
     },
     {
       code: "USDC", // ERC-20 token symbol
-      icon: svgIcon, // imported svg icon
+      icon: usdcIcon, // imported svg icon
       address: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83", // token address
       decimals: 6,
       canVote: true,
