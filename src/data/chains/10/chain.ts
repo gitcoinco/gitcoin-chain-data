@@ -1,5 +1,5 @@
 import { TChain } from "../../../types";
-import { daiIcon, ethIcon, opIcon, usdGloIcon, usdcIcon } from "../../icons";
+import { daiIcon, ethIcon, opIcon, usdGloIcon } from "../../icons";
 
 export const optimism: TChain = {
   id: 10,

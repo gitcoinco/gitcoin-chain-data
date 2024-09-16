@@ -22,6 +22,7 @@ import { metis } from "../data/chains/1088/chain.js";
 // import { optimismSepolia } from "../data/chains/11155420/chain.js";
 
 import { TChain } from "../types.js";
+import { gnosis } from "../data/chains/100/chain.js";
 
 const chainImports: { [key: number]: TChain } = {
   1: {
@@ -32,6 +33,9 @@ const chainImports: { [key: number]: TChain } = {
   },
   42: {
     ...lukso,
+  },
+  100: {
+    ...gnosis,
   },
   137: {
     ...polygon,
