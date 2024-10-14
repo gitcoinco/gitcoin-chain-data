@@ -30,7 +30,7 @@ export const lukso: TChain = {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000",
       },
-      redstoneTokenId: "LYX",
+      redstoneTokenId: "LYXE",
     },
     {
       code: "LYX",
@@ -42,7 +42,7 @@ export const lukso: TChain = {
         chainId: 42,
         address: "0x0000000000000000000000000000000000000000",
       },
-      redstoneTokenId: "LYX",
+      redstoneTokenId: "LYXE",
     },
     {
       code: "WLYX",
@@ -54,7 +54,7 @@ export const lukso: TChain = {
         chainId: 42,
         address: "0x2db41674f2b882889e5e1bd09a3f3613952bc472",
       },
-      redstoneTokenId: "LYX",
+      redstoneTokenId: "LYXE",
     },
   ],
   subscriptions: [
