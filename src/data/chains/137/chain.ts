@@ -76,7 +76,7 @@ export const polygon: TChain = {
         chainId: 10,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       },
-      redstoneTokenId: "USDGLO",
+      redstoneTokenId: "CUSD", // USDGLO not supported by Redstone. So setting the price temporrarily to CUSD
     },
   ],
   subscriptions: [
