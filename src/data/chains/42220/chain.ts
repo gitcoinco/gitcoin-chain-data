@@ -53,7 +53,7 @@ export const celoMainnet: TChain = {
         chainId: 42220,
         address: "0x765de816845861e75a25fca122bb6898b8b1282a",
       },
-      redstoneTokenId: "CSDC",
+      redstoneTokenId: "CUSD",
     },
     {
       code: "USDGLO",
@@ -65,7 +65,7 @@ export const celoMainnet: TChain = {
         chainId: 42220,
         address: "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
       },
-      redstoneTokenId: "USDGLO",
+      redstoneTokenId: "CUSD", // USDGLO not supported by Redstone. So setting the price temporrarily to CUSD
     },
   ],
   subscriptions: [
