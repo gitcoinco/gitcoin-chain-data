@@ -54,6 +54,7 @@ export type TContracts = {
   directGrants: Address;
   directAllocationPoolId?: number;
   directAllocationStrategyAddress?: Address;
+  ensUniversalResolver?: Address
 };
 
 export type TNetworkType = "mainnet" | "testnet";
