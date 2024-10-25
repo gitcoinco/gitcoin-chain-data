@@ -19,6 +19,7 @@ export const mainnet: TChain = {
     directAllocationPoolId: 11,
     directAllocationStrategyAddress:
       "0xef78f18f49dea8b8a5caa41633bb50b0666d40f1",
+    ensUniversalResolver: "0xce01f8eee7E479C928F8919abD53E553a36CeF67",
   },
   tokens: [
     {
