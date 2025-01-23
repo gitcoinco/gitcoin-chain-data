@@ -17,6 +17,7 @@ export const sepolia: TChain = {
     directAllocationPoolId: 386,
     directAllocationStrategyAddress:
       "0xd60BCfa8714949c478d88da51A7450703A32Cf35",
+    retroFunding: "0xc3840647beB1f2026D2Ab1d6056DC6b953eEf212",
   },
   tokens: [
     {
