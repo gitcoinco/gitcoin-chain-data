@@ -11,7 +11,8 @@ type CoingeckoSupportedChainId =
   | 713715
   | 1329
   | 42
-  | 42220;
+  | 42220
+  | 295;
 
 export type TToken = {
   code: string;
