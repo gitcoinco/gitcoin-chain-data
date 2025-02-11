@@ -1,5 +1,5 @@
 import { TChain } from "../../../types";
-import { hederaIcon } from "../../icons";
+import { hederaIcon, usdcIcon } from "../../icons";
 
 export const hedera: TChain = {
   id: 295, // chain id
@@ -42,6 +42,18 @@ export const hedera: TChain = {
       },
       // see: https://github.com/redstone-finance/redstone-node/blob/main/src/config/tokens.json
       redstoneTokenId: "HBAR", // redstone token id
+    },
+    {
+      code: "USDC",
+      icon: usdcIcon,
+      address: "0x000000000000000000000000000000000006f89a",
+      decimals: 6,
+      canVote: true,
+      priceSource: {
+        chainId: 1,
+        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      },
+      redstoneTokenId: "USDC",
     },
   ],
   subscriptions: [
