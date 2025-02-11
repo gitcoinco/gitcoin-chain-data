@@ -21,7 +21,7 @@ export const hedera: TChain = {
       code: "HBAR", // native token symbol
       icon: hederaIcon, // imported svg icon
       address: "0x0000000000000000000000000000000000000000",
-      decimals: 8,
+      decimals: 18,
       canVote: true, // true for native currency and stable coins, protocol and other are false
       priceSource: {
         chainId: 295, // chain id
@@ -34,7 +34,7 @@ export const hedera: TChain = {
       code: "HBAR", // native token symbol
       icon: hederaIcon, // imported svg icon
       address: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
-      decimals: 8,
+      decimals: 18,
       canVote: true, // true for native currency and stable coins, protocol and other are false
       priceSource: {
         chainId: 295, // chain id
