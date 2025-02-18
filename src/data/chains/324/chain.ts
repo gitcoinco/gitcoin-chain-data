@@ -49,9 +49,21 @@ export const zkSyncEraMainnet: TChain = {
       redstoneTokenId: "ETH",
     },
     {
-      code: "USDC",
+      code: "USDC.e",
       icon: usdcIcon,
       address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+      decimals: 6,
+      canVote: true,
+      priceSource: {
+        chainId: 1,
+        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      },
+      redstoneTokenId: "USDC",
+    },
+    {
+      code: "USDC",
+      icon: usdcIcon,
+      address: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
       decimals: 6,
       canVote: true,
       priceSource: {
