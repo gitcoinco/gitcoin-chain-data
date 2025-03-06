@@ -23,6 +23,7 @@ export const arbitrum: TChain = {
     directAllocationPoolId: 390,
     directAllocationStrategyAddress:
       "0x91ad709fe04e214ef53218572d8d8690a8b4fdd0",
+    retroFunding: "0x3ef485b9776a48587e0469954065e9568E914B58",
   },
   tokens: [
     {
