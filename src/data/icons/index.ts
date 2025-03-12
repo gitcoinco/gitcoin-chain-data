@@ -3,6 +3,7 @@ import usdcIcon from "./usdc";
 import daiIcon from "./dai";
 import opIcon from "./op";
 import usdGloIcon from "./usdglo";
+import gooddollarIcon from "./gooddollar";
 import luksoIcon from "./lukso";
 import polygonIcon from "./polygon";
 import dataIcon from "./data";
@@ -50,4 +51,5 @@ export {
   baseIcon,
   metisIcon,
   hederaIcon,
+  gooddollarIcon,
 };
