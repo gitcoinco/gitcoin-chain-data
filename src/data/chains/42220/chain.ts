@@ -9,6 +9,7 @@ export const celoMainnet: TChain = {
   blockExplorer: "https://celoscan.io/",
   icon: celoIcon,
   rpc: "https://forno.celo.org",
+  coingeckoId: "celo",
   pricesFromTimestamp: 1704164777,
   contracts: {
     multiRoundCheckout: "0xb1481E4Bb2a018670aAbF68952F73BE45bdAD62D",
@@ -77,7 +78,7 @@ export const celoMainnet: TChain = {
         chainId: 42220,
         address: "0x62B8B11039FcfE5aB0C56E502b1C372A3d2a9c7A",
       },
-      redstoneTokenId: "undefined", // G$ not supported by Redstone. So setting the price temporrarily to undefined
+      redstoneTokenId: "", // G$ not supported by Redstone. So setting the price temporrarily to ""
     },
   ],
   subscriptions: [

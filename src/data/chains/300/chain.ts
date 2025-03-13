@@ -9,6 +9,7 @@ export const zksyncEraTestnet: TChain = {
   blockExplorer: "https://sepolia.explorer.zksync.io/",
   icon: zkeraIcon,
   rpc: "https://sepolia.era.zksync.dev",
+  coingeckoId: "undefined",
   pricesFromTimestamp: 1701486377,
   contracts: {
     multiRoundCheckout: "0x32e93A37dc02f97b8EDe446D8e468B1a894b47e0",

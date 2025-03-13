@@ -9,6 +9,7 @@ export const scrollSepolia: TChain = {
   blockExplorer: "https://sepolia.scrollscan.com",
   icon: scrollIcon,
   rpc: "https://sepolia-rpc.scroll.io",
+  coingeckoId: "ethereum",
   pricesFromTimestamp: 1704164777,
   contracts: {
     multiRoundCheckout: "0x8Bd6Bc246FAF14B767954997fF3966CD1c0Bf0f5",

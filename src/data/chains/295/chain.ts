@@ -9,6 +9,7 @@ export const hedera: TChain = {
   blockExplorer: "https://hashscan.io/mainnet/",
   icon: hederaIcon, // imported svg icon
   rpc: "https://mainnet.hashio.io/api", // public rpc url
+  coingeckoId: "hedera-hashgraph",
   contracts: {
     multiRoundCheckout: "0x1E18cdce56B3754c4Dca34CB3a7439C24E8363de",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",

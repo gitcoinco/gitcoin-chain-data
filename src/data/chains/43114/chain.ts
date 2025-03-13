@@ -10,6 +10,7 @@ export const avalanche: TChain = {
   icon: avalancheIcon,
   rpc: "https://rpc.ankr.com/avalanche",
   pricesFromTimestamp: 1692497177,
+  coingeckoId: "avalanche",
   contracts: {
     multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",
