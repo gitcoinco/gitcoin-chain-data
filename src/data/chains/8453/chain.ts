@@ -10,6 +10,7 @@ export const base: TChain = {
   icon: baseIcon,
   rpc: "https://mainnet.base.org/",
   pricesFromTimestamp: 1701486377,
+  coingeckoId: "base",
   contracts: {
     multiRoundCheckout: "0x7C24f3494CC958CF268a92b45D7e54310d161794",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",

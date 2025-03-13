@@ -42,6 +42,7 @@ export type TChain = {
   icon: string;
   type: TNetworkType;
   id: number;
+  coingeckoId: string;
   contracts: TContracts;
   pricesFromTimestamp?: number;
   maxGetLogsRange?: number;

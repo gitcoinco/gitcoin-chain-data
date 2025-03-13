@@ -15,6 +15,7 @@ export const arbitrum: TChain = {
   blockExplorer: "https://arbiscan.io/",
   icon: arbitrumIcon,
   rpc: "https://arbitrum-one.publicnode.com/",
+  coingeckoId: "arbitrum-one",
   pricesFromTimestamp: 1688263577,
   contracts: {
     multiRoundCheckout: "0x8e1bD5Da87C14dd8e08F7ecc2aBf9D1d558ea174",

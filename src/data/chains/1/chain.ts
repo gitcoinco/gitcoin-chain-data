@@ -10,6 +10,7 @@ export const mainnet: TChain = {
   blockExplorer: "https://etherscan.io/",
   icon: ethIcon,
   rpc: "https://ethereum-rpc.publicnode.com/",
+  coingeckoId: "ethereum",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,
   contracts: {

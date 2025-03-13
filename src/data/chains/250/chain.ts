@@ -10,6 +10,7 @@ export const fantom: TChain = {
   icon: fantomIcon,
   rpc: "https://rpcapi.fantom.network",
   pricesFromTimestamp: 1667354777,
+  coingeckoId: "fantom",
   contracts: {
     multiRoundCheckout: "0x03506eD3f57892C85DB20C36846e9c808aFe9ef4",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",

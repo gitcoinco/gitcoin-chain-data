@@ -10,6 +10,7 @@ export const polygon: TChain = {
   icon: polygonIcon,
   rpc: "https://polygon-rpc.com",
   pricesFromTimestamp: 1692497177,
+  coingeckoId: "polygon-pos",
   maxGetLogsRange: 0,
   contracts: {
     multiRoundCheckout: "0xe04d9e9CcDf65EB1Db51E56C04beE4c8582edB73",

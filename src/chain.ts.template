@@ -7,6 +7,7 @@ export const chainName: TChain = {
   prettyName; "Ethereum", // pretty network name
   type: "mainnet", // chain type: "mainnet" or "testnet"
   blockExplorer: "https://<url>/",
+  coingeckoId" "<coingecko-id>",
   icon: svgIcon, // imported svg icon
   rpc: "https://<rpc-url>", // public rpc url
   contracts: {

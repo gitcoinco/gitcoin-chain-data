@@ -7,6 +7,7 @@ export const gnosis: TChain = {
   name: "gnosis", // chain name
   prettyName: "Gnosis", // pretty network name
   type: "mainnet", // chain type: "mainnet" or "testnet"
+  coingeckoId: "xdai",
   blockExplorer: "https://gnosisscan.io/",
   icon: svgIcon, // imported svg icon
   rpc: "https://rpc.gnosischain.com", // public rpc url

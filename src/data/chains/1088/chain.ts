@@ -9,6 +9,7 @@ export const metis: TChain = {
   blockExplorer: "https://andromeda-explorer.metis.io/",
   icon: metisIcon, // imported svg icon
   rpc: "https://andromeda.metis.io/?owner=1088", // public rpc url
+  coingeckoId: "metis-andromeda",
   contracts: {
     multiRoundCheckout: "0x710172b2C0aCc629A3FD23D436c347807dD5C412",
     quadraticFunding: "0x787eC93Dd71a90563979417879F5a3298389227f",

@@ -10,6 +10,7 @@ export const lukso: TChain = {
   icon: luksoIcon,
   rpc: "https://42.rpc.thirdweb.com",
   pricesFromTimestamp: 1704164777,
+  coingeckoId: "lukso",
   maxGetLogsRange: 0,
   contracts: {
     multiRoundCheckout: "0x75849046b2EAd803e095769e94D7d1Db14dFfFD7",

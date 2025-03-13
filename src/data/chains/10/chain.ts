@@ -8,6 +8,7 @@ export const optimism: TChain = {
   type: "mainnet",
   blockExplorer: "https://optimistic.etherscan.io/",
   icon: opIcon,
+  coingeckoId: "optimistic-ethereum",
   rpc: "https://optimism-rpc.publicnode.com/",
   pricesFromTimestamp: 1667354777,
   maxGetLogsRange: 0,

@@ -8,6 +8,7 @@ export const polygonMumbai: TChain = {
   type: "testnet",
   blockExplorer: "https://mumbai.polygonscan.com/",
   icon: polygonIcon,
+  coingeckoId: "polygon-pos",
   rpc: "https://rpc-mumbai.maticvigil.com/",
   pricesFromTimestamp: 1704164777,
   contracts: {
